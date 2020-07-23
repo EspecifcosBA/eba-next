@@ -1,0 +1,471 @@
+[
+  {
+    "group": "casa central",
+    "country": "argentina",
+    "province": "capital federal",
+    "place": "capital federal",
+    "name": "casa central",
+    "address": "Leopoldo Marechal 914",
+    "phone": [
+      "01141396860",
+      "01141396861"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Capital Federal",
+    "place": "Barrio Norte",
+    "name": "Barrio Norte",
+    "address": "Av Santa Fe 2861",
+    "phone": [
+      "01148215227"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Capital Federal",
+    "place": "Belgrano",
+    "name": "NUCLEA",
+    "address": "Ciudad de la Paz 2985",
+    "phone": [
+      "01145442202"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Capital Federal",
+    "place": "Recoleta",
+    "name": "Quantum",
+    "address": "Arenales 1942 - 1° B",
+    "phone": [
+      "53093204"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Capital Federal",
+    "place": "Villa Urquiza",
+    "name": "Peeling",
+    "address": "Av Monroe 5244 1°piso",
+    "phone": [
+      "01145210986"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "Ciudadela",
+    "name": "Alta Cosmética",
+    "address": "Santa Juana de Arco 3792",
+    "phone": [
+      "01146531659"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "Escobar",
+    "name": "Bellanor",
+    "address": "-",
+    "phone": [
+      "1530920405"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "Lanús",
+    "name": "Dicosur",
+    "address": "Hipólito Yrigoyen 4615",
+    "phone": [
+      "01142491923"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "Lomas de Zamora",
+    "name": "Dicosur",
+    "address": "Laprida 432 2º",
+    "phone": [
+      "01142928887"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "Morón",
+    "name": "Quimey",
+    "address": "Valle 295",
+    "phone": [
+      "01146290869"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "Quilmes",
+    "name": "L'Por",
+    "address": "Moreno 574",
+    "phone": [
+      "42537242"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "Ramos Mejia",
+    "name": "JEM",
+    "address": "Rosales 333",
+    "phone": [
+      "01144690357",
+      "01146563696"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "San Isidro",
+    "name": "Ctro.Cosm. Del Norte",
+    "address": "Martin y Omar 129 - Of.114",
+    "phone": [
+      "01147429498"
+    ]
+  },
+  {
+    "group": "capital federal y GBA",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "Villa Ballester",
+    "name": "Hugo Daizo",
+    "address": "Independencia 4904",
+    "phone": [
+      "01147680362"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Tierra del Fuego",
+    "place": "Rio Grande",
+    "name": "Graciela Busto",
+    "address": "Don Bosco 745",
+    "phone": [
+      "02964 15521556"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Tierra del Fuego",
+    "place": "Ushuaia",
+    "name": "DEA",
+    "address": "Isla año nuevo, Tira 1, Dpto 14",
+    "phone": [
+      "0290115406682",
+      "02901445696"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Santiago del Estero",
+    "place": "La Banda",
+    "name": "Marisa Nediani",
+    "address": "-",
+    "phone": [
+      "0385-4271885"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Santa Fé",
+    "place": "Cañada de Gomez",
+    "name": "Marisa Maldonado",
+    "address": "-",
+    "phone": [
+      "03471-15687456"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Santa Fé",
+    "place": "Rosario",
+    "name": "Kio's",
+    "address": "-",
+    "phone": [
+      "03402493023"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Santa Fé",
+    "place": "Santa Fé",
+    "name": "Koré",
+    "address": "Catamarca 3033",
+    "phone": [
+      "03424524653"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Salta",
+    "place": "Salta",
+    "name": "Mirta Causarano",
+    "address": "Caseros 1353 of. 3",
+    "phone": [
+      "03874217319",
+      "4960844"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Río Negro",
+    "place": "Villa Regina",
+    "name": "Carina Paravano",
+    "address": "-",
+    "phone": [
+      "0298-4465837"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Neuquén",
+    "place": "Neuquén",
+    "name": "Ruby Suhr",
+    "address": "Olascoaga 1190",
+    "phone": [
+      "02994425925"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Neuquen",
+    "place": "San Martin de los Andes",
+    "name": "Mariela Garea",
+    "address": "-",
+    "phone": [
+      "02972437736"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Misiones",
+    "place": "Obera",
+    "name": "Punto Guapa",
+    "address": "Cordoba 235",
+    "phone": [
+      ""
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Mendoza",
+    "place": "Godoy Cruz",
+    "name": "Mariana Catani",
+    "address": "Derqui 13 dto.1",
+    "phone": [
+      "02614245948",
+      "155024133 "
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "La Pampa",
+    "place": "Santa Rosa",
+    "name": "Graciela Piatti",
+    "address": "Villegas 253",
+    "phone": [
+      "02954422480"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "La Pampa",
+    "place": "Santa Rosa",
+    "name": "Silvina Andragnez",
+    "address": "-",
+    "phone": [
+      "02954563083"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Entre Rios",
+    "place": "Concordia",
+    "name": "Biodermia",
+    "address": "A. del Valle 189 \"B\"",
+    "phone": [
+      "03454230793"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Entre Rios",
+    "place": "Paraná",
+    "name": "Rosa Schaffner",
+    "address": "Salta 131",
+    "phone": [
+      "03434225191"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Cordoba",
+    "place": "Ciudad de Cordoba",
+    "name": "Jaden",
+    "address": "San Jeronimo 167, 3ro F",
+    "phone": [
+      "03514235359",
+      "0351153161561"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Córdoba",
+    "place": "Córdoba",
+    "name": "Nené Molina",
+    "address": "San Martín 70 (Galeria). 2do Piso, Local 77",
+    "phone": [
+      "03514210185"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Chubut",
+    "place": "Comodoro Rivadavia",
+    "name": "Adriana Camaño",
+    "address": "13 de Diciembre 315",
+    "phone": [
+      "0297154256835"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Chubut",
+    "place": "Comodoro rivadavia",
+    "name": "Bella estetica",
+    "address": "Santa cruz 420",
+    "phone": [
+      ""
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Chubut",
+    "place": "Puerto Madryn",
+    "name": "Esencia Boutique",
+    "address": "Juan Muzzio y Juan de la Piedra 505",
+    "phone": [
+      "1550528067"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "Bahía Blanca",
+    "name": "Celia Aguilera ",
+    "address": "E. Gonzalez 1327 ",
+    "phone": [
+      "02914883089"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "Mar del Plata",
+    "name": "Eurosur",
+    "address": "Sgo. del Estero 3402",
+    "phone": [
+      "02234925556"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "San Nicolás",
+    "name": "Liliana Zanello",
+    "address": "-",
+    "phone": [
+      "03461461576",
+      "0346115522558"
+    ]
+  },
+  {
+    "group": "interior del pais",
+    "country": "argentina",
+    "province": "Buenos Aires",
+    "place": "Tandil",
+    "name": "Eurosur Tandil",
+    "address": "RODRGUEZ 999",
+    "phone": [
+      "02494444000"
+    ]
+  },
+  {
+    "group": "internacional",
+    "country": "Perú",
+    "province": "Lima",
+    "place": "Miraflores",
+    "name": "Viki Vereau SAC",
+    "address": "Ca. 2 de Mayo 516, Of. 201",
+    "phone": [
+      "51987106906",
+      "51995962178"
+    ]
+  }, {
+    "group": "internacional",
+    "country": "México",
+    "province": "Estado de México",
+    "place": "Colonia viveros de la loma Tlalnepantla",
+    "name": "Skin Connection SA de CV",
+    "address": "Viveros de la colina 147",
+    "phone": [
+      "525585016690 ext 104"
+    ]
+  }, {
+    "group": "internacional",
+    "country": "Ecuador",
+    "province": "Azuay",
+    "place": "Cuenca",
+    "name": "Kasanacorp",
+    "address": "Av. Felipe II, e Antonio Machado y Don Bosco",
+    "phone": [
+      "59372455143",
+      "59372886258"
+    ]
+  }
+] 
