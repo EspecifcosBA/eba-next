@@ -18,7 +18,7 @@ export default function Products({ products }: InferGetStaticPropsType<typeof ge
       {
         products.map(product => (
           <div key={product.name}>
-            <Link href={`products/${parseName(product.name)}`}>
+            <Link href={`productos/${parseName(product.name)}`}>
               <a>{product.name}</a>
             </Link>
           </div>

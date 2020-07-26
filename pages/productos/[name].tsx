@@ -1,4 +1,4 @@
-import { getAllProductsName, getProductData } from '../../lib/products';
+import { getAllProductsName, getProductData } from 'lib/products';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 
 const Product = ({ product }: InferGetStaticPropsType<typeof getStaticProps>) => {

@@ -1,11 +1,14 @@
-import ProductData from '../data/products.json';
+import ProductData from 'data/products.json';
 
 export const getAllProductsName = () => {
-  return ProductData.map(product => ({
-    params: {
-      name: product.name.replace(/ /g, '_')
+  return ProductData.map(product => {
+    const name = product.name.replace(/ /g, '_')
+    return {
+      params: {
+        name
+      }
     }
-  }))
+  })
 }
 
 export const getProductData = (parsedName: string) => {
