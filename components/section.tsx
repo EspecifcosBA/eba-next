@@ -12,7 +12,7 @@ type SectionProps = {
 
 const Section: FunctionComponent<SectionProps> = ({ 
   color = 'default',
-  size = 'large',
+  size = 'small',
   className = '',
   tag: Tag = 'section',
   img,
@@ -24,6 +24,65 @@ const Section: FunctionComponent<SectionProps> = ({
       <div className="container">
         { children }
       </div>
+      <style jsx>{`
+        .section {
+          display: flex;
+          align-items: center;
+        }
+
+        .section .container {
+          padding: 5rem;
+        }
+
+        .section.section-xsmall {
+          padding: 0;
+        }
+        
+        .section.section-small {
+          padding: 2.5rem 0;
+        }
+        
+        .section.section-regular {
+          padding: 5rem 0;
+        }
+
+        .section.section-large {
+          padding: 10rem 0;
+        }
+
+        .section.section-xlarge {
+          height: 80vh;
+        }
+
+        .section.section-remove-vertical {
+          padding-top: 0rem;
+        }
+      
+        .section.section-primary {
+          background-color: var(--primaryColor);
+          color: var(--primaryTextColor);
+        }
+
+        .section.section-muted {
+          background-color: var(--secondaryLightColor);
+          color: var(--secondaryTextColor);
+        }
+
+        .section.section-default {
+          background-color: #fff;
+          color: var(--secondaryTextColor);
+        }
+
+        .section.section-secondary {
+          background-color: var(--primaryDarkColor);
+          color: var(--primaryTextColor);
+        }
+
+        .section.section-cover {
+          background-size: cover;
+          background-position: bottom left;
+        }
+      `}</style>
     </Tag>
   )
 }

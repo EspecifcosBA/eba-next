@@ -429,14 +429,25 @@ th {
 /* Custom Styles
    ========================================================================== */
 
+:root {
+  --primaryColor: #5a91c4;
+  --primaryLightColor: #8dc1f7;
+  --primaryDarkColor: #226493;
+  --secondaryColor: #9e9e9e;
+  --secondaryLightColor: #cfcfcf;
+  --secondaryDarkColor: #707070;
+  --primaryTextColor: #fff;
+  --secondaryTextColor: #000000;
+}
+
 a {
-  color: #1e87f0;
+  color: var(--primaryColor);
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover {
-  color: #0f6ecd;
+  color: var(--primaryDarkColor);
   text-decoration: underline;
 }
 
@@ -446,14 +457,14 @@ a:hover {
 }
 
 a.muted {
-  color: #999;
+  color: var(--secondaryColor);
 }
 a.muted:hover {
-  color: #666;
+  color: var(--secondaryDarkColor);
 }
 
 .active {
-  color: #222;
+  color: var(--secondaryTextColor);
 }
 
 .text-left {
@@ -467,3 +478,12 @@ a.muted:hover {
 .text-center {
   text-align: center;
 }
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
+} 
