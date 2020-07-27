@@ -1,6 +1,16 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+  const router = useRouter();
+  const activePath = (href: string) => router.pathname === href ? 'active' : '';
+  const paths = [
+    { href: '/', label: 'nosotros'},
+    { href: '/productos', label: 'productos'},
+    { href: '/distribuidoras', label: 'distribuidoras'},
+    { href: '/contacto', label: 'contacto'},
+  ];
+
   return (
     <>
       <header className="eba-header mdl-layout__header">
@@ -17,35 +27,25 @@ const Navbar = () => {
           <div className="mdl-layout-spacer"></div>
           
           <nav className="mdl-navigation mdl-layout--large-screen-only">
-            <Link href="/">
-              <a className="mdl-navigation__link">nosotros</a>
-            </Link>
-            <Link href="/productos">
-              <a className="mdl-navigation__link">productos</a>
-            </Link>
-            <Link href="/distribuidoras">
-              <a className="mdl-navigation__link">distribuidoras</a>
-            </Link>
-            <Link href="/contacto">
-              <a className="mdl-navigation__link">contacto</a>
-            </Link>
+            {
+              paths.map(({ href, label }, key) => (
+                <Link href={href} key={key}>
+                  <a className={`mdl-navigation__link ${activePath(href)}`}>{label}</a>
+                </Link>
+              ))
+            }
           </nav>
         </div>
       </header>
       <div className="mdl-layout__drawer">
         <nav className="mdl-navigation">
-          <Link href="/">
-            <a className="mdl-navigation__link">nosotros</a>
-          </Link>
-          <Link href="/productos">
-            <a className="mdl-navigation__link">productos</a>
-          </Link>
-          <Link href="/distribuidoras">
-            <a className="mdl-navigation__link">distribuidoras</a>
-          </Link>
-          <Link href="/contacto">
-            <a className="mdl-navigation__link">contacto</a>
-          </Link>
+          {
+            paths.map(({ href, label }, key) => (
+              <Link href={href} key={key}>
+                <a className={`mdl-navigation__link ${activePath(href) && 'active'}`}>{label}</a>
+              </Link>
+            ))
+          }
         </nav>
       </div>
       <style jsx>{`
@@ -60,6 +60,9 @@ const Navbar = () => {
           padding: 1rem;
         }
 
+        .eba-header .mdl-navigation__link.active {
+          color: var(--primaryColor);
+        }
         .eba-header a:hover {
           text-decoration: none;
           color: var(--secondaryDarkColor);
