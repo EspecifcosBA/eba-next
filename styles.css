@@ -431,10 +431,12 @@ th {
 
 :root {
   --primaryColor: #5a91c4;
+  --primaryXLightColor: #E3F2FD;
   --primaryLightColor: #8dc1f7;
   --primaryDarkColor: #226493;
   --secondaryColor: #9e9e9e;
   --secondaryLightColor: #cfcfcf;
+  --secondaryXLightColor: #FAFAFA;
   --secondaryDarkColor: #707070;
   --primaryTextColor: #fff;
   --secondaryTextColor: #000000;

@@ -4,13 +4,27 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import Card from 'components/card';
+import CategoryMenu from 'components/categoryMenu';
 
 import { InferGetStaticPropsType } from 'next';
 
 type Category = "Protección Intensiva" | "Higiene" | "Máscaras" | "Peeling" | "Ácido Hialurónico" | "Hombres" | "Activos Concentrados" | "Monodosis" | "Protección Solar" | "Corporales" | "Therapy Rituals";
+type CategoryUrl = "proteccion_intensiva" |
+  "higiene" |
+  "mascaras" |
+  "peeling" |
+  "acido_hialuronico" |
+  "hombres" |
+  "activos_concentrados" |
+  "monodosis" |
+  "proteccion_solar" |
+  "corporales" |
+  "therapy_rituals";
+
 type Product = {
   name: string,
   category: Array<Category>,
+  categoryUrl: Array<CategoryUrl>,
   desc: string,
   fullDesc: string,
   actives: Array<string>,
@@ -29,24 +43,11 @@ type Product = {
 
 export default function Products({ products }: InferGetStaticPropsType<typeof getStaticProps>) {
   const router = useRouter();
-  const categories = [
-    "Protección Intensiva", "Higiene", "Máscaras", "Peeling", "Ácido Hialurónico", "Hombres", "Activos Concentrados", "Monodosis", "Protección Solar", "Corporales", "Therapy Rituals"
-  ]
 
   return (
     <div className="mdl-grid">
       <div className="mdl-cell mdl-cell--2-col">
-        <ul className="eba-tab">
-          {
-            categories.map((cat, i) => (
-              <li key={i}>
-                <Link href="/">
-                  <a>{cat}</a>
-                </Link>
-              </li>
-            ))
-          }  
-        </ul>
+        <CategoryMenu />
       </div>
       <div className="mdl-cell mdl-cell--10-col">
         <div className="mdl-grid">

@@ -1,4 +1,39 @@
 import ProductData from 'data/products.json';
+import { uniq } from 'ramda';
+
+export type Category = "Protección Intensiva" | "Higiene" | "Máscaras" | "Peeling" | "Ácido Hialurónico" | "Hombres" | "Activos Concentrados" | "Monodosis" | "Protección Solar" | "Corporales" | "Therapy Rituals";
+export type CategoryUrl = 
+  "proteccion_intensiva" |
+  "higiene" |
+  "mascaras" |
+  "peeling" |
+  "acido_hialuronico" |
+  "hombres" |
+  "activos_concentrados" |
+  "monodosis" |
+  "proteccion_solar" |
+  "corporales" |
+  "therapy_rituals";
+
+export type Product = {
+  name: string,
+  category: Array<Category>,
+  categoryUrl: Array<CategoryUrl>,
+  desc: string,
+  fullDesc: string,
+  actives: Array<string>,
+  ph: string,
+  variants: {
+    code: number,
+    content: string,
+    price: number,
+    sellPrice: number,
+    image: string
+  }[],
+  image: string,
+  apply: string,
+  url: string,
+};
 
 export const getAllProductsPath = () => {
   return ProductData.map(product => ({
@@ -21,6 +56,20 @@ export const getAllProductsName = () => {
 
 export const getProductData = (url: string | string[]) => {
   return ProductData.find(product => product.url === url);
+}
+
+export const getProductsByCategory = (catUrl: string) => {
+  return ProductData.filter(product => product.categoryUrl.includes(catUrl))
+}
+
+export const getAllProductsCategoryPath = () => {
+  const x = uniq(ProductData.map(product => product.categoryUrl).flat()).map(cat => ({
+    params: {
+      category: cat
+    }
+  }));
+  console.log(x)
+  return x;
 }
 
 export default getAllProductsName;
