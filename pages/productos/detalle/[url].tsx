@@ -1,4 +1,4 @@
-import { getAllProductsName, getProductData } from 'lib/products';
+import { getAllProductsPath, getProductData } from 'lib/products';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 
 const Product = ({ product }: InferGetStaticPropsType<typeof getStaticProps>) => {
@@ -11,7 +11,7 @@ const Product = ({ product }: InferGetStaticPropsType<typeof getStaticProps>) =>
 }
 
 export async function getStaticPaths() {
-  const paths = getAllProductsName();
+  const paths = getAllProductsPath();
   return {
     paths,
     fallback: false
@@ -19,9 +19,8 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const name = params && params.name ? (params.name.length ? '' : params.name) : '';
-  //@ts-ignore
-  const product = getProductData(params.name);
+  
+  const product = params !== undefined && params.url !== undefined ? getProductData(params.url) : {};
   return {
     props: {
       product
