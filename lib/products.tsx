@@ -63,13 +63,11 @@ export const getProductsByCategory = (catUrl: string) => {
 }
 
 export const getAllProductsCategoryPath = () => {
-  const x = uniq(ProductData.map(product => product.categoryUrl).flat()).map(cat => ({
+  return uniq(ProductData.map(product => product.categoryUrl).flat()).map(cat => ({
     params: {
       category: cat
     }
   }));
-  console.log(x)
-  return x;
 }
 
 export default getAllProductsName;
