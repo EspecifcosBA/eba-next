@@ -15,7 +15,9 @@ const Navbar = () => {
     <>
       <header className="eba-header mdl-layout__header">
         <div className="mdl-layout__header-row">
-          
+          <div role="button" className="mdl-layout__drawer-button">
+            <span className="material-icons">menu</span>
+          </div>
           <span className="mdl-layout-title">
             <Link href="/">
               <a className="eba-logo">
@@ -63,9 +65,15 @@ const Navbar = () => {
         .eba-header .mdl-navigation__link.active {
           color: var(--primaryColor);
         }
+
         .eba-header a:hover {
           text-decoration: none;
           color: var(--secondaryDarkColor);
+        }
+        @media screen and (min-width: 1025px) {
+          .eba-header .mdl-layout__drawer-button {
+            display: none;
+          }
         }
       `}</style>
     </>

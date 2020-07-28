@@ -34,7 +34,10 @@ const App = ({ Component, pageProps }: AppProps) => {
           font-family: 'Material Icons';
           font-style: normal;
           font-weight: 400;
-          src: url(flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+          src: url(/MaterialIcons-Regular.eot);
+          src: url(/MaterialIcons-Regular.woff2) format('woff2');
+          src: url(/MaterialIcons-Regular.woff) format('woff');
+          src: url(/MaterialIcons-Regular.ttf) format('truetype');
         }
         
         .material-icons {
@@ -49,7 +52,11 @@ const App = ({ Component, pageProps }: AppProps) => {
           white-space: nowrap;
           word-wrap: normal;
           direction: ltr;
+          text-rendering: optimizeLegibility;
+          -moz-osx-font-smoothing: grayscale;
+          font-feature-settings: 'liga';
           -webkit-font-feature-settings: 'liga';
+          -webkit-font-smoothing: antialiased;
           -webkit-font-smoothing: antialiased;
         }
       `}</style>
