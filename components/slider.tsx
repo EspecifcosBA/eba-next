@@ -59,12 +59,18 @@ const Slider: FunctionComponent<SliderProps> = ({ children }) => {
           ))
         }
       </div>
-      <div role="button" className="slider-arrow slider-arrow-left" onClick={moveSlider('prev')}>
-        <span className="material-icons">navigate_before</span>
-      </div>
-      <div role="button" className="slider-arrow slider-arrow-right" onClick={moveSlider('next')}>
-        <span className="material-icons">navigate_next</span>
-      </div>
+      {
+        children.length > 1 ? (
+          <>
+            <div role="button" className="slider-arrow slider-arrow-left" onClick={moveSlider('prev')}>
+              <span className="material-icons">navigate_before</span>
+            </div>
+            <div role="button" className="slider-arrow slider-arrow-right" onClick={moveSlider('next')}>
+              <span className="material-icons">navigate_next</span>
+            </div>
+          </>
+        ) : null
+      }
       <style jsx>{`
         .eba-slider {
           margin: auto;
