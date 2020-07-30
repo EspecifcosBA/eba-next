@@ -19,7 +19,7 @@ const Card: FunctionComponent<CardProps> = ({ title, img, suppText, onClick }) =
         )
       }
       <div className="mdl-card__title">
-        <h2 className="mdl-card__title-text">{ title }</h2>
+        <h4 className="mdl-card__title-text">{ title }</h4>
       </div>
       {
         suppText && (
@@ -34,6 +34,7 @@ const Card: FunctionComponent<CardProps> = ({ title, img, suppText, onClick }) =
         .eba-card.mdl-card {
           width: 100%;
           height: 400px;
+          background-color: var(--secondaryXLightColor);
         }
 
         .eba-card.mdl-card:hover {
@@ -45,7 +46,7 @@ const Card: FunctionComponent<CardProps> = ({ title, img, suppText, onClick }) =
           background-repeat: no-repeat;
           background-position: bottom center;
           background-size: contain;
-          background-color: #fff;
+          background-color: var(--secondaryXLightColor);
           height: 75%;
           display: flex;
           justify-content: center;

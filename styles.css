@@ -450,12 +450,12 @@ a {
 
 a:hover {
   color: var(--primaryDarkColor);
-  text-decoration: underline;
 }
 
 a:active,
 a:hover {
   outline: none;
+  text-decoration: none;
 }
 
 a.muted {
