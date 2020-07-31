@@ -1,29 +1,15 @@
 import { getAllProductsPath, getProductData, Product } from 'lib/products';
 import Link from 'next/link';
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import { GetStaticProps, NextPage } from 'next';
 
-import { useState, useRef } from 'react';
 import Slider from 'components/slider';
+import Section from 'components/section';
+import Label from 'components/label';
 
 const ProductPage: NextPage<{product: Product}> = ({ product }) => {
   const images = [
     product.image,
-    ...product.variants.map(variant => variant.image)
-  ];
-  const [ current, setCurrent ] = useState(0);
-  const slides = useRef(null);
-  const nextSlider = (current: number) => {
-    const next = current + 1 < images.length ? current + 1 : 0;
-    console.log(next);
-    console.log(slides);
-    setCurrent(next);
-  }
-
-  const prevSlider = (current: number) => {
-    const prev = current - 1 >= 0 ? current - 1 : images.length - 1;
-    console.log(prev)
-    setCurrent(prev);
-  }
+  ].concat(product.variants.length > 1 ? product.variants.map(variant => variant.image) : []);
 
   return (
     <div className="mdl-grid">
@@ -31,16 +17,13 @@ const ProductPage: NextPage<{product: Product}> = ({ product }) => {
         <ul className="eba-breadcrumb">
           <li>
             <Link href="/productos">
-              <a>productos</a>
+              <a>Productos</a>
             </Link>
           </li>
           <li>
             <Link href={`/productos/${product.categoryUrl[0]}`}>
               <a>{product.category[0]}</a>
             </Link>
-          </li>
-          <li>
-            <span>{product.name}</span>
           </li>
         </ul>
       </div>
@@ -56,15 +39,35 @@ const ProductPage: NextPage<{product: Product}> = ({ product }) => {
         </Slider>
       </div>
       <div className="mdl-cell mdl-cell--8-col">
-        <h2>{product.name}</h2>
-        <p>{product.desc}</p>
+        <Section size="xsmall">
+          <h3>{product.name}</h3>
+          <p className="product-intro">{product.desc}</p>
+          <dl className="product-description-list">
+            <dt>Descripcion</dt>
+            <dd>{ product.fullDesc }</dd>
+
+            <dt>Aplicacion</dt>
+            <dd>{ product.apply }</dd>
+
+            <dt>Activos</dt>
+            <dd>{product.actives.map((active, i) => (
+              <Label color="secondary" key={i}>{active}</Label>
+            ))}</dd>
+
+            <dt>Presentacion</dt>
+            <dd>{product.variants.map(({ code, content }) => (
+              <Label color="muted" key={code}>{content}</Label>
+            ))}</dd>
+          </dl>
+        </Section>
       </div>
     <style jsx>{`
       .eba-breadcrumb {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         padding: 0;
         list-style: none;
+        overflow: hidden;
       }
 
       .eba-breadcrumb > * {
@@ -75,12 +78,13 @@ const ProductPage: NextPage<{product: Product}> = ({ product }) => {
         display: inline-block;
         font-size: 14px;
         color: var(--secondaryColor);
+        min-width: 0;
       }
 
       .eba-breadcrumb>:nth-child(n+2)::before {
         content: "/";
         display: inline-block;
-        margin: 0 20px;
+        margin: 0 10px;
         font-size: 14px;
         color: var(--secondaryColor);
       }
@@ -100,6 +104,23 @@ const ProductPage: NextPage<{product: Product}> = ({ product }) => {
         background: center / contain no-repeat;
       }
     
+      .product-intro {
+        color: var(--secondaryDarkColor);
+        font-style: italic;
+      }
+      .product-description-list > dt {
+        color: var(--primaryDarkColor);
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+
+      .product-description-list > dd {
+        margin-left: 0;
+        margin-bottom: 1rem;
+      }
+      .product-description-list > dd:last-child {
+        margin-bottom: 0;
+      }
     `}</style>
     </div>
   )
