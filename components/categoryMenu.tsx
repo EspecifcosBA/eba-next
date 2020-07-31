@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react';
 import Link from 'next/link';
+import { useState, useCallback } from 'react';
 
 type CategoryMenuProps = {
   active?: string
@@ -41,8 +42,22 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
     label: "Therapy Rituals"
   }];
 
+  const activeCategory = categories.find(cat => cat.url === active);
+
+  const [ openMenu, setOpenMenu ] = useState<boolean>(false);
+  const [ size, setSize ] = useState({ width: 0, height: 0});
+
+  const measuredRef = useCallback(node => {
+    if (node !== null) {
+      const measurements = node.getBoundingClientRect();
+      setSize({ width: measurements.width, height: measurements.height });
+    }
+  }, []);
+
+  console.log(size);
   return (
-    <ul className="eba-menu">
+    <>
+    <ul className="eba-menu mdl-cell--hide-tablet mdl-cell--hide-phone">
       {
         categories.map(({ url, label }, i) => (
           <li key={i}>
@@ -52,7 +67,50 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
           </li>
         ))
       }
-      <style jsx>{`
+      <li>
+        <Link href={`/productos`}>
+          <a className={active === undefined ? 'active' : ''}>todos</a>
+        </Link>
+      </li>
+    </ul>
+    <div className="mdl-cell--hide-desktop">
+      <div className="eba-menu-mobile-title">
+        <span>{activeCategory?.label || 'categorias'}</span>
+        <button id="demo-menu-lower-left" className="mdl-button mdl-button--icon" onClick={() => setOpenMenu(!openMenu)}>
+          <i className="material-icons">{openMenu ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }</i>
+        </button>
+      </div>
+
+      <div className={`mdl-menu__container is-upgraded ${openMenu ? 'is-visible' : ''}`}>
+        <div className="mdl-menu__outline mdl-menu--bottom-left" style={ openMenu ? {width: size.width, height: size.height} : {} }></div>
+        <ul className="eba-menu-mobile mdl-menu mdl-menu--bottom-left" ref={measuredRef} style={ openMenu ? { clip: `rect(0px, ${size.width}px, ${size.height}px, 0px)`} : {}}>
+          {
+            categories.map(({ url, label }, i) => (
+              <li key={i} className={`mdl-menu__item ${active === url ? 'active' : ''}`} style={openMenu ? {transitionDelay: '0.19s'} : {}} onClick={() => setOpenMenu(false)}>
+                <Link href={`/productos/${url}`}>
+                  <a>{label}</a>
+                </Link>
+              </li>
+            ))
+          }
+          <li className={`mdl-menu__item ${active === undefined ? 'active' : ''}`} style={openMenu ? {transitionDelay: '0.19s'} : {}} onClick={() => setOpenMenu(false)}>
+            <Link href={`/productos`}>
+              <a>todos</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <style jsx>{`
+        .eba-menu-mobile-title {
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+        }
+        .eba-menu-mobile-title > span {
+          margin-right: 5px;
+        }
         .eba-menu {
           display: flex;
           flex-wrap: wrap;
@@ -80,7 +138,8 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
           position: relative;
           padding-left: 0;
         }
-        .eba-menu > * > a {
+        .eba-menu > * > a,
+        .eba-menu-mobile > * > a {
           text-align: left;
           border-right: 1px solid transparent;
           border-bottom: none;
@@ -97,14 +156,15 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
           color: var(--secondaryDarkColor);
         }
 
-        .eba-menu > * > a.active {
+        .eba-menu > * > a.active,
+        .eba-menu-mobile > li.active {
           background-color: var(--secondaryXLightColor);
           border-color: var(--primaryColor);
           color: #666;
           text-decoration: none;
         }
       `}</style>  
-    </ul>
+    </>
   )
 }
 

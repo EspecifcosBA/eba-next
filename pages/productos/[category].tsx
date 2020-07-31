@@ -11,14 +11,14 @@ const ProductsPerCategory: NextPage<{products: Product[]}> = ({ products }) => {
 
   return (
     <div className="mdl-grid">
-      <div className="mdl-cell mdl-cell--2-col">
+      <div className="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
         <CategoryMenu active={activePath} />
       </div>
-      <div className="mdl-cell mdl-cell--10-col">
+      <div className="mdl-cell mdl-cell--10-col mdl-cell--12-col-tablet">
         <div className="mdl-grid">
           {
             products.map(product => (
-              <div className="mdl-cell mdl-cell--3-col" key={product.name}>
+              <div className="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" key={product.name}>
                 <Card
                   title={product.name}
                   img={product.image}
