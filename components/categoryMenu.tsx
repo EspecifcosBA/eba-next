@@ -37,9 +37,6 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
   }, {
     url: "corporales",
     label: "Corporales"
-  }, {
-    url: "therapy_rituals",
-    label: "Therapy Rituals"
   }];
 
   const activeCategory = categories.find(cat => cat.url === active);

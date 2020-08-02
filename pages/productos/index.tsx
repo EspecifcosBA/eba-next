@@ -8,7 +8,7 @@ import CategoryMenu from 'components/categoryMenu';
 
 import { InferGetStaticPropsType } from 'next';
 
-type Category = "Protección Intensiva" | "Higiene" | "Máscaras" | "Peeling" | "Ácido Hialurónico" | "Hombres" | "Activos Concentrados" | "Monodosis" | "Protección Solar" | "Corporales" | "Therapy Rituals";
+type Category = "Protección Intensiva" | "Higiene" | "Máscaras" | "Peeling" | "Ácido Hialurónico" | "Hombres" | "Activos Concentrados" | "Monodosis" | "Protección Solar" | "Corporales";
 type CategoryUrl = "proteccion_intensiva" |
   "higiene" |
   "mascaras" |
@@ -18,8 +18,7 @@ type CategoryUrl = "proteccion_intensiva" |
   "activos_concentrados" |
   "monodosis" |
   "proteccion_solar" |
-  "corporales" |
-  "therapy_rituals";
+  "corporales";
 
 type Product = {
   name: string,
