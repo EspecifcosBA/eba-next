@@ -1375,6 +1375,13 @@
     },
     {
       "name": "Dermo Corp, Crema de Masajes",
+      "category": [
+        "Corporales"
+      ],
+      "desc": "",
+      "fullDesc": "",
+      "actives": [],
+      "ph": "",
       "variants": [
         {
           "code": 2047,
@@ -1383,18 +1390,23 @@
           "sellPrice": 700
         }
       ],
-      "category": [
-        "Corporales"
-      ],
       "image": "masajes-dermo-corp.png",
+      "apply": "",
       "lang": "es",
-      "url": "dermo_corp,_crema_de_masajes",
+      "url": "dermo_corp_crema_de_masajes",
       "categoryUrl": [
         "corporales"
       ]
     },
     {
       "name": "Lift Corp, Crema de Masajes",
+      "category": [
+        "Corporales"
+      ],
+      "desc": "",
+      "fullDesc": "",
+      "actives": [],
+      "ph": "",
       "variants": [
         {
           "code": 2048,
@@ -1403,10 +1415,8 @@
           "sellPrice": 720
         }
       ],
-      "category": [
-        "Corporales"
-      ],
       "image": "masajes-lift-corp.png",
+      "apply": "",
       "lang": "es",
       "url": "lift_corp_crema_de_masajes",
       "categoryUrl": [
