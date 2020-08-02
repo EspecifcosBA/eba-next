@@ -54,7 +54,6 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
     }
   }, []);
 
-  console.log(size);
   return (
     <>
     <ul className="eba-menu mdl-cell--hide-tablet mdl-cell--hide-phone">
