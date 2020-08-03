@@ -57,14 +57,14 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
       {
         categories.map(({ url, label }, i) => (
           <li key={i}>
-            <Link href={`/productos/${url}`}>
+            <Link href="/productos/[category]" as={`/productos/${url}`} passHref>
               <a className={active === url ? 'active' : ''}>{label}</a>
             </Link>
           </li>
         ))
       }
       <li>
-        <Link href={`/productos`}>
+        <Link href="/productos">
           <a className={active === undefined ? 'active' : ''}>todos</a>
         </Link>
       </li>
@@ -83,14 +83,14 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
           {
             categories.map(({ url, label }, i) => (
               <li key={i} className={`mdl-menu__item ${active === url ? 'active' : ''}`} style={openMenu ? {transitionDelay: '0.19s'} : {}} onClick={() => setOpenMenu(false)}>
-                <Link href={`/productos/${url}`}>
+                <Link href="/productos/[category]" as={`/productos/${url}`}>
                   <a>{label}</a>
                 </Link>
               </li>
             ))
           }
           <li className={`mdl-menu__item ${active === undefined ? 'active' : ''}`} style={openMenu ? {transitionDelay: '0.19s'} : {}} onClick={() => setOpenMenu(false)}>
-            <Link href={`/productos`}>
+            <Link href="/productos">
               <a>todos</a>
             </Link>
           </li>

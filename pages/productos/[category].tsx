@@ -22,7 +22,7 @@ const ProductsPerCategory: NextPage<{products: Product[]}> = ({ products }) => {
                 <Card
                   title={product.name}
                   img={product.image}
-                  onClick={() => push(`/productos/detalle/${product.url}`)}
+                  onClick={() => push('/productos/detalle/[url]', `/productos/detalle/${product.url}`)}
                 >
                 </Card>
               </div>
