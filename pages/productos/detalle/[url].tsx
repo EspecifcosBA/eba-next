@@ -21,7 +21,7 @@ const ProductPage: NextPage<{product: Product}> = ({ product }) => {
             </Link>
           </li>
           <li>
-            <Link href={`/productos/${product.categoryUrl[0]}`}>
+            <Link href="/productos/[category]" as={`/productos/${product.categoryUrl[0]}`}>
               <a>{product.category[0]}</a>
             </Link>
           </li>
