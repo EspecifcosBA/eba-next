@@ -32,6 +32,7 @@ const Section: FunctionComponent<SectionProps> = ({
 
         .section .container {
           padding: 5rem;
+          width: 100%;
         }
 
         .section.section-xsmall {
