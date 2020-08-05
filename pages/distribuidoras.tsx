@@ -101,8 +101,8 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
           <p className="eba-phones">
             <i className="material-icons">phone</i>
             {
-              headquarters.phone.map(phone => (
-                <a href={`tel:${phone}`}>{phone}</a>
+              headquarters.phone.map((phone, key) => (
+                <a href={`tel:${phone}`} key={key}>{phone}</a>
               ))  
             }
           </p>
