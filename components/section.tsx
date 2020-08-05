@@ -87,6 +87,13 @@ const Section: FunctionComponent<SectionProps> = ({
           background-size: cover;
           background-position: bottom left;
         }
+
+        @media screen and (max-width: 426px) {
+          .section .container {
+            padding: 5%;
+          }
+        }
+
       `}</style>
     </Tag>
   )
