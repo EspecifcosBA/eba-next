@@ -440,6 +440,8 @@ th {
   --secondaryDarkColor: #707070;
   --primaryTextColor: #fff;
   --secondaryTextColor: #000000;
+  --errorColor: #f44336;
+  --successColor: #4caf50;
 }
 
 a {
