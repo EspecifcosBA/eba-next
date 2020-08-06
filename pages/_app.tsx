@@ -11,22 +11,24 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>ESPECIFICOS Buenos Aires</title>
         <link href="/material.min.css" rel="stylesheet"></link>
-        <script type="text/javascript" src="/material.min.js"></script>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
-      <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <Navbar/>
-        <div className="mdl-layout__content">
-          <Component {...pageProps} />
-          <footer className="mdl-mini-footer">
-            <div className="mdl-mini-footer__left-section">
-              <div className="mdl-logo">Title</div>
-              <ul className="mdl-mini-footer__link-list">
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Privacy & Terms</a></li>
-              </ul>
-            </div>
-          </footer>
+      <div className="mdl-layout__container">
+        <div className="mdl-layout mdl-layout--fixed-header has-drawer is-upgraded">
+          <Navbar/>
+          <div className="mdl-layout__content">
+            <Component {...pageProps} />
+            <footer className="mdl-mini-footer">
+              <div className="mdl-mini-footer__left-section">
+                <div className="mdl-logo">Title</div>
+                <ul className="mdl-mini-footer__link-list">
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Privacy & Terms</a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
         </div>
       </div>
       <style jsx>{`
