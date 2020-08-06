@@ -52,10 +52,11 @@ const Card: FunctionComponent<CardProps> = ({ title, img, suppText, onClick }) =
           justify-content: center;
           padding: 2rem;
           padding-bottom: 0;
-          flex: 3;
+          flex: 1 auto;
         }
         .eba-card > .mdl-card__media > img {
           height: 100%;
+          object-fit: contain;
         }
         .eba-card > .mdl-card__title {
           align-items: center;

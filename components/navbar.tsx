@@ -39,7 +39,7 @@ const Navbar = () => {
           </nav>
         </div>
       </header>
-      <div className="mdl-layout__drawer">
+      <div className="mdl-layout__drawer mdl-layout--small-screen-only">
         <nav className="mdl-navigation">
           {
             paths.map(({ href, label }, key) => (
