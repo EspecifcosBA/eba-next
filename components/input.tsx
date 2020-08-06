@@ -6,15 +6,16 @@ type InputProps = {
   type?: 'text' | 'number' | 'email',
   children?: ReactElement,
   tag?: 'input' | 'textarea',
+  error?: boolean,
 };
 
-const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(({ tag = 'input', label, type = 'text', children, ...props }, ref) => {
+const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(({ tag = 'input', label, type = 'text', children, error, ...props }, ref) => {
   const Tag = tag;
   return (
     <>
       <div className="input">
         {/* @ts-ignore */}
-        <Tag type={type} className="input__field" placeholder={label} {...props} ref={ref}/>
+        <Tag type={type} className={`input__field ${error ? 'input__field--has-error' : ''}`} placeholder={label} {...props} ref={ref}/>
         <label className="input__label">
           { label }
         </label>
@@ -46,6 +47,9 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(({ 
           top: 20px;
         }
 
+        .input__field--has-error {
+          border-color: var(--errorColor);
+        }
         .input__label {
           position: absolute;
           top: 0;
@@ -56,12 +60,16 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(({ 
           user-select: none;
           pointer-events: none;
         }
-        
         .input__field:focus {
           padding-bottom: 6px;
           border-width: 2px;
           border-image: linear-gradient(to right, var(--primaryColor), var(--primaryLightColor));
           border-image-slice: 1;
+        }
+        .input__field--has-error:focus {
+          border-image: linear-gradient(to right, var(--errorColor), var(--errorColor));
+          border-image-slice: 1;
+          border-width: 2px;
         }
         .input__field:focus ~ .form__label {
           position: absolute;
