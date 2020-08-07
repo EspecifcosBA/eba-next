@@ -109,7 +109,7 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
         </div>
       </Section>
       <div className="mdl-grid">
-        <div className="mdl-cell mdl-cell--hide-desktop mdl-cell--hide-tablet">
+        <div className="mdl-cell mdl-cell--hide-desktop mdl-cell--8-col-tablet">
           {
             groups.map((groupName, key) => (
               <DistributionList
@@ -121,7 +121,7 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
             ))
           }
         </div>
-        <div className="mdl-cell mdl-cell--hide-phone mdl-cell--12-col">
+        <div className="mdl-cell mdl-cell--hide-phone mdl-cell--hide-tablet mdl-cell--12-col">
           <h4>Distribuidoras</h4>
           <div className="mdl-tabs is-upgraded eba-distribution">
             <div className="mdl-tabs__tab-bar">
