@@ -27,7 +27,7 @@ const ProductPage: NextPage<{product: Product}> = ({ product }) => {
           </li>
         </ul>
       </div>
-      <div className="mdl-cell mdl-cell--4-col eba-image-list">
+      <div className="mdl-cell mdl-cell--4-col eba-image-list mdl-cell--4-col-phone mdl-cell--8-col-tablet">
         <Slider>
           {
             images.map((image, key) => (

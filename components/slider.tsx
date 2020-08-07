@@ -100,6 +100,7 @@ const Slider: FunctionComponent<SliderProps> = ({ children }) => {
           top: 50%;
           cursor: pointer;
           z-index: 3;
+          padding: 32px 8px;
         }
 
         .slider-arrow.slider-arrow-right {
