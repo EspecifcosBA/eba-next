@@ -70,9 +70,9 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
       </li>
     </ul>
     <div className="mdl-cell--hide-desktop">
-      <div className="eba-menu-mobile-title">
-        <span>{activeCategory?.label || 'categorias'}</span>
-        <button id="demo-menu-lower-left" className="mdl-button mdl-button--icon" onClick={() => setOpenMenu(!openMenu)}>
+      <div className="eba-menu-mobile-title" onClick={() => setOpenMenu(!openMenu)}>
+        <span >{activeCategory?.label || 'categorias'}</span>
+        <button id="demo-menu-lower-left" className="mdl-button mdl-button--icon">
           <i className="material-icons">{openMenu ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }</i>
         </button>
       </div>
