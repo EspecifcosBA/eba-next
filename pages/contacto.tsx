@@ -25,12 +25,13 @@ const Contacto: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps>
       <div className="eba-contact">
         <div className="eba-contact__banner">
         </div>
+        <div className="eba-contact__bg mdl-cell--hide-phone mdl-cell--hide-tablet"></div>
         <div className="eba-contact__form mdl-shadow--2dp">
-          <div>
-            <div>
+          <div className="mdl-grid">
+            <div className="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
               <h4>Contacto directo</h4>
-              <div className="mdl-grid">
-                <div className="mdl-cell">
+              <div className="">
+                <div className="">
                   <h5>Horarios de atencion</h5>
                   <ul>
                     <li>
@@ -41,7 +42,7 @@ const Contacto: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps>
                     </li>
                   </ul>
                 </div>
-                <div className="mdl-cell">
+                <div className="">
                   <h5>Direccion</h5>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8647274129094!2d-58.44025004840602!3d-34.60758198036267!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6c8dad9245%3A0x8985011c07c0b099!2sEspec%C3%ADficos%20Buenos%20Aires!5e0!3m2!1sen!2snl!4v1596700935162!5m2!1sen!2snl"  height="100" frameBorder="0"></iframe>
                   <div>
@@ -50,7 +51,7 @@ const Contacto: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps>
                     </a>
                   </div>
                 </div>
-                <div className="mdl-cell">
+                <div className="">
                   <h5>Telefonos</h5>
                   <ul className="eba-phones">
                     {
@@ -62,42 +63,55 @@ const Contacto: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps>
                 </div>
               </div>
             </div>
-            <h4>Consultas</h4>
-            <p>Un equipo de profesionales esta a su servicio para responder sus consultas.</p>
-            
-            <form onSubmit={handleSubmit(onsubmit)}>
-              <Input name='name' label="Nombre" ref={register({ required: true })} error={!!errors.name}>
-                { errors.name && <span className="eba-error">Campo requerido</span>}
-              </Input>
+            <div className="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+              <h4>Consultas</h4>
+              <p>Un equipo de profesionales esta a su servicio para responder sus consultas.</p>
+              
+              <form onSubmit={handleSubmit(onsubmit)}>
+                <Input name='name' label="Nombre" ref={register({ required: true })} error={!!errors.name}>
+                  { errors.name && <span className="eba-error">Campo requerido</span>}
+                </Input>
 
-              <Input name='email' type='email' label="Email" ref={register({ required: true })} error={!!errors.email}>
-                { errors.email && <span className="eba-error">Campo requerido</span>}
-              </Input>
+                <Input name='email' type='email' label="Email" ref={register({ required: true })} error={!!errors.email}>
+                  { errors.email && <span className="eba-error">Campo requerido</span>}
+                </Input>
 
-              <Input name='content' tag='textarea' label='Mensaje' ref={register({required: true})} error={!!errors.content}>
-                { errors.content && <span className="eba-error">Campo requerido</span>}
-              </Input>
+                <Input name='content' tag='textarea' label='Mensaje' ref={register({required: true})} error={!!errors.content}>
+                  { errors.content && <span className="eba-error">Campo requerido</span>}
+                </Input>
 
-              { dialog && (
-                <div className="eba-confirmation">
-                  <p>Su mensaje ha sido en viado, nuestro equipo respondera su consulta a la brevedad</p>
-                </div>
-              )}
-              <button className="mdl-button mdl-button--raised mdl-button--accent" type="submit">enviar</button>
-            </form>
+                { dialog && (
+                  <div className="eba-confirmation">
+                    <p>Su mensaje ha sido en viado, nuestro equipo respondera su consulta a la brevedad</p>
+                  </div>
+                )}
+                <button className="mdl-button mdl-button--raised mdl-button--accent" type="submit">enviar</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
       <style jsx>{`
         .eba-contact {
           position: relative;
-          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          flex: 2 0 100vh;
+        }
+        .eba-contact h4 {
+          font-size: 1.5rem;
+        }
+        .eba-contact h5 {
+          font-size: 1rem;
         }
         .eba-contact__banner {
           background-image: url(/contacto.jpg);
-          height: 50vh;
+          flex: 1 0 50vh;
           background-size: cover;
           background-position: 50% 25%;
+        }
+        .eba-contact__bg {
+          flex: 1 0 50vh;
         }
         .eba-contact__form {
           position: absolute;
@@ -129,7 +143,7 @@ const Contacto: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps>
           font-weight: 600;
         }
 
-        @media screen and (max-width: 426px) {
+        @media screen and (max-width: 839px) {
           .eba-contact__form {
             position: static;
             width: auto;
