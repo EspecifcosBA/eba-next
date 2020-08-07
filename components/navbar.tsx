@@ -14,6 +14,11 @@ const Navbar = () => {
     { href: '/contacto', label: 'contacto'},
   ];
 
+  const handleDrawerLink = (url: string) => () => {
+    toggleDrawer(!openDrawer);
+    router.push(url);
+  }
+
   return (
     <>
       <header className="eba-header mdl-layout__header is-casting-shadow">
@@ -47,12 +52,29 @@ const Navbar = () => {
           <nav className="mdl-navigation">
             {
               paths.map(({ href, label }, key) => (
-                <Link href={href} key={key}>
-                  <a className={`mdl-navigation__link ${activePath(href) && 'active'}`}>{label}</a>
-                </Link>
+                <a 
+                  key={key}
+                  className={`mdl-navigation__link ${activePath(href) && 'active'}`}
+                  onClick={handleDrawerLink(href)}
+                >
+                  {label}
+                </a>
               ))
             }
           </nav>
+          <div className="eba-social-links">
+            <div className="mdl-navigation">
+              <a className="mdl-navigation__link" href="https://www.facebook.com/Especificos-Buenos-Aires-326062297573907/" target="_blank">
+                <img src="/facebook-50.png" alt="facebook" width={32}/>
+              </a>
+              <a className="mdl-navigation__link" href="https://www.instagram.com/especificosba/" target="_blank">
+                <img src="/instagram-50.png" alt="instagram" width={32}/>
+              </a>
+              <a className="mdl-navigation__link" href="https://goo.gl/maps/hvv6FA2nvm4dzwtv5" target="_blank">
+                <img src="/google-maps-50.png" alt="maps" width={32}/>
+              </a>
+            </div>
+          </div>
         </div>
         <div className={`mdl-layout__obfuscator ${openDrawer ? 'is-visible' : ''}`} onClick={() => toggleDrawer(false)}></div>
       </div>
@@ -76,6 +98,28 @@ const Navbar = () => {
         .eba-header a:hover {
           text-decoration: none;
           color: var(--secondaryDarkColor);
+        }
+
+        .mdl-layout__drawer {
+          justify-content: space-between;
+        }
+
+        .mdl-layout__drawer .mdl-navigation__link {
+          text-transform: uppercase;
+          border-bottom: 1px solid var(--secondaryLightColor);
+        }
+
+        .mdl-layout__drawer .mdl-navigation__link:last-child {
+          border-bottom: 0;
+        }
+
+        .eba-social-links .mdl-navigation {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .eba-social-links .mdl-navigation .mdl-navigation__link {
+          border-bottom: 0;
         }
       `}</style>
     </>
