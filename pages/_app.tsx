@@ -2,6 +2,7 @@ import { AppProps } from 'next/app'
 import Head from 'next/head';
 
 import Navbar from 'components/navbar';
+import Footer from 'components/footer';
 
 import 'styles.css';
 
@@ -11,27 +12,27 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>ESPECIFICOS Buenos Aires</title>
         <link href="/material.min.css" rel="stylesheet"></link>
-        
+        <link rel="icon" type="image/png" href="/favicon.png"></link>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
       <div className="mdl-layout__container">
         <div className="mdl-layout mdl-layout--fixed-header has-drawer is-upgraded">
           <Navbar/>
           <div className="mdl-layout__content">
-            <Component {...pageProps} />
-            <footer className="mdl-mini-footer">
-              <div className="mdl-mini-footer__left-section">
-                <div className="mdl-logo">Title</div>
-                <ul className="mdl-mini-footer__link-list">
-                  <li><a href="#">Help</a></li>
-                  <li><a href="#">Privacy & Terms</a></li>
-                </ul>
-              </div>
-            </footer>
+            <Component {...pageProps}/>
+            <Footer />
           </div>
         </div>
       </div>
       <style jsx>{`
+        .eba-site .mdl-layout__content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .eba-site .mdl-layout__content > div {
+          flex: 1;
+        }
         @font-face {
           font-family: 'Material Icons';
           font-style: normal;
