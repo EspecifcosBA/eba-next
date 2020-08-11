@@ -34,13 +34,27 @@ const App = ({ Component, pageProps }: AppProps) => {
           flex: 1;
         }
         @font-face {
+          font-family: 'Playfair Display';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/PlayfairDisplay-Medium.ttf) format('truetype');
+        }
+
+        @font-face {
+          font-family: 'Playfair Display';
+          font-style: bold;
+          font-weight: 700;
+          src: url(/fonts/PlayfairDisplay-Bold.ttf) format('truetype');
+        }
+
+        @font-face {
           font-family: 'Material Icons';
           font-style: normal;
           font-weight: 400;
-          src: url(/MaterialIcons-Regular.eot);
-          src: url(/MaterialIcons-Regular.woff2) format('woff2');
-          src: url(/MaterialIcons-Regular.woff) format('woff');
-          src: url(/MaterialIcons-Regular.ttf) format('truetype');
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2');
+          src: url(/fonts/MaterialIcons-Regular.woff) format('woff');
+          src: url(/fonts/MaterialIcons-Regular.ttf) format('truetype');
         }
         
         .material-icons {
@@ -62,6 +76,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           -webkit-font-smoothing: antialiased;
           -webkit-font-smoothing: antialiased;
         }
+
       `}</style>
     </div>
   )
