@@ -30,9 +30,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           flex-direction: column;
           justify-content: space-between;
         }
-        .eba-site .mdl-layout__content > div {
-          flex: 1;
-        }
+        
         @font-face {
           font-family: 'Playfair Display';
           font-style: normal;

@@ -44,71 +44,73 @@ export default function Products({ products }: InferGetStaticPropsType<typeof ge
   const router = useRouter();
 
   return (
-    <div className="mdl-grid">
-      <div className="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
-        <CategoryMenu />
-      </div>
-      <div className="mdl-cell mdl-cell--10-col mdl-cell--12-col-tablet">
-        <div className="mdl-grid">
-          {
-            products.map(product => (
-              <div className="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" key={product.name}>
-                <Card
-                  title={product.name}
-                  img={product.image}
-                  onClick={() => router.push('/productos/detalle/[url]', `/productos/detalle/${product.url}`)}
-                >
-                  { product.actives.join(', ')}
-                </Card>
-              </div>
-            ))
-          }
+    <div>
+      <div className="mdl-grid">
+        <div className="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+          <CategoryMenu />
         </div>
+        <div className="mdl-cell mdl-cell--10-col mdl-cell--12-col-tablet">
+          <div className="mdl-grid">
+            {
+              products.map(product => (
+                <div className="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" key={product.name}>
+                  <Card
+                    title={product.name}
+                    img={product.image}
+                    onClick={() => router.push('/productos/detalle/[url]', `/productos/detalle/${product.url}`)}
+                  >
+                    { product.actives.join(', ')}
+                  </Card>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+        <style jsx>{`
+          .eba-tab {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            list-style: none;
+            position: relative;
+            flex-direction: column;
+            margin-left: 0;
+          }
+
+          ul.eba-tab::before {
+            content: '';
+            top: 0;
+            bottom: 0;
+            left: auto;
+            right: 0;
+            border-left: 1px solid #e5e5e5;
+            border-bottom: none;
+            position: absolute;
+          }
+
+          .eba-tab > * {
+            flex: none;
+            position: relative;
+            padding-left: 0;
+          }
+          .eba-tab > * > a {
+            text-align: left;
+            border-right: 1px solid transparent;
+            border-bottom: none;
+            display: block;
+            padding: 5px 10px;
+            color: #999;
+            font-size: .875rem;
+            text-transform: uppercase;
+            transition: color .1s ease-in-out;
+          }
+
+          .eba-tab > * > a:hover {
+            text-decoration: none;
+            color: var(--secondaryDarkColor);
+          }
+        `}</style>
       </div>
-      <style jsx>{`
-        .eba-tab {
-          display: flex;
-          flex-wrap: wrap;
-          padding: 0;
-          list-style: none;
-          position: relative;
-          flex-direction: column;
-          margin-left: 0;
-        }
-
-        ul.eba-tab::before {
-          content: '';
-          top: 0;
-          bottom: 0;
-          left: auto;
-          right: 0;
-          border-left: 1px solid #e5e5e5;
-          border-bottom: none;
-          position: absolute;
-        }
-
-        .eba-tab > * {
-          flex: none;
-          position: relative;
-          padding-left: 0;
-        }
-        .eba-tab > * > a {
-          text-align: left;
-          border-right: 1px solid transparent;
-          border-bottom: none;
-          display: block;
-          padding: 5px 10px;
-          color: #999;
-          font-size: .875rem;
-          text-transform: uppercase;
-          transition: color .1s ease-in-out;
-        }
-
-        .eba-tab > * > a:hover {
-          text-decoration: none;
-          color: var(--secondaryDarkColor);
-        }
-      `}</style>
     </div>
   );
 }

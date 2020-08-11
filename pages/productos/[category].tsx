@@ -10,25 +10,27 @@ const ProductsPerCategory: NextPage<{products: Product[]}> = ({ products }) => {
   const activePath = query && query.category && typeof query.category === 'string' ? query.category : undefined;
 
   return (
-    <div className="mdl-grid">
-      <div className="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
-        <CategoryMenu active={activePath} />
-      </div>
-      <div className="mdl-cell mdl-cell--10-col mdl-cell--12-col-tablet">
-        <div className="mdl-grid">
-          {
-            products.map(product => (
-              <div className="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" key={product.name}>
-                <Card
-                  title={product.name}
-                  img={product.image}
-                  onClick={() => push('/productos/detalle/[url]', `/productos/detalle/${product.url}`)}
-                >
-                  { product.actives.join(', ')}
-                </Card>
-              </div>
-            ))
-          }
+    <div>
+      <div className="mdl-grid">
+        <div className="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+          <CategoryMenu active={activePath} />
+        </div>
+        <div className="mdl-cell mdl-cell--10-col mdl-cell--12-col-tablet">
+          <div className="mdl-grid">
+            {
+              products.map(product => (
+                <div className="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" key={product.name}>
+                  <Card
+                    title={product.name}
+                    img={product.image}
+                    onClick={() => push('/productos/detalle/[url]', `/productos/detalle/${product.url}`)}
+                  >
+                    { product.actives.join(', ')}
+                  </Card>
+                </div>
+              ))
+            }
+          </div>
         </div>
       </div>
     </div>
