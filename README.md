@@ -1,4 +1,7 @@
+# EBA Next
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+You can find a deployed version of this project on [`eba.inama.dev`](https://eba.inama.dev).
 
 ## Getting Started
 
