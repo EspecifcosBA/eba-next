@@ -86,10 +86,13 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
   const [ active, setActive ] = useState<Group>(groups[0]);
   return (
     <div>
-      <Section color="muted" style={{backgroundImage: 'url(/hq.jpg)', backgroundPosition: 'center'}} size="xlarge" img>
+      <section id="eba-hq-container">
+        <video poster="/hq.jpg" id="bgvid" playsInline autoPlay muted loop>
+          <source src="/video-inst-eba.webm" type="video/webm"></source>
+        </video>
         <div className="eba-hq">
           <h3>
-            Casa ESPECIFICOS<br/>
+            Casa <span>ESPECIFICOS</span><br/>
             <small>Lugar de encuentro de profesionales de la estetica</small>
           </h3>
           <p>
@@ -107,7 +110,9 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
             }
           </p>
         </div>
-      </Section>
+      </section>
+      {/* <Section color="muted" style={{backgroundImage: 'url(/hq.jpg)', backgroundPosition: 'center'}} size="xlarge" img>
+      </Section> */}
       <div className="mdl-grid">
         <div className="mdl-cell mdl-cell--hide-desktop mdl-cell--8-col-tablet">
           {
@@ -170,13 +175,54 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
         </div>
       </div>
       <style jsx>{`
+        @media screen and (max-width: 769px) {
+          #eba-hq-container video {
+            display: none;
+          }
+
+          #eba-hq-container {
+            background: url(/hq.jpg);
+            background-size: cover;
+          }  
+        }
+        #eba-hq-container {
+          position: relative;
+          height: 70vh;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #eba-hq-container video {
+          position: absolute;
+          z-index: -1;
+          max-width: 100%;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: 50%;
+        }
+
         .eba-hq {
           color: var(--secondaryXLightColor);
           text-align: center;
+          background-color: rgba(0,0,0,0.3);
+          width: 100%;
         }
 
         .eba-hq h3 {
           line-height: 0.8;
+          font-family: 'Playfair Display';
+        }
+
+        .eba-hq span {
+          font-family: "Roboto","Helvetica","Arial",sans-serif;
+        }
+
+        .eba-hq small {
+          font-family: inherit;
+          color: var(--secondaryXLightColor);
+          opacity: .75;
         }
 
         .eba-hq p {
