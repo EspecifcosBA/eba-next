@@ -1,22 +1,17 @@
 import { Fade } from "react-awesome-reveal";
 
-import Section from 'components/section';
-import ProductsShowcase from 'components/productsShowcase';
-
 export default function Home() {
-  const introStyles = {
-    
-  }
   return (
     
     <div className="page-content">
       <Fade cascade>
-        <section style={introStyles} className="intro-container">
+        <section className="intro-container">
           <div className="intro-content">
             <h1 className="">Cuidado específico para cada tipo de piel.</h1>
             <p className="subtitle-text">Productos profesionales, elaborados con normas de calidad internacional GMP, basados en sustancias activas concentradas de gran pureza y vehículos específicos altamente eficaces que permiten optimizar la belleza y cuidados personalizados de la piel, con base científica.</p>
           </div>
         </section>
+        
         <section className="us-container">
           <div className="us-primary">
             <Fade triggerOnce>
@@ -37,9 +32,18 @@ export default function Home() {
           </div>
         </section>
 
-        <Section color='default' id="productos">
-          <ProductsShowcase />
-        </Section>
+        <section className="us-certification">
+          <div className="us-certification__logos">
+            <img src="/logos/anmat.png" />
+            <img src="/logos/gmp.png" />
+            <img src="/logos/iso9000.png" />
+            <img src="/logos/iso14000.png" />
+          </div>
+          <div className="us-certification__text">
+            <h4>Estrictos controles bajo normas de calidad nacional e internacional son garantía de nuestros productos.</h4>
+          </div>
+        </section>
+
       </Fade>
       
       <style jsx>{`
@@ -135,6 +139,32 @@ export default function Home() {
           background: rgba(0,0,0,0.2);
         }
 
+        section.us-certification {
+          display: flex;
+          flex-direction: column;
+          padding: 3rem;
+          background: var(--primaryXLightColor);
+          backgro
+          margin: 0 0 2rem;
+        }
+        
+        section.us-certification .us-certification__logos {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+        }
+
+        section.us-certification .us-certification__logos img {
+          flex: 1;
+          object-fit: contain;
+          max-width: 200px;
+        }
+        section.us-certification .us-certification__text h4 {
+          font-family: 'Playfair Display';
+          text-align: center;
+          color: var(--primaryDarkColor);
+        }
+
         @media screen and (max-width: 769px) {
           .intro-container {
             background-image: url(/intro-model-centre.jpg);
@@ -168,6 +198,7 @@ export default function Home() {
             top: auto;
             left: auto;
           }
+
           section.us-container .us-secondary {
             padding: 0;
             padding-bottom: 2rem;
@@ -175,6 +206,15 @@ export default function Home() {
           section.us-container .us-secondary h3 {
             width: 100%;
             padding: 1rem;
+          }
+
+          section.us-certification .us-certification__logos {
+            overflow-x: scroll;
+            justify-content: flex-start;
+          }
+
+          section.us-certification .us-certification__logos img {
+            max-width: 150px;
           }
         }
 
