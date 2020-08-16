@@ -32,7 +32,7 @@ export default function Home() {
           </div>
           <div className="us-secondary">
             <Fade delay={500} direction="down" triggerOnce >
-              <h3>Tratamientos pensados desde una profesional de la estética hacia sus colegas</h3>
+              <h3>El alma de nuestros productos:<br/>autenticidad y excelencia</h3>
             </Fade>
           </div>
         </section>
@@ -116,18 +116,19 @@ export default function Home() {
         
         section.us-container .us-secondary {
           flex: 2;
-          background: url(/img/us-photo-7.jpg);
+          background: url(/monodosis-bg.jpg);
           background-size: cover;
-          background-position: right;
+          background-position: center;
           display: flex;
           flex-direction: column;
-          justify-content: flex-end;
+          justify-content: center;
           padding: 5rem 3rem;
         }
 
         section.us-container .us-secondary h3 {
           font-family: 'Playfair Display';
           width: 90%;
+          padding: 2rem;
           text-align: center;
           margin: 0 auto;
           color: white;
@@ -170,6 +171,10 @@ export default function Home() {
           section.us-container .us-secondary {
             padding: 0;
             padding-bottom: 2rem;
+          }
+          section.us-container .us-secondary h3 {
+            width: 100%;
+            padding: 1rem;
           }
         }
 
