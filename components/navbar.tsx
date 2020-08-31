@@ -10,6 +10,7 @@ const Navbar = () => {
   const paths = [
     { href: '/', label: 'nosotros'},
     { href: '/productos', label: 'productos'},
+    { href: '/formacion', label: 'formacion'},
     { href: '/distribuidoras', label: 'distribuidoras'},
     { href: '/contacto', label: 'contacto'},
   ];
