@@ -48,8 +48,7 @@ export default function Home() {
       
       <style jsx>{`
         .intro-container {
-          background-image: url(/intro-model-bg.jpg);
-          background-attachment: fixed;
+          background-image: url(/img/us-photo-0.jpg);
           background-position: right;
           height: 70vh;
           background-size: cover;
@@ -167,7 +166,10 @@ export default function Home() {
 
         @media screen and (max-width: 769px) {
           .intro-container {
-            background-image: url(/intro-model-centre.jpg);
+            background-image: url(/img/us-photo-0-mb.jpg);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             align-items: center;
             background-position: center;
             height: 90vh;
