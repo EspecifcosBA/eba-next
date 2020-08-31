@@ -4,6 +4,7 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { getCourses, Course } from 'lib/courses';
 import Button from 'components/button';
 import Section from 'components/section';
+import Card from 'components/card';
 
 const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps>> = ({ courses }) => {
 
@@ -45,63 +46,32 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
           </div>
         </div>
       </Section>
-      <Section color="muted">
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tenetur, veritatis odio corporis cupiditate praesentium beatae modi placeat recusandae! Corrupti modi nobis quas id. Recusandae similique odit ipsum eveniet perspiciatis?</h5>
-        <div>
+      <section className="courses__list">
+        <div className="mdl-grid">
           {
             courses.map((course, key) => (
-              <div className="course-data" key={key}>
-                <h4>{course.name}</h4>
-                <div>
-                  <dl className="course-spec">
-                    <dt>cursada</dt>
-                    <dd>
-                      <b>Modalidad:</b> {course.type}<br/>
-                      <b>Duracion:</b> {course.duration}<br/>
-                      <b>Ubicacion:</b> {course.location}
-                    </dd>
-                    
-                    { course.certificates ? 
-                      (
-                        <>
-                        <dt>Avales</dt>
-                        <dd>
-                          <ul>
-                            { course.certificates.map((data, key) => (
-                              <li key={key}>{data}</li>
-                            ))}
-                          </ul>
-                        </dd>
-                        </>
-                      )
-                    : null }
-
-                    { course.requirements ? (
-                      (
-                        <>
-                          <dt>Requisitos</dt>
-                          <dd>{course.requirements}</dd>
-                        </>
-                      )
-                    ) : null }
-                  </dl>
-                  <dl>
-                    <dt>informacion</dt>
-                    <dd>{course.description}</dd>
-                  </dl>
-                </div>
-                <Button onClick={moreInfo(course.name)}>Mas informacion</Button>
+              <div className="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--stretch" key={key}>
+                <Card
+                  title={course.name}
+                  actions={[{label: 'mas informacion', onClick: moreInfo(course.name)}]}
+                  suppText={`${course.type} / ${course.duration}`}
+                  flexCard
+                >
+                  <div>
+                    <p>{course.description}</p>
+                  </div>
+                </Card>
               </div>
             ))
           }
         </div>
-      </Section>
+      </section>
       <style jsx>{`
         .courses-intro {
           width: 50%;
         }
         .courses-intro h3 {
-          font-family: 'Playfair Display';
+          font-family: var(--fontDisplay);
         }
 
         .courses-highlights {
@@ -115,45 +85,9 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
           width: 80px;
         }
 
-        .course-data {
-          background-color: white;
-          padding: 1rem;
-          margin: 1rem 0;
-          border-radius: 2px;
-          border: 1px solid #efefef;
-        }
-
-        .course-data ul {
-          margin: 0;
-          padding: 0;
-          list-style: inside;
-        }
-
-        .course-data > div {
-          display: flex;
-          gap: 2rem;
-        }
-
-        .course-spec {
-          flex: 2 0 40%;
-        }
-
-        .course-data h4 {
-          font-family: 'Playfair Display';
-          text-transform: capitalize;
-        }
-        .course-data dt {
-          color: var(--primaryDarkColor);
-          font-weight: normal;
-          text-transform: uppercase;
-        }
-
-        .course-data dd {
-          margin-left: 0;
-          margin-bottom: 1rem;
-        }
-        .course-data dd:last-child {
-          margin-bottom: 0;
+        .courses__list {
+          background-color: var(--secondaryXLightColor);
+          padding: 5rem;
         }
       `}</style>
     </div>
