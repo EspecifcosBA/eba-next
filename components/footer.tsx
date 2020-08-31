@@ -7,8 +7,6 @@ const Footer: FunctionComponent = () => {
       <div className="mdl-mini-footer__left-section">
         <div className="mdl-logo">
           <img src='/logo-light.svg' style={{height: '42px'}} alt="ESPECIFICOS Buenos Aires"></img>
-          Excelencia, ciencia y lujo al cuidado de la piel
-
         </div>
       </div>
       <div className="mdl-mini-footer__right-section">
