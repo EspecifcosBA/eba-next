@@ -212,7 +212,7 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
 
         .eba-hq h3 {
           line-height: 0.8;
-          font-family: 'Playfair Display';
+          font-family: var(--fontDisplay);
         }
 
         .eba-hq span {

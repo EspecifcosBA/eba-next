@@ -442,6 +442,7 @@ th {
   --secondaryTextColor: #000000;
   --errorColor: #f44336;
   --successColor: #4caf50;
+  --fontDisplay: 'Playfair Display', 'serif';
 }
 
 a {

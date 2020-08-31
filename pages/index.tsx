@@ -67,7 +67,7 @@ export default function Home() {
 
         .intro-content h1 {
           font-size: 4rem;
-          font-family: 'Playfair Display', 'serif';
+          font-family: var(--fontDisplay);
           font-weight: 600;
           line-height: 1.05;
           margin: 0.5rem 0;
@@ -129,7 +129,7 @@ export default function Home() {
         }
 
         section.us-container .us-secondary h3 {
-          font-family: 'Playfair Display';
+          font-family: var(--fontDisplay);
           width: 90%;
           padding: 2rem;
           text-align: center;
@@ -159,7 +159,7 @@ export default function Home() {
           max-width: 200px;
         }
         section.us-certification .us-certification__text h4 {
-          font-family: 'Playfair Display';
+          font-family: var(--fontDisplay);
           text-align: center;
           color: var(--primaryDarkColor);
         }
