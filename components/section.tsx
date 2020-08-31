@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, CSSProperties } from 'react';
 
 type SectionProps = {
   color?: 'default' | 'muted' | 'primary' | 'secondary',
@@ -6,7 +6,8 @@ type SectionProps = {
   tag?: 'section' | 'div'
   className?: string,
   id?: string,
-  img?: boolean,
+  img?: string,
+  position?: string,
   [key: string]: any
 }
 
@@ -16,11 +17,21 @@ const Section: FunctionComponent<SectionProps> = ({
   className = '',
   tag: Tag = 'section',
   img,
+  position,
   children,
   ...props
 }) => {
+  const bgImgStyles: CSSProperties = img ? {
+    background: `url(${img})`,
+    backgroundPosition: position ? position : 'bottom center',
+  } : {};
+
   return (
-    <Tag className={`section section-${color} section-${size} ${className} ${img ? 'section-cover' : ''}`} {...props}>
+    <Tag 
+      className={`section section-${color} section-${size} ${className} ${img ? 'section-cover' : ''}`}
+      {...props}
+      style={{...props.style, ...bgImgStyles}}
+    >
       <div className="container">
         { children }
       </div>
@@ -69,7 +80,7 @@ const Section: FunctionComponent<SectionProps> = ({
         }
 
         .section.section-muted {
-          background-color: var(--secondaryLightColor);
+          background-color: var(--secondaryXLightColor);
           color: var(--secondaryTextColor);
         }
 
