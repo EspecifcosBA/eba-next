@@ -58,8 +58,8 @@ export default function Products({ products }: InferGetStaticPropsType<typeof ge
                     title={product.name}
                     img={product.image}
                     onClick={() => router.push('/productos/detalle/[url]', `/productos/detalle/${product.url}`)}
+                    suppText={product.actives.join(', ')}
                   >
-                    { product.actives.join(', ')}
                   </Card>
                 </div>
               ))

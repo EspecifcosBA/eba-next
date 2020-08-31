@@ -21,13 +21,22 @@ const Card: FunctionComponent<CardProps> = ({ title, img, suppText, onClick, chi
       <div className="mdl-card__title">
         <h4 className="mdl-card__title-text">{ title }</h4>
         {
-          (suppText || children) && (
+          suppText ? (
             <div className="mdl-card__supporting-text">
-              { suppText || children }
+              { suppText }
             </div>
-          )
+          ) : null
         }
       </div>
+      {
+        children ? (
+          <div className="mdl-card__supporting-text">
+            {
+              children
+            }
+          </div>
+        ) : null
+      }
 
       <style jsx>
       {`
@@ -51,10 +60,12 @@ const Card: FunctionComponent<CardProps> = ({ title, img, suppText, onClick, chi
           height: 75%;
           flex: 4 auto;
         }
+
         .eba-card > .mdl-card__media > img {
           object-fit: contain;
           max-width: 100%;
         }
+
         .eba-card > .mdl-card__title {
           border-top: 1px solid #efefef;
           background-color: white;
@@ -71,7 +82,7 @@ const Card: FunctionComponent<CardProps> = ({ title, img, suppText, onClick, chi
           align-self: baseline;
         }
 
-        .eba-card .mdl-card__supporting-text {
+        .eba-card .mdl-card__title > .mdl-card__supporting-text {
           padding: 0;
           white-space: nowrap;
           overflow: hidden;
