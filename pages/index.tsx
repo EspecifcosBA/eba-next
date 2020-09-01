@@ -1,8 +1,11 @@
+import { useRouter } from 'next/router';
 import { Fade } from "react-awesome-reveal";
+import Button from 'components/button';
 
 export default function Home() {
-  return (
-    
+  const router = useRouter();
+
+  return (  
     <div className="page-content">
       <Fade cascade>
         <section className="intro-container">
@@ -32,7 +35,19 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="us-certification">
+        <section className="us-products">
+          <div className="us-products__container">
+            <div className="us-products__img">
+              <div className="us-products__img__bg"></div>
+              <div className="us-products__img__product"></div>
+            </div>
+            <div className="us-products__text">
+              <h3>Tratamientos pensados desde una profesional de la estética hacia sus colegas</h3>
+              <Button accent raised onClick={() => { router.push('/productos') }}>Ver productos</Button>
+            </div>
+          </div>
+        </section>
+        {/* <section className="us-certification">
           <div className="us-certification__logos">
             <img src="/logos/anmat.png" />
             <img src="/logos/gmp.png" />
@@ -42,16 +57,14 @@ export default function Home() {
           <div className="us-certification__text">
             <h4>Estrictos controles bajo normas de calidad nacional e internacional son garantía de nuestros productos.</h4>
           </div>
-        </section>
-
+        </section> */}
+        <section><div>j</div></section>
       </Fade>
       
       <style jsx>{`
         .intro-container {
-          background-image: url(/img/us-photo-0.jpg);
-          background-position: right;
+          background: no-repeat right/contain url(/img/us-photo-0.jpg);
           height: 70vh;
-          background-size: cover;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -71,6 +84,7 @@ export default function Home() {
           font-weight: 600;
           line-height: 1.05;
           margin: 0.5rem 0;
+          letter-spacing: unset;
         }
         .top-container {
           z-index: 2;
@@ -116,10 +130,15 @@ export default function Home() {
           left: 5%;
           text-align: center;
         }
+
+        section.us-container .us-primary .us-primary__text p {
+          font-size: 1.1rem;
+          font-weight: 300
+        }
         
         section.us-container .us-secondary {
           flex: 2;
-          background: url(/monodosis-bg.jpg);
+          background: url(/img/monodosis-bg-edit.jpg);
           background-size: cover;
           background-position: center;
           display: flex;
@@ -131,11 +150,12 @@ export default function Home() {
         section.us-container .us-secondary h3 {
           font-family: var(--fontDisplay);
           width: 90%;
+          font-size: 3rem;
+          font-weight: 600;
           padding: 2rem;
           text-align: center;
           margin: 0 auto;
-          color: white;
-          background: rgba(0,0,0,0.2);
+          color: rgba(0,0,0,0.87);
         }
 
         section.us-certification {
@@ -143,7 +163,6 @@ export default function Home() {
           flex-direction: column;
           padding: 3rem;
           background: var(--primaryXLightColor);
-          backgro
           margin: 0 0 2rem;
         }
         
@@ -164,14 +183,52 @@ export default function Home() {
           color: var(--primaryDarkColor);
         }
 
+        section.us-products {
+          height: 50vh;
+        }
+
+        section.us-products .us-products__container {
+          display: flex;
+          height: 100%;
+          width: 60%;
+          margin: auto;
+        }
+
+        section.us-products .us-products__container .us-products__img {
+          flex: 1 0 33%;
+          position: relative;
+        }
+
+        section.us-products .us-products__container .us-products__img .us-products__img__bg {
+          background: no-repeat bottom/cover url(/img/us-photo-5-blue.jpg);
+          height: 100%;
+        }
+
+        section.us-products .us-products__container .us-products__img .us-products__img__product {
+          background: no-repeat url(/products/sublime-uvit-60.png);
+          width: 200px;
+          height: 170px;
+          position: absolute;
+          background-size: contain;
+          bottom: 0;
+          right: -40%;
+        }
+
+        section.us-products .us-products__container .us-products__text {
+          padding: 1rem;
+        }
+        section.us-products .us-products__container .us-products__text h3 {
+          font-family: var(--fontDisplay);
+          font-weight: 600;
+        }
+
         @media screen and (max-width: 769px) {
           .intro-container {
-            background-image: url(/img/us-photo-0-mb.jpg);
+            background: no-repeat center/cover url(/img/us-photo-0-mb.jpg);
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             align-items: center;
-            background-position: center;
             height: 90vh;
           }
 
@@ -191,7 +248,8 @@ export default function Home() {
             align-items: center;
           }
           
-          section.us-container .us-primary .us-primary__img {
+          section.us-container .us-primary .us-primary__img,
+          section.us-container .us-secondary h3 {
             display: none;
           }
 
@@ -204,6 +262,11 @@ export default function Home() {
           section.us-container .us-secondary {
             padding: 0;
             padding-bottom: 2rem;
+            flex: 1;
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top;
           }
           section.us-container .us-secondary h3 {
             width: 100%;
@@ -217,6 +280,10 @@ export default function Home() {
 
           section.us-certification .us-certification__logos img {
             max-width: 150px;
+          }
+
+          section.us-products .us-products__container {
+            width: 100%;
           }
         }
 
