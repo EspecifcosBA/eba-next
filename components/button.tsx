@@ -3,16 +3,16 @@ import classNames from 'classnames';
 
 type ButtonProps = {
   onClick?: (e: React.MouseEvent<HTMLElement>) => void,
-  active?: boolean,
+  accent?: boolean,
   raised?: boolean,
   colored?: boolean,
   bordered?: boolean,
 }
 
-const Button: FunctionComponent<ButtonProps> = ({ active, raised, colored, bordered, onClick, children }) => {
+const Button: FunctionComponent<ButtonProps> = ({ accent, raised, colored, bordered, onClick, children }) => {
   const styles = classNames('eba-button mdl-button mdl-js-button', {
     'mdl-button--raised': raised,
-    'mdl-button--accent': active,
+    'mdl-button--accent': accent,
     'mdl-button--colored': colored,
     'mdl-button--bordered': bordered
   })
