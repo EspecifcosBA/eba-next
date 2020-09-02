@@ -30,7 +30,7 @@ const Navbar = () => {
           <span className="mdl-layout-title">
             <Link href="/">
               <a className="eba-logo">
-                <img src='/logo.svg' style={{height: '38px'}}></img>
+                <object type="image/svg+xml" data="logo.svg" height={38}></object>
               </a>
            </Link>
           </span>
