@@ -62,7 +62,7 @@ export default function Home() {
             <h4>Estrictos controles bajo normas de calidad nacional e internacional son garantía de nuestros productos.</h4>
           </div>
         </section> */}
-        <section><div>j</div></section>
+        
       </Fade>
       
       <style jsx>{`
