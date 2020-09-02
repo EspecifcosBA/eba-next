@@ -13,7 +13,7 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
   }
 
   const moreInfo = (subject: string) => () => {
-    location.assign(`mailto:consultas@especificosba.com.ar?subject=Informacion ${subject}`)
+    location.assign(`mailto:formacion@especificosba.com.ar?subject=Informacion ${subject}`)
   }
 
   return (
@@ -30,19 +30,19 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
         <div className="courses-highlights">
           <div>
             <object type="image/svg+xml" data="logos/certificate.svg" className="courses-icon"></object>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quam ad quo, ullam praesentium perferendis in consequuntur quas.</p>
+            <p>Certificaciones y avales nacionales e internacionales.</p>
           </div>
           <div>
             <object type="image/svg+xml" data="logos/online.svg" className="courses-icon"></object>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quam ad quo, ullam praesentium perferendis in consequuntur quas.</p>
+            <p>Material online para toda la cursada.</p>
           </div>
           <div>
             <object type="image/svg+xml" data="logos/test.svg" className="courses-icon"></object>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quam ad quo, ullam praesentium perferendis in consequuntur quas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div>
             <object type="image/svg+xml" data="logos/watchlater.svg" className="courses-icon"></object>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quam ad quo, ullam praesentium perferendis in consequuntur quas.</p>
+            <p>Clase transmitida en vivo en el horario establecido, las clases quedan grabadas y disponibles en la plataforma.</p>
           </div>
         </div>
       </Section>
@@ -53,12 +53,33 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
               <div className="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--stretch" key={key}>
                 <Card
                   title={course.name}
-                  actions={[{label: 'mas informacion', onClick: moreInfo(course.name)}]}
-                  suppText={`${course.type} / ${course.duration}`}
+                  actions={[{label: 'solicitar informacion', onClick: moreInfo(course.name)}]}
+                  suppText={`${course.duration} / ${course.type}`}
                   flexCard
+                  inert
                 >
-                  <div>
+                  <div className="courses__list__card">
                     <p>{course.description}</p>
+                    <dl>
+                      {
+                        course.certificates ? (
+                          <>
+                            <dt>Avales:</dt>
+                            {
+                              course.certificates.map((certificate, key) => (
+                                <dd key={key}>{certificate}</dd>
+                              ))
+                            }
+                          </>
+                      ) : null }
+                      {
+                        course.requirements ? (
+                          <>
+                            <dt>Requisitos previos:</dt>
+                            <dd>{course.requirements}</dd>
+                          </>
+                      ) : null }
+                    </dl>
                   </div>
                 </Card>
               </div>
@@ -81,6 +102,10 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
           gap: 3rem;
         }
 
+        .courses-highlights > div {
+          flex: 1;
+        }
+
         object.courses-icon {
           width: 80px;
         }
@@ -88,6 +113,32 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
         .courses__list {
           background-color: var(--secondaryXLightColor);
           padding: 5rem;
+        }
+
+        .courses__list__card dl {
+          color: var(--secondaryDarkColor);
+        }
+
+        .courses__list__card dt {
+          margin-top: 1rem;
+        }
+
+        .courses__list__card dd {
+          margin-left: 1rem;
+        }
+
+        @media screen and (max-width: 769px) {
+          .courses-intro {
+            width: 100%;
+          }
+
+          .courses-highlights {
+            flex-wrap: wrap;
+          }
+
+          .courses__list {
+            padding: 2rem 0;
+          }
         }
       `}</style>
     </div>
