@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import { Fade } from "react-awesome-reveal";
+
 import Button from 'components/button';
+import Ball from 'components/ball';
 
 export default function Home() {
   const router = useRouter();
@@ -10,6 +12,7 @@ export default function Home() {
       <Fade cascade>
         <section className="intro-container">
           <div className="intro-content">
+            <Ball size={[100, 100]} zIndex={-1} top="-6rem" left="35%" inert/>
             <h1 className="">Cuidado específico para cada tipo de piel.</h1>
             <p className="subtitle-text">Productos profesionales, elaborados con normas de calidad internacional GMP, basados en sustancias activas concentradas de gran pureza y vehículos específicos altamente eficaces que permiten optimizar la belleza y cuidados personalizados de la piel, con base científica.</p>
           </div>
@@ -38,6 +41,7 @@ export default function Home() {
         <section className="us-products">
           <div className="us-products__container">
             <div className="us-products__img">
+              <Ball zIndex={-2} top="1rem" right="-30%" />
               <div className="us-products__img__bg"></div>
               <div className="us-products__img__product"></div>
             </div>
@@ -72,6 +76,7 @@ export default function Home() {
           padding: 0 5rem;
         }
         .intro-content {
+          position: relative;
           width: 50%;
           padding: 2rem;
           background-color: rgba(255, 255, 255, 0.3);
@@ -185,6 +190,7 @@ export default function Home() {
 
         section.us-products {
           height: 50vh;
+          position: relative;
         }
 
         section.us-products .us-products__container {
