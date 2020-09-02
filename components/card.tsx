@@ -13,16 +13,20 @@ type CardProps = {
   actions?: {
     label: string,
     onClick: (e: React.MouseEvent<HTMLElement>) => void
-  }[]
+  }[],
+  className?: string,
+  inert?: boolean,
 }
 
-const Card: FunctionComponent<CardProps> = ({ title, flexCard, img, suppText, onClick, actions, muted, children }) => {
+const Card: FunctionComponent<CardProps> = ({ title, flexCard, img, suppText, onClick, actions, muted, children, className = '', inert }) => {
   const classnames = cx({
     'eba-card': true,
     'mdl-card': true,
     'mdl-card--flex': flexCard,
     'mdl-card--muted': muted,
     'mdl-card--extended': !!children,
+    'mdl-card--inert': inert,
+    [className]: true
   });
 
   return (
@@ -81,7 +85,7 @@ const Card: FunctionComponent<CardProps> = ({ title, flexCard, img, suppText, on
           background-color: var(--secondaryXLightColor);
         }
 
-        .eba-card.mdl-card:hover {
+        .eba-card.mdl-card:not(.mdl-card--inert):hover {
           cursor: pointer;
           box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
         }
