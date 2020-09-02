@@ -4,20 +4,10 @@ import Head from 'next/head';
 import Navbar from 'components/navbar';
 import Footer from 'components/footer';
 
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-
 
 import 'styles.css';
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const router = useRouter();
-  useEffect(() => {
-    router.events.on('routeChangeComplete', () => {
-      console.log('hey')
-      window.scrollTo(0,0);
-    })
-  })
   return (
     <div className="eba-site">
       <Head>
