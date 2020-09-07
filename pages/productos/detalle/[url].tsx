@@ -1,16 +1,19 @@
-import { getAllProductsPath, getProductData, Product } from 'lib/products';
+import { getAllProductsPath, getProductData, Product, getRelated } from 'lib/products';
 import Link from 'next/link';
 import { GetStaticProps, NextPage } from 'next';
+import { useRouter } from 'next/router';
 
 import Slider from 'components/slider';
 import Section from 'components/section';
 import Label from 'components/label';
+import Card from 'components/card';
 
-const ProductPage: NextPage<{product: Product}> = ({ product }) => {
+const ProductPage: NextPage<{product: Product, related: Product[]}> = ({ product, related }) => {
   const images = [
     product.image,
   ].concat(product.variants.length > 1 ? product.variants.map(variant => variant.image) : []);
 
+  const router = useRouter();
   return (
     <div>
       <div className="mdl-grid">
@@ -62,6 +65,25 @@ const ProductPage: NextPage<{product: Product}> = ({ product }) => {
             </dl>
           </Section>
         </div>
+        <Section size="xsmall">
+          <h3>Productos relacionados</h3>
+          <div className="related-products__list">
+            <Slider maxItemsPerSlide={4}>
+              {
+                related.map((product, key) => (
+                  <Card
+                    key={key}
+                    title={product.name}
+                    suppText={product.actives.join(', ')}
+                    img={product.image}
+                    onClick={() => router.push('/productos/detalle/[url]', `/productos/detalle/${product.url}`)}
+                  />
+                ))
+              }
+            </Slider>
+          </div>
+        </Section>
+      </div>
       <style jsx>{`
         .eba-breadcrumb {
           display: flex;
@@ -123,7 +145,6 @@ const ProductPage: NextPage<{product: Product}> = ({ product }) => {
           margin-bottom: 0;
         }
       `}</style>
-      </div>
     
     </div>
   )
@@ -139,10 +160,13 @@ export async function getStaticPaths() {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   
-  const product = params !== undefined && params.url !== undefined ? getProductData(params.url) : {};
+  const product = (params !== undefined && params.url !== undefined) ? getProductData(params.url) : undefined;
+  const related = product ? getRelated(product.url) : [];
+
   return {
     props: {
-      product
+      product,
+      related
     }
   }
 }

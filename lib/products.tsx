@@ -53,8 +53,8 @@ export const getAllProductsName = () => {
   })
 }
 
-export const getProductData = (url: string | string[]) => {
-  return ProductData.find(product => product.url === url);
+export const getProductData = (url: string | string[]): Product => {
+  return ProductData.find(product => product.url === url) as Product;
 }
 
 export const getProductsByCategory = (catUrl: string) => {
@@ -67,6 +67,10 @@ export const getAllProductsCategoryPath = () => {
       category: cat
     }
   }));
+}
+
+export const getRelated = (url: string) => {
+  return ProductData.slice(0, 5);
 }
 
 export default getAllProductsName;
