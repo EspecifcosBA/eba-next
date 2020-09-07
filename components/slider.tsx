@@ -2,36 +2,47 @@ import { useState, FunctionComponent, useRef, ReactElement, useCallback } from '
 
 type SliderProps = {
   slides?: string[],
+  maxItemsPerSlide?: number,
   children: ReactElement[],
 };
 
-const Slider: FunctionComponent<SliderProps> = ({ children }) => {
-  const [ width, setWidth ] = useState(0);
+const Slider: FunctionComponent<SliderProps> = ({ children, maxItemsPerSlide = 1 }) => {
+  const GAP = 16;
+  const MIN_SIZE = 200;
   const slider = useRef<HTMLDivElement>(null);
+  const [ itemWidth, setWidth ] = useState(0);
+  const [ itemsPerSlide, setItemsAmount ] = useState(1);
+  const [ slidesPosition, setSlidesPosition ] = useState<number[]>([]);
+  const [ currentslide, setCurrentSlide ] = useState<number>(0);
 
   const measuredRef = useCallback(node => {
     if (node !== null) {
-      const measuredWith = node.getBoundingClientRect().width;
-      setWidth(measuredWith);
-      setSlides(children.map((child, i) => i * measuredWith));
+      const containerWidth = node.getBoundingClientRect().width;
+      const itemsAmount = calculateItemsPerSlide(containerWidth);
+      const slidesWidth = ( containerWidth - (itemsAmount - 1) * GAP) / itemsAmount;
+      setWidth(slidesWidth);
+      setItemsAmount(itemsAmount);
+      setSlidesPosition(children.map((_, i) => i * (slidesWidth + GAP)));
     }
   }, []);
 
-  const [ slides, setSlides ] = useState<number[]>([]);
-  const [ currentslide, setCurrentSlide ] = useState<number>(0);
+  const calculateItemsPerSlide = (width: number) => {
+    const _itemsPerSlide = Math.floor(width / MIN_SIZE) || 1;
+    return _itemsPerSlide < maxItemsPerSlide ? _itemsPerSlide : maxItemsPerSlide
+  }
 
   const calculateSliderPosition = (direction: 'next' | 'prev') => {
     if (direction === 'next') {
-      if (currentslide + 1 < slides.length) {
-        return currentslide + 1;
+      if (currentslide + itemsPerSlide < slidesPosition.length) {
+        return currentslide + itemsPerSlide;
       } else {
         return 0;
       }
     } else {
-      if (currentslide - 1 >= 0) {
-        return currentslide - 1;
+      if (currentslide - itemsPerSlide >= 0) {
+        return currentslide - itemsPerSlide;
       } else {
-        return slides.length - 1;
+        return slidesPosition.length - 1;
       }
     }
   }
@@ -41,19 +52,21 @@ const Slider: FunctionComponent<SliderProps> = ({ children }) => {
     if (slidercontroler) {
       const nextSlide = calculateSliderPosition(direction);
       slidercontroler.scrollTo({
-        left: slides[nextSlide],
+        left: slidesPosition[nextSlide],
         behavior: 'smooth'
       });
       setCurrentSlide(nextSlide);
     }
   }
-
+  
   return (
     <div className="eba-slider" ref={measuredRef}>
       <div className="eba-slider-container" ref={slider}>
         {
           children && children.map((child, key) => (
-            <div key={key} className='slide' style={{width}}>
+            <div key={key} className='slide' style={{
+              
+            }}>
               { child }
             </div>
           ))
@@ -80,11 +93,12 @@ const Slider: FunctionComponent<SliderProps> = ({ children }) => {
         }
         .eba-slider-container {
           display: flex;
-          overflow-x: auto;
+          gap: ${GAP}px;
+          overflow-x: scroll;
           align-items: center;
           margin-bottom: -17px;
           padding-bottom: 20px;
-          scroll-snap-types: x mandatory;
+          scroll-snap-type: x mandatory;
           scroll-behavior: smooth;
           -webkit-overflow-scrolling: touch;
         }
@@ -94,6 +108,7 @@ const Slider: FunctionComponent<SliderProps> = ({ children }) => {
           display: flex;
           justify-content: center;
           align-items: center;
+          width: ${itemWidth}px;
         }
         .slider-arrow {
           position: absolute;
