@@ -37,13 +37,16 @@ const Section: FunctionComponent<SectionProps> = ({
       </div>
       <style jsx>{`
         .section {
+          box-sizing: border-box;
           display: flex;
           align-items: center;
+          width: 100%;
         }
 
         .section .container {
           padding: 5rem;
           width: 100%;
+          box-sizing: border-box;
         }
 
         .section.section-xsmall {
