@@ -14,6 +14,7 @@
     "@types/classnames": "2.2.10",
     "@types/ramda": "0.27.12",
     "classnames": "2.2.6",
+    "framer-motion": "^2.6.6",
     "next": "9.4.4",
     "ramda": "0.27.0",
     "react": "16.13.1",

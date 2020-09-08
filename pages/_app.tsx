@@ -1,13 +1,37 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head';
+import { useEffect, useRef, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import Navbar from 'components/navbar';
 import Footer from 'components/footer';
 
-
 import 'styles.css';
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps, router }: AppProps) => {
+  const layoutContainer = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const scrollToTop = (url: string) => {
+      if (layoutContainer?.current) {
+        layoutContainer.current.scrollTo(0, 0)
+      }
+    }
+
+    router.events.on('routeChangeComplete', scrollToTop)
+
+    return () => {
+      router.events.off('routeChangeComplete', scrollToTop);
+    }
+  }, [])
+
+  const hide = {
+    opacity: 0
+  };
+  const show = {
+    opacity: 1
+  };
+
   return (
     <div className="eba-site">
       <Head>
@@ -16,11 +40,13 @@ const App = ({ Component, pageProps }: AppProps) => {
         <link rel="icon" type="image/png" href="/favicon.png"></link>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
-      <div className="mdl-layout__container">
+      <div className="mdl-layout__container" >
         <div className="mdl-layout mdl-layout--fixed-header has-drawer is-upgraded">
           <Navbar/>
-          <div className="mdl-layout__content">
-            <Component {...pageProps}/>
+          <div className="mdl-layout__content" ref={layoutContainer}>
+            <motion.div key={router.route} initial="hide" animate="show" variants={{ hide, show }} transition={{duration: 0.5, ease: "easeOut"}}>
+              <Component {...pageProps}/>
+            </motion.div>
             <Footer />
           </div>
         </div>
