@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { Fade } from "react-awesome-reveal";
+import { motion } from 'framer-motion';
 
 import Button from 'components/button';
 import Ball from 'components/ball';
@@ -7,63 +7,57 @@ import Ball from 'components/ball';
 export default function Home() {
   const router = useRouter();
 
+  const sectionVariants = {
+    initial: { opacity: 0 },
+    enter: { opacity: 2, transition: { duration: 1, ease: [0.48, 0.15, 0.25, 0.96] } },
+  };
   return (  
     <div className="page-content">
-      <Fade cascade>
-        <section className="intro-container">
-          <div className="intro-content">
-            <Ball size={[100, 100]} zIndex={-1} top="-6rem" left="35%" inert/>
-            <h1 className="">Cuidado específico para cada tipo de piel.</h1>
-            <p className="subtitle-text">Productos profesionales, elaborados con normas de calidad internacional GMP, basados en sustancias activas concentradas de gran pureza y vehículos específicos altamente eficaces que permiten optimizar la belleza y cuidados personalizados de la piel, con base científica.</p>
-          </div>
-        </section>
-        
-        <section className="us-container">
-          <div className="us-primary">
-            <Fade triggerOnce>
-              <div className="us-primary__img">
-                <img src="/img/us-photo-4.jpg"/>
+      <motion.div initial="initial" animate="enter">
+        <div>
+          <motion.div variants={sectionVariants}>
+            <section className="intro-container">
+              <div className="intro-content">
+                <Ball size={[100, 100]} zIndex={-1} top="-6rem" left="35%" inert/>
+                <h1 className="">Cuidado específico para cada tipo de piel.</h1>
+                <p className="subtitle-text">Productos profesionales, elaborados con normas de calidad internacional GMP, basados en sustancias activas concentradas de gran pureza y vehículos específicos altamente eficaces que permiten optimizar la belleza y cuidados personalizados de la piel, con base científica.</p>
               </div>
-            </Fade>
-            <div className="us-primary__text">
-              <Fade delay={300} triggerOnce>
-                <p>El diagnóstico previo personalizado y seguimiento por una profesional formada en tratamientos ESPECIFICOS Buenos Aires es nuestra filosofía de excelencia, ética, seriedad y apoyo constante para un perfecto resultado.</p>
-              </Fade>
-            </div>
-          </div>
-          <div className="us-secondary">
-            <Fade delay={500} direction="down" triggerOnce >
-              <h3>El alma de nuestros productos:<br/>autenticidad y excelencia</h3>
-            </Fade>
-          </div>
-        </section>
+            </section>
+          </motion.div>
+          
+          <motion.div variants={sectionVariants}>
+            <section className="us-container">
+              <div className="us-primary">
+                <div className="us-primary__img">
+                  <img src="/img/us-photo-4.jpg"/>
+                </div>
+                <div className="us-primary__text">
+                  <p>El diagnóstico previo personalizado y seguimiento por una profesional formada en tratamientos ESPECIFICOS Buenos Aires es nuestra filosofía de excelencia, ética, seriedad y apoyo constante para un perfecto resultado.</p>
+                </div>
+              </div>
+              <div className="us-secondary">
+                <h3>El alma de nuestros productos:<br/>autenticidad y excelencia</h3>
+              </div>
+            </section>
+          </motion.div>
 
-        <section className="us-products">
-          <div className="us-products__container">
-            <div className="us-products__img">
-              <Ball zIndex={-2} top="1rem" right="-30%" />
-              <div className="us-products__img__bg"></div>
-              <div className="us-products__img__product"></div>
+          <motion.div variants={sectionVariants}>
+          <section className="us-products">
+            <div className="us-products__container">
+              <div className="us-products__img">
+                <Ball zIndex={-2} top="1rem" right="-30%" />
+                <div className="us-products__img__bg"></div>
+                <div className="us-products__img__product"></div>
+              </div>
+              <div className="us-products__text">
+                <h3>Tratamientos pensados desde una profesional de la estética hacia sus colegas</h3>
+                <Button accent raised onClick={() => { router.push('/productos') }}>Ver productos</Button>
+              </div>
             </div>
-            <div className="us-products__text">
-              <h3>Tratamientos pensados desde una profesional de la estética hacia sus colegas</h3>
-              <Button accent raised onClick={() => { router.push('/productos') }}>Ver productos</Button>
-            </div>
-          </div>
-        </section>
-        {/* <section className="us-certification">
-          <div className="us-certification__logos">
-            <img src="/logos/anmat.png" />
-            <img src="/logos/gmp.png" />
-            <img src="/logos/iso9000.png" />
-            <img src="/logos/iso14000.png" />
-          </div>
-          <div className="us-certification__text">
-            <h4>Estrictos controles bajo normas de calidad nacional e internacional son garantía de nuestros productos.</h4>
-          </div>
-        </section> */}
-        
-      </Fade>
+          </section>
+          </motion.div>
+        </div>
+      </motion.div>
       
       <style jsx>{`
         .intro-container {
