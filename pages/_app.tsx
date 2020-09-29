@@ -44,7 +44,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         <div className="mdl-layout mdl-layout--fixed-header has-drawer is-upgraded">
           <Navbar/>
           <div className="mdl-layout__content" ref={layoutContainer}>
-            <motion.div key={router.route} initial="hide" animate="show" variants={{ hide, show }} transition={{duration: 0.5, ease: "easeOut"}}>
+            <motion.div key={router.route} initial="hide" animate="show" variants={{ hide, show }} transition={{duration: 0.2, ease: "easeOut"}}>
               <Component {...pageProps}/>
             </motion.div>
             <Footer />
