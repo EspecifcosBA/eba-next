@@ -18,7 +18,6 @@ export default function Home() {
           <motion.div variants={sectionVariants}>
             <section className="intro-container">
               <div className="intro-content">
-                <Ball size={[100, 100]} zIndex={-1} top="-6rem" left="35%" inert/>
                 <h1 className="">Cuidado específico para cada tipo de piel.</h1>
                 <p className="subtitle-text">Productos profesionales, elaborados con normas de calidad internacional GMP, basados en sustancias activas concentradas de gran pureza y vehículos específicos altamente eficaces que permiten optimizar la belleza y cuidados personalizados de la piel, con base científica.</p>
               </div>
@@ -60,6 +59,9 @@ export default function Home() {
       </motion.div>
       
       <style jsx>{`
+        .page-content {
+          margin-bottom: 2rem;
+        }
         .intro-container {
           background: no-repeat right/contain url(/img/us-photo-0.jpg);
           height: 70vh;
@@ -91,7 +93,6 @@ export default function Home() {
         
         .subtitle-text {
           font-size: 1.2em;
-          opacity: 0.7;
           font-weight: 300;
         }
 
@@ -183,7 +184,7 @@ export default function Home() {
         }
 
         section.us-products {
-          height: 50vh;
+          height: 45vh;
           position: relative;
         }
 
