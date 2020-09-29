@@ -15,7 +15,7 @@ const ProductPage: NextPage<{product: Product, related: Product[]}> = ({ product
 
   const router = useRouter();
   return (
-    <div>
+    <div className="eba-product-page">
       <div className="mdl-grid">
         <div className="mdl-cell mdl-cell--12-col">
           <ul className="eba-breadcrumb">
@@ -46,27 +46,29 @@ const ProductPage: NextPage<{product: Product, related: Product[]}> = ({ product
           <Section size="xsmall">
             <h3>{product.name}</h3>
             <p className="product-intro">{product.desc}</p>
-            <dl className="product-description-list">
-              <dt>Descripcion</dt>
-              <dd>{ product.fullDesc }</dd>
-
-              <dt>Aplicacion</dt>
-              <dd>{ product.apply }</dd>
-
-              <dt>Activos</dt>
-              <dd>{product.actives.map((active, i) => (
-                <Label color="secondary" key={i}>{active}</Label>
-              ))}</dd>
-
-              <dt>Presentacion</dt>
-              <dd>{product.variants.map(({ code, content }) => (
-                <Label color="muted" key={code}>{content}</Label>
-              ))}</dd>
-            </dl>
+            <div className="product-description">
+              <div>
+                <h4>Aplicación</h4>
+                <p>{ product.apply }</p>
+              </div>
+              <div>
+                <h4>Activos</h4>
+                <p>
+                  {product.actives.map((active, i) => (
+                    <Label color="secondary" key={i}>{active}</Label>
+                  ))}
+                </p>
+              </div>
+            </div>
           </Section>
         </div>
+        <div className="product-highlight">
+          <p>
+            {product.fullDesc}
+          </p>
+        </div>
         <Section size="xsmall">
-          <h3>Productos relacionados</h3>
+          <h4>Productos relacionados</h4>
           <div className="related-products__list">
             <Slider maxItemsPerSlide={4}>
               {
@@ -85,6 +87,11 @@ const ProductPage: NextPage<{product: Product, related: Product[]}> = ({ product
         </Section>
       </div>
       <style jsx>{`
+
+        .eba-product-page {
+          padding: 0 5rem;
+        }
+
         .eba-breadcrumb {
           display: flex;
           flex-wrap: nowrap;
@@ -128,21 +135,33 @@ const ProductPage: NextPage<{product: Product, related: Product[]}> = ({ product
         }
       
         .product-intro {
-          color: var(--secondaryDarkColor);
-          font-style: italic;
-        }
-        .product-description-list > dt {
-          color: var(--primaryDarkColor);
-          font-weight: normal;
-          text-transform: uppercase;
+          font-size: 1.2rem;
+          color: var(--secondaryDarkColor)
         }
 
-        .product-description-list > dd {
-          margin-left: 0;
-          margin-bottom: 1rem;
+        .product-highlight {
+          background: var(--secondaryXLightColor);
+          padding: 2rem;
+          margin-top: 2rem;
         }
-        .product-description-list > dd:last-child {
-          margin-bottom: 0;
+
+        .product-highlight > p {
+          width: 80%;
+          margin: auto;
+          font-size: 1.3rem;
+          font-weight: 300;
+          text-align: center;
+        }
+
+        @media screen and (max-width: 769px) {
+          .eba-product-page {
+            padding: 0rem;
+            text-align: center;
+          }
+
+          .product-highlight > p{
+            width: 100%;
+          }
         }
       `}</style>
     
