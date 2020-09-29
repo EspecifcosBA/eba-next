@@ -442,7 +442,12 @@ th {
   --secondaryTextColor: #000000;
   --errorColor: #f44336;
   --successColor: #4caf50;
+  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --fontDisplay: 'Playfair Display', 'serif';
+}
+
+body {
+  font-family: var(--font);
 }
 
 a {
@@ -483,6 +488,12 @@ a.muted:hover {
 .text-center {
   text-align: center;
 }
+
+h1, h3, h4 {
+  font-family: var(--fontDisplay);
+  font-weight: 600;
+}
+
 
 @keyframes fadeInAnimation { 
   0% { 
