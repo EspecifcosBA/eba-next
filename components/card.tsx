@@ -123,8 +123,10 @@ const Card: FunctionComponent<CardProps> = ({ title, flexCard, img, suppText, on
           flex: unset;
         }
         .eba-card > .mdl-card__title > .mdl-card__title-text {
-          font-size: 1.125rem;
+          font-size: 1.2rem;
           align-self: baseline;
+          font-family: var(--font);
+          font-weight: 400;
         }
 
         .eba-card .mdl-card__title .mdl-card__supporting-text {
