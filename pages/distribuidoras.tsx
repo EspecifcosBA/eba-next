@@ -144,13 +144,13 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
                 <thead>
                   <tr>
                     <th className="mdl-data-table__cell--non-numeric">Distribuidor</th>
+                    <th className="mdl-data-table__cell--non-numeric">Domicilio</th>
+                    <th className="mdl-data-table__cell--non-numeric">Telefono</th>
+                    <th className="mdl-data-table__cell--non-numeric">Localidad</th>
+                    <th className="mdl-data-table__cell--non-numeric">Provincia</th>
                     { active === 'internacional' ? (
                       <th className="mdl-data-table__cell--non-numeric">Pais</th>
                     ) : null }
-                    <th className="mdl-data-table__cell--non-numeric">Provincia</th>
-                    <th className="mdl-data-table__cell--non-numeric">Localidad</th>
-                    <th className="mdl-data-table__cell--non-numeric">Domicilio</th>
-                    <th className="mdl-data-table__cell--non-numeric">Telefono</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -158,13 +158,13 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
                     distributors[active].map((distributor, key) => (
                     <tr key={key}>
                       <td className="mdl-data-table__cell--non-numeric">{distributor.name}</td>
+                      <td className="mdl-data-table__cell--non-numeric">{distributor.address}</td>
+                      <td className="mdl-data-table__cell--non-numeric">{distributor.phone.join(', ')}</td>
+                      <td className="mdl-data-table__cell--non-numeric">{distributor.place}</td>
+                      <td className="mdl-data-table__cell--non-numeric">{distributor.province}</td>
                       { active === 'internacional' ? (
                         <td className="mdl-data-table__cell--non-numeric">{distributor.country}</td>
                       ) : null }
-                      <td className="mdl-data-table__cell--non-numeric">{distributor.province}</td>
-                      <td className="mdl-data-table__cell--non-numeric">{distributor.place}</td>
-                      <td className="mdl-data-table__cell--non-numeric">{distributor.address}</td>
-                      <td className="mdl-data-table__cell--non-numeric">{distributor.phone.join(', ')}</td>
                     </tr>
                     ))
                   }
@@ -212,16 +212,14 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
 
         .eba-hq h3 {
           line-height: 0.8;
-          font-family: var(--fontDisplay);
+          font-family: "Roboto","Helvetica","Arial",sans-serif;
+          font-weight: 300;
         }
 
-        .eba-hq span {
-          font-family: "Roboto","Helvetica","Arial",sans-serif;
-        }
 
         .eba-hq small {
-          font-family: inherit;
           color: var(--secondaryXLightColor);
+          font-family: var(--fontDisplay);
           opacity: .75;
         }
 
@@ -256,7 +254,6 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
 
         h4 {
           text-align: center;
-          text-transform: uppercase;
         }
         .eba-distribution .mdl-tabs__tab-bar,
         .eba-distribution .mdl-tabs__panel,
