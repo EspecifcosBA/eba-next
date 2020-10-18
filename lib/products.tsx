@@ -1,18 +1,20 @@
 import ProductData from 'data/products.json';
 import { uniq } from 'ramda';
 
-export type Category = "Protección Intensiva" | "Higiene" | "Máscaras" | "Peeling" | "Ácido Hialurónico" | "Hombres" | "Activos Concentrados" | "Monodosis" | "Protección Solar" | "Corporales";
+export type Category = "Protección Intensiva" | "Higiene" | "Máscaras" | "Espumas" | "Peeling" | "Ácido Hialurónico" | "Hombres" | "Activos Concentrados" | "Monodosis" | "Protección Solar" | "Corporales" | "Therapy Rituals";
 export type CategoryUrl = 
   "proteccion_intensiva" |
   "higiene" |
   "mascaras" |
+  "espumas" |
   "peeling" |
   "acido_hialuronico" |
   "hombres" |
   "activos_concentrados" |
   "monodosis" |
   "proteccion_solar" |
-  "corporales";
+  "corporales" |
+  "therapy_rituals";
 
 export type Product = {
   name: string,

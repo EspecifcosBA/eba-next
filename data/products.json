@@ -1,11 +1,11 @@
 [
     {
-      "name": "Complex Bio Vitamins A+E+C",
+      "name": "Complex Bio Vitamins",
       "category": [
         "Protección Intensiva"
       ],
       "desc": "Potente acción antioxidante, un magnífico aporte de firmeza y elasticidad que mejora el color, la luminosidad y la hidratación de la piel retrasando el envejecimiento cutáneo. ",
-      "fullDesc": "Crema antioxidante, humecto  nutritiva, potenciada por la acción de una micro alga, Espirulina, que contiene los veinte aminoácidos en perfecto balance, minerales y proteínas. Textura suave, fluida. Indicada para pieles normales, deshidratadas, menopausia.",
+      "fullDesc": "Crema antioxidante, humecto - nutritiva, potenciada por la acción de una micro alga, Espirulina, que contiene los veinte aminoácidos en perfecto balance, minerales y proteínas. Textura suave, fluida. Indicada para pieles normales, deshidratadas, menopausia.",
       "actives": [
         "Vitamina A",
         "Vitamina C",
@@ -32,13 +32,13 @@
       "image": "complex-bio.png",
       "apply": "Tras limpiar y tonificar rostro, cuello y escote, aplicar mañana y noche con un suave masaje.",
       "lang": "es",
-      "url": "complex_bio_vitamins_a_e_c",
+      "url": "complex_bio_vitamins",
       "categoryUrl": [
         "proteccion_intensiva"
       ]
     },
     {
-      "name": "Sublime Uvit - Crema Reparadora",
+      "name": "Sublime Uvit",
       "category": [
         "Protección Intensiva"
       ],
@@ -46,7 +46,8 @@
       "fullDesc": "Formulada específicamente para cubrir las necesidades de las pieles más secas. Dota a la piel de una nueva capacidad de autorregeneración y autodefensa. Fórmula rica y exclusiva, perfectamente equilibrada, de alto poder antioxidante. Reduce la profundidad y longitud de las arrugas y previene su aparición prematura. Reafirmante.",
       "actives": [
         "Polifenoles de pepitas de uva",
-        "Salvia, Tocoferol",
+        "Salvia",
+        "Tocoferol",
         "Aceite de Jojoba"
       ],
       "ph": "",
@@ -75,14 +76,14 @@
       ]
     },
     {
-      "name": "Audace - Glico Activo",
+      "name": "Audace Glico Activo",
       "category": [
         "Protección Intensiva"
       ],
       "desc": "Acción altamente hidratante y regeneradora en pieles desvitalizadas. Promueve la formación de colágeno, Ayuda a evitar la pérdida de agua transepidérmica, estimula la liberación de citoquinas. Efecto luminoso en pieles secas, con necesidades. Compensa las carencias de la piel. Ayuda a disminuir estrías y cicatrices.",
       "fullDesc": "Piel más confortable y aparece revitalizada. Incluso al final del día, la piel se siente nutrida e hidratada. Los signos de cansancio y de la edad parecen reducidos. La piel visiblemente reparada, con toda la luminosidad recuperada. Su textura rica y densa combate las arrugas y líneas de expresión y proporciona el confort que las pieles secas necesitan. Se absorbe con rapidez sin restos grasos.",
       "actives": [
-        "Acido Glicólico ( 7%)",
+        "Acido Glicólico (7%)",
         "Extracto de algas"
       ],
       "ph": "",
@@ -151,7 +152,7 @@
       "category": [
         "Higiene"
       ],
-      "desc": "Emulsión de limpieza, demaquillante, de PH neutro, hipoalergénica. Indicada para todo tipo de piel, aún las más sensibles.",
+      "desc": "Emulsión de limpieza, demaquillante, de PH neutro, hipoalergénica. Indicada para todo tipo de piel, aún las más sensibles. Prepara la piel para el tratamiento posterior.",
       "fullDesc": "Limpia profundamente la epidermis, se equilibra el pH de la piel. Elimina suavemente las impurezas sin dañar la humedad y el equilibrio natural. Prepara, purificará y acondiciona a la piel para recibir los beneficios óptimos de los mejores cuidados. La piel está lista para recibir los productos propios de la Fase de Tratamiento.",
       "actives": [
         "Matricaria chamomilla"
@@ -285,7 +286,6 @@
       "desc": "Los ácidos Linoleico y Linolénico, aportan mayor protección a las células de Langerhans, mejorando notablemente la protección de la piel",
       "fullDesc": "Máscara activa. Ayuda a aumentar los mecanismos de defensa de la piel, aportando beneficios en tratamientos de rosácea, acné, cutis graso, manchas cutáneas y pieles desvitalizadas. Aporta ácidos grasos insaturados esenciales, disminuye la inflamación, ayuda a normalizar la piel",
       "actives": [
-        "Acido Linoleico",
         "Acido Linolénico",
         "Avena Sativa",
         "Malva",
@@ -314,7 +314,7 @@
         "Máscaras"
       ],
       "desc": "SpecificMask aporta máxima tecnología en renovación celular, disminuye las arrugas más profundas de la piel otorgando firmeza y radiante apariencia. Piel más lisa que recupera la belleza y juventud",
-      "fullDesc": "Evita la pérdida de agua transepidérmica. Disminuye arrugas dinámicas. Puede aplicarse sobre labios y párpados, aún en pieles sensibles. Aplicar en combinación con Monodosis Específicas o Micropeeling en tratamientos intensivos anti-envejecimiento.",
+      "fullDesc": "Máscara Shock antienvejecimiento. Máxima tecnología en renovación celular. Disminuye líneas de expresión, aportando radiante apariencia y otorgando firmeza. Evita la pérdida de agua transepidérmica. Puede aplicarse sobre labios y párpados. Apta para tratamientos con radiofrecuencia",
       "actives": [
         "Vitamina A",
         "Vitamina E",
@@ -331,7 +331,7 @@
         }
       ],
       "image": "specific-mask-250.png",
-      "apply": "Aplicar en rostro, cuello y escote, dejar actuar durante veinte minutos, retirar mediante esponja y agua",
+      "apply": "Aplicar en rostro, cuello y escote, dejar actuar durante 20 minutos, retirar mediante esponja y agua",
       "lang": "es",
       "url": "specific_mask",
       "categoryUrl": [
@@ -347,7 +347,8 @@
       "fullDesc": "Específicamente formulado para actuar frente a las causas que generan el acné. Normaliza el PH de la piel, antiséptico, antinflamatorio, anti pruriginoso. Evita la deshidratación de la piel. FPS. Puede combinarse con peeling Biorregulador y Refreshing Mask en tratamiento en gabinete profesional",
       "actives": [
         "Acido Salicílico",
-        "Retinol, Resorcina",
+        "Retinol",
+        "Resorcina",
         "FPS"
       ],
       "ph": "4,5",
@@ -381,7 +382,7 @@
         "Peeling"
       ],
       "desc": "Fórmula de alto desarrollo con doble función: tratamientos de peeling y aumento en la penetrabilidad de activos, mejorando la renovación celular.",
-      "fullDesc": "Fórmula de alto desarrollo con doble función: tratamientos de peeling, y aumento de penetrabilidad de activos, mejorando la recuperación celular. Indicado para Acné, piel seborreica, cutis graso, disminuir líneas de expresión.",
+      "fullDesc": "Indicado para Acné, piel seborreica, cutis graso, disminuir líneas de expresión.",
       "actives": [
         "Acido Salicílico",
         "Acido Láctico",
@@ -438,7 +439,7 @@
       "category": [
         "Ácido Hialurónico"
       ],
-      "desc": "Microdermolift activa de forma inteligente los mecanismos propios de la piel, mediante la acción sinérgica del ácido hialurónico de máxima pureza y vehículos especializados.",
+      "desc": "Microdermo Lift activa de forma inteligente los mecanismos propios de la piel, mediante la acción sinérgica de Ácido Hialurónico de máxima calidad y vehículos especializados, desafiando el paso del tiempo. Reduce visiblemente líneas de expresión y arrugas.",
       "fullDesc": "Piel hidratada con intensidad lisa y luminosa por más tiempo. Un contorno de ojos que alivia para reducir bolsas palpebrales y los signos de fatiga. Especialmente formulado para tratar la delicada zona del contorno de los ojos, esta única textura, reduce líneas de expresión y arrugas con una sensación aterciopelada",
       "actives": [
         "Acido Hialurónico"
@@ -453,7 +454,7 @@
         }
       ],
       "image": "microdermo-lift-20.png",
-      "apply": "Aplicar en la zona del contorno de los ojos y líneas de expresión",
+      "apply": "Aplicar en la zona del contorno de ojos, contorno de labios, líneas de expresión y arrugas.",
       "lang": "es",
       "url": "microdermo_lift",
       "categoryUrl": [
@@ -466,7 +467,7 @@
         "Ácido Hialurónico"
       ],
       "desc": "Serum multi-acción intensivo, disminuye manchas cutáneas y evita el efecto rebote post-estacional. Aporta una intensa hidratación y resultados de suavidad incomparables",
-      "fullDesc": "Piel más firme, suave y elástica. Mejora visiblemente la luminosidad, coloración e hidratación profunda de la piel. Indicado para piel normal, manchas cutáneas, piel deshidratada. ",
+      "fullDesc": "Hidratación intensiva y duradera, ayuda a evitar y disminuir manchas cutáneas, protege de la acción de rayos UV. Piel + firme + suave y elástica. Indicado para piel normal, manchas cutáneas, piel deshidratada.",
       "actives": [
         "Acido Hialurónico",
         "Acido Láctico",
@@ -497,12 +498,12 @@
       ]
     },
     {
-      "name": "Hydra Intensive Tonico",
+      "name": "Hydra Intensive Tónico",
       "category": [
         "Ácido Hialurónico"
       ],
       "desc": "Resblece la hidratación, mejora la renovación celular, suavidad, elasticidad y firmeza, prolongando la juventud de la piel.",
-      "fullDesc": "Fórmula intensiva de acción sinérgica combinada, ayuda a reforzar la barrera protectora de la piel, para lograr una piel hidratada y re-nutrida. Protege a la piel del stress medioambiental. Aporta compensación intensa, inmediata, continua y calma las pieles sensibles.",
+      "fullDesc": "Tónico protector de acción sinérgica combinada. Protege a la piel del stress medioambiental. Restablece la hidratación, mejora la renovación celular, suavidad, elasticidad y firmeza, prolongando la juventud de la piel. Indicado en todos los biotipos cutáneos, aún rosácea y piel sensible.",
       "actives": [
         "Acido Hialurónico",
         "Azuleno",
@@ -540,7 +541,7 @@
         "Hombres"
       ],
       "desc": "Crema facial ultra ligera y elástica, específicamente formulada para la piel del hombre",
-      "fullDesc": "Piel lisa y firme. Disminuye líneas de expresión y arrugas. Indicado para piel con tendencia a seca",
+      "fullDesc": " Piel lisa y firme. Disminuye líneas de expresión y arrugas. Indicado para piel con tendencia a seca.",
       "actives": [
         "retinol"
       ],
@@ -554,7 +555,7 @@
         }
       ],
       "image": "renovatio-retinol.png",
-      "apply": "aplicar por la mañana y por la noche",
+      "apply": "Aplicar por la mañana junto Renovatio Serum For Men. Aplicar por la noche con Renovatio Retinol For Men",
       "lang": "es",
       "url": "renovatio_retinol_for_men",
       "categoryUrl": [
@@ -566,8 +567,8 @@
       "category": [
         "Hombres"
       ],
-      "desc": "Serum intensivo formulado específicamente para la piel del hombre con filtro solar.",
-      "fullDesc": "Disminuye líneas de expresión y arrugas.",
+      "desc": "Serum intensivo antioxidante, específicamente formulado para la piel del hombre.",
+      "fullDesc": "Disminuye líneas de expresión y arrugas. Indicado para piel normal o deshidratada.",
       "actives": [
         "polifenoles de pepitas de uva",
         "Vitamina C",
@@ -583,7 +584,7 @@
         }
       ],
       "image": "renovatio-serum.png",
-      "apply": "Aplicar después de afeitar, por la mañana y por la noche",
+      "apply": " Aplicar por la mañana, por la noche y después de afeitar",
       "lang": "es",
       "url": "renovatio_serum_for_men",
       "categoryUrl": [
@@ -591,7 +592,7 @@
       ]
     },
     {
-      "name": "RENOVATIO Skin Control For Men",
+      "name": "RENOVATIO Skin Control",
       "category": [
         "Hombres"
       ],
@@ -612,7 +613,7 @@
         }
       ],
       "image": "renovatio-skin-control.png",
-      "apply": "Aplicar después de afeitar, por la mañana y por la noche.",
+      "apply": "Aplicar por la mañana y por la noche.",
       "lang": "es",
       "url": "renovatio_skin_control_for_men",
       "categoryUrl": [
@@ -790,13 +791,7 @@
       "desc": "Tratamiento reafirmante con alto poder nutritivo que, por su composición rica en activos compensadores, mejora en firmeza y elasticidad de la piel, recuperando toda su vitalidad y energía.",
       "fullDesc": "Espuma corporal, específicamente formulada para potenciar el tratamiento reductor, anticelulítico y tonificante corporal. Ayuda a eliminar el aspecto visible de la celulitis, mejora la tonicidad de los tejidos, disminuye la sensación de piernas cansadas. Reequilibra a la piel en oligoelementos, minerales, aminoácidos y proteínas. Piel más lisa, firme, elástica, suave y luminosa. Puede utilizarse también como apoyo domiciliario",
       "actives": [
-        "Cafeína",
-        "Centella asiática",
-        "Acido Lipoico",
-        "Fosfatidilcolina",
-        "Espirulina",
-        "Vitamina C liposomada",
-        "Oligoelementos marinos + Zn + CU"
+        "Cafeína"
       ],
       "ph": "",
       "variants": [
@@ -816,7 +811,7 @@
       ]
     },
     {
-      "name": "Hydroviton - Monodosis",
+      "name": "Hydroviton",
       "category": [
         "Monodosis"
       ],
@@ -838,13 +833,13 @@
       "image": "hydroviton-caja.png",
       "apply": "Aplicar con la piel limpia, por la mañana y por la noche.",
       "lang": "es",
-      "url": "hydroviton_-_monodosis",
+      "url": "hydroviton",
       "categoryUrl": [
         "monodosis"
       ]
     },
     {
-      "name": "Vitamina F Pure - Monodosis",
+      "name": "Vitamina F Pure",
       "category": [
         "Monodosis"
       ],
@@ -865,13 +860,13 @@
       "image": "vitamina-f-caja.png",
       "apply": "Aplicar por la mañana y por la noche.",
       "lang": "es",
-      "url": "vitamina_f_pure_-_monodosis",
+      "url": "vitamina_f_pure",
       "categoryUrl": [
         "monodosis"
       ]
     },
     {
-      "name": "Skin Dose - Monodosis",
+      "name": "Skin Dose",
       "category": [
         "Monodosis"
       ],
@@ -893,13 +888,13 @@
       "image": "skin-dose-caja.png",
       "apply": "Aplicación: trabajar en forma circular en las manchas o tratar zonas con irregularidades pigmentarias, luego extender a toda la piel.",
       "lang": "es",
-      "url": "skin_dose_-_monodosis",
+      "url": "skin_dose",
       "categoryUrl": [
         "monodosis"
       ]
     },
     {
-      "name": "Bio Dose - Monodosis",
+      "name": "Bio Dose",
       "category": [
         "Monodosis"
       ],
@@ -922,13 +917,13 @@
       "image": "biodose-caja.png",
       "apply": "aplicar por la mañana y por la noche",
       "lang": "es",
-      "url": "bio_dose_-_monodosis",
+      "url": "bio_dose",
       "categoryUrl": [
         "monodosis"
       ]
     },
     {
-      "name": "HSP - 20 - Monodosis",
+      "name": "HSP-20",
       "category": [
         "Monodosis"
       ],
@@ -950,13 +945,13 @@
       "image": "hsp-20-caja.png",
       "apply": "Aplicar por la noche en la zona de contorno de ojos.",
       "lang": "es",
-      "url": "hsp_-_20_-_monodosis",
+      "url": "hsp_-_20",
       "categoryUrl": [
         "monodosis"
       ]
     },
     {
-      "name": "Complex AM 40 - Monodosis",
+      "name": "Complex AM 40",
       "category": [
         "Monodosis"
       ],
@@ -977,13 +972,13 @@
       "image": "complex-am40-caja.png",
       "apply": "Aplicar por la mañana y por la noche",
       "lang": "es",
-      "url": "complex_am_40_-_monodosis",
+      "url": "complex_am_40",
       "categoryUrl": [
         "monodosis"
       ]
     },
     {
-      "name": "Complex AM 45 - Monodosis",
+      "name": "Complex AM 45",
       "category": [
         "Monodosis"
       ],
@@ -1005,13 +1000,13 @@
       "image": "complex-am45-caja.png",
       "apply": "Aplicar todos los días, por la noche en el rostro, cuello y escote",
       "lang": "es",
-      "url": "complex_am_45_-_monodosis",
+      "url": "complex_am_45",
       "categoryUrl": [
         "monodosis"
       ]
     },
     {
-      "name": "Vitamina C - Monodosis",
+      "name": "Vitamina C Pure",
       "category": [
         "Monodosis"
       ],
@@ -1032,13 +1027,13 @@
       "image": "vitamina-c-caja.png",
       "apply": "Aplicar diariamente por la mañana.",
       "lang": "es",
-      "url": "vitamina_c_-_monodosis",
+      "url": "vitamina_c_pure",
       "categoryUrl": [
         "monodosis"
       ]
     },
     {
-      "name": "Argan Bio + - Monodosis",
+      "name": "Argan Bio +",
       "category": [
         "Monodosis"
       ],
@@ -1059,7 +1054,7 @@
       "image": "argan-bio-caja.png",
       "apply": "Aplicar diariamente. Cuando se traten estrías y cicatrices, aplicar dos veces por día",
       "lang": "es",
-      "url": "argan_bio___-_monodosis",
+      "url": "argan_bio__",
       "categoryUrl": [
         "monodosis"
       ]
@@ -1195,7 +1190,7 @@
       "image": "dda1.png",
       "apply": "Dejar actuar durante quince minutos, de acuerdo a las indicaciones del protocolo específico y retirar.",
       "lang": "es",
-      "url": "dynamic_do_all__1",
+      "url": "dynamic_do_all_1",
       "categoryUrl": [
         "mascaras",
         "peeling"
@@ -1226,20 +1221,22 @@
       "image": "dda2.png",
       "apply": "Puede utilizarse de forma independiente o en sinergia con activos tópicos en procedimientos dermocosmiátricos para suavizar, acondicionar y compensar la piel. Dejar actuar durante quince minutos, de acuerdo a las indicaciones del protocolo específico y retirar.",
       "lang": "es",
-      "url": "dynamic_do_all__2",
+      "url": "dynamic_do_all_2",
       "categoryUrl": [
         "mascaras",
         "peeling"
       ]
     },
     {
-      "name": "PROTECTION TIME  Color  Ác Hialurónico",
+      "name": "PROTECTION TIME Color Ác Hialurónico",
       "category": [
         "Protección Solar"
       ],
       "desc": "Fluido Facial con color. Protección reforzada frente a los rayos UVA y UVB, gracias a un sistema filtrante óptimo Específico, combinado con Acido Hialurónico, hidratante protector de la piel.",
-      "fullDesc": "Ayuda a prevenir intolerancias solares y daño celular provocado por la acción de rayos UV. Textura fluida, no grasa. Acabado imperceptible. Sin perfume. Sin parabenos, con color",
+      "fullDesc": "Ayuda a prevenir intolerancias solares y daño celular provocado por la acción de rayos UV. Textura fluida, no grasa. Acabado imperceptible. Sin perfume. Sin parabenos, con color. Testeados en USA bajo normas FDA-COLIPA",
       "actives": [
+        "Con color",
+        "FPS 50+",
         "Ácido Hialurónico"
       ],
       "variants": [
@@ -1253,7 +1250,7 @@
       "image": "hialuronico.png",
       "apply": "Aplicar la crema antes de salir a la playa o la piscina, y como mínimo 30 minutos antes de exponerse al sol. Extender PROTECTION TIME 50+ sobre la piel bien seca. Utilizar protección solar aunque esté nublado. Reaplicar cuando sea necesario de acuerdo a cada fototipo cutáneo. Se recomienda cada dos horas para mantener la protección, especialmente después de un baño o nadar",
       "lang": "es",
-      "url": "protection_time__color__c_hialurnico",
+      "url": "protection_time_color_ac_hialurnico",
       "categoryUrl": [
         "proteccion_solar"
       ]
@@ -1266,6 +1263,7 @@
       "desc": "Fluído facial. Protección reforzada frente a los rayos UVA y UVB, gracias a un sistema filtrante óptimo Específico, combinado con Sepicalm S, biovector aminoácido con minerales, mejorando el confort cutáneo.",
       "fullDesc": "Ayuda a prevenir intolerancias solares. Textura fluida, no graso. Acabado imperceptible. Sin perfume. Sin parabenos. Testeados en USA bajo normas FDA-COLIPA",
       "actives": [
+        "FPS 50+",
         "Sepicalm V.G"
       ],
       "ph": "",
@@ -1286,13 +1284,15 @@
       ]
     },
     {
-      "name": "PROTECTION TIME  Color Grosella",
+      "name": "PROTECTION TIME Color Grosella",
       "category": [
         "Protección Solar"
       ],
       "desc": "Protección reforzada frente a los rayos UVA y UVB, gracias a un sistema filtrante óptimo Específico, combinado con Grosella, antioxidante protector de la piel.",
-      "fullDesc": "Ayuda a prevenir intolerancias solares, manchas pigmentarias foto-inducidas y daño celular provocado por la acción de los radicales libres y rayos UV. Textura fluida, no grasa, acabado imperceptible. Sin perfume. Sin parabenos, con color.",
+      "fullDesc": "Ayuda a prevenir intolerancias solares, manchas pigmentarias foto-inducidas y daño celular provocado por la acción de los radicales libres y rayos UV. Textura fluida, no grasa, acabado imperceptible. Sin perfume. Sin parabenos, con color. Testeados en USA bajo normas FDA-COLIPA",
       "actives": [
+        "Con color",
+        "FPS 50+",
         "Grosella"
       ],
       "variants": [
@@ -1306,19 +1306,20 @@
       "image": "grosella.png",
       "apply": "Aplicar la crema antes de salir a la playa o la piscina, y como mínimo 30 minutos antes de exponerse al sol. Extender PROTECTION TIME 50+ sobre la piel bien seca. Utilizar protección solar aunque esté nublado. Reaplicar cuando sea necesario de acuerdo a cada fototipo cutáneo. Se recomienda cada dos horas para mantener la protección, especialmente después de un baño o nadar",
       "lang": "es",
-      "url": "protection_time__color_grosella",
+      "url": "protection_time_color_grosella",
       "categoryUrl": [
         "proteccion_solar"
       ]
     },
     {
-      "name": "PROTECTION TIME  Aceite de Sésamo",
+      "name": "PROTECTION TIME Aceite de Sésamo",
       "category": [
         "Protección Solar"
       ],
       "desc": "Protección reforzada frente a los rayos UVA y UVB, gracias a un sistema filtrante óptimo Específico, combinado con Aceite de Sésamo, rico en ácidos grasos esenciales, coadyuvante en la protección.",
-      "fullDesc": "Ayuda a prevenir intolerancias solares, manchas pigmentarias foto-inducidas y daño celular provocado por la acción de rayos UV. Textura ultra fluida, no grasa, no deja marcas blancas. Acabado imperceptible. Sin perfume. Sin parabenos",
+      "fullDesc": "Ayuda a prevenir intolerancias solares, manchas pigmentarias foto-inducidas y daño celular provocado por la acción de rayos UV. Textura ultra fluida, no grasa, no deja marcas blancas. Acabado imperceptible. Sin perfume. Sin parabenos. Testeados en USA bajo normas FDA-COLIPA",
       "actives": [
+        "FPS 50+",
         "Aceite de Sésamo"
       ],
       "variants": [
@@ -1332,7 +1333,7 @@
       "image": "sesamo.png",
       "apply": "Aplicar la crema antes de salir a la playa o la piscina, y como mínimo 30 minutos antes de exponerse al sol. Extender PROTECTION TIME 50+ sobre la piel bien seca. Utilizar protección solar aunque esté nublado. Reaplicar cuando sea necesario de acuerdo a cada fototipo cutáneo. Se recomienda cada dos horas para mantener la protección, especialmente después de un baño o nadar",
       "lang": "es",
-      "url": "protection_time__aceite_de_ssamo",
+      "url": "protection_time_aceite_de_sesamo",
       "categoryUrl": [
         "proteccion_solar"
       ]
@@ -1343,7 +1344,7 @@
         "Corporales"
       ],
       "desc": "Crema antioxidante corporal, específicamente formulada para proteger a la piel de la acción de los radicales libres",
-      "fullDesc": "Aportando mayor beneficio mediante la protección de la acción solar. Evita el fotoenvejecimiento de la piel. Tonificante, Mejora la hidratación y elasticidad. Piel de seda.",
+      "fullDesc": "Aportando mayor beneficio mediante la protección de la acción solar. Evita el fotoenvejecimiento de la piel. Tonificante, mejora la hidratación y elasticidad. Piel de seda.",
       "actives": [
         "Polifenoles de pepitas de uva",
         "Tocoferol",
@@ -1379,8 +1380,11 @@
         "Corporales"
       ],
       "desc": "",
-      "fullDesc": "",
-      "actives": [],
+      "fullDesc": "Silhouette Perfect Program. Complejo de activación global que ayuda a reducir y disminuir el aspecto visible de la celulitis. Programa intensivo. Para una acción sinérgica perfecta combinar con espuma S.O.S Sculpt",
+      "actives": [
+        "L Carnitina",
+        "Garcinia Cambogia"
+      ],
       "ph": "",
       "variants": [
         {
@@ -1391,7 +1395,7 @@
         }
       ],
       "image": "masajes-dermo-corp.png",
-      "apply": "",
+      "apply": "Aplicar mediante masaje o posterior al ejercicio físico",
       "lang": "es",
       "url": "dermo_corp_crema_de_masajes",
       "categoryUrl": [
@@ -1404,8 +1408,11 @@
         "Corporales"
       ],
       "desc": "",
-      "fullDesc": "",
-      "actives": [],
+      "fullDesc": "Silhouette Slimming Program. Complejo de activación global que ayuda a reducir el tejido adiposo donde más lo necesitas. Programa intensivo Anti angiogénesisanti adipogénesis.",
+      "actives": [
+        "L Carnitina",
+        "Adipoless"
+      ],
       "ph": "",
       "variants": [
         {
@@ -1416,7 +1423,7 @@
         }
       ],
       "image": "masajes-lift-corp.png",
-      "apply": "",
+      "apply": "Aplicar mediante masaje o posterior al ejercicio físico. Para una acción sinérgica perfecta combinar con espuma S.O.S Extreme",
       "lang": "es",
       "url": "lift_corp_crema_de_masajes",
       "categoryUrl": [
@@ -1426,6 +1433,7 @@
     {
       "name": "Espuma ACTIVE 7",
       "category": [
+        "Espumas",
         "Activos Concentrados"
       ],
       "fullDesc": "Espuma corporal, específicamente formulada para potenciar el tratamiento reductor, anticelulítico y tonificante corporal. Ayuda a eliminar el aspecto visible de la celulitis, mejora la tonicidad de los tejidos, disminuye la sensación de piernas cansadas. Reequilibra a la piel en oligoelementos, minerales, aminoácidos y proteínas. Piel más lisa, firme, elástica, suave y luminosa. Puede utilizarse también como apoyo domiciliario",
@@ -1451,16 +1459,18 @@
       "lang": "es",
       "url": "espuma_active_7",
       "categoryUrl": [
+        "espumas",
         "activos_concentrados"
       ]
     },
     {
       "name": "Espuma Strialess",
       "category": [
+        "Espumas",
         "Corporales"
       ],
-      "desc": "",
-      "fullDesc": "Strialess Cell2Cell prevención y corrección, ayuda a reforzar la elasticidad. Renovación celular y flexibilidad. Mejora el aspecto visible de la piel",
+      "desc": "Strialess Cell2Cell prevención y corrección, ayuda a reforzar la elasticidad. Renovación celular y flexibilidad. Mejora el aspecto visible de la piel",
+      "fullDesc": "Complejos activantes que estimulan los factores de crecimiento naturales de la piel y la comunicación célula a célula. Aumenta la producción de colágeno y elastina. Estimulante reparador de la matriz de la piel. ayuda a reforzar la elasticidad. Renovación celular y flexibilidad. Mejorando el aspecto visible de la piel.",
       "actives": [
         "Cell2Cell",
         "DermCom"
@@ -1474,9 +1484,11 @@
         }
       ],
       "image": "strialess.png",
+      "apply": "Aplicar dos veces al día en la zona afectada, o donde se desee prevenir la aparición de estrías mediante un ligero masaje. Puede combinarse con Monodosis Complex AM 40 + Audace Glico Activo.",
       "lang": "es",
       "url": "espuma_strialess",
       "categoryUrl": [
+        "espumas",
         "corporales"
       ]
     },
@@ -1485,11 +1497,12 @@
       "category": [
         "Corporales"
       ],
-      "desc": "",
-      "fullDesc": "Booster shot corporal, programa intensivo. Indicado para ayudar a reducir las acumulaciones grasas, donde mas lo necesitas, procurando el bienestar",
+      "desc": "Booster shot corporal, programa intensivo. Indicado para ayudar a reducir las acumulaciones grasas, donde mas lo necesitas, procurando el bienestar",
+      "fullDesc": "Completo tratamiento de innovadora y efectiva tecnología, que ayuda a tonificar y disminuir el aspecto visible de la celulitis. Indicado para ayudar a reducir las acumulaciones grasas, donde más lo necesitas. Activa la lipólisis, con excelente bio afinidad cutánea",
       "actives": [
         "Adiposlim",
-        "Garcinia Cambogia"
+        "Garcinia Cambogia",
+        "Cafeina"
       ],
       "variants": [
         {
@@ -1500,6 +1513,7 @@
         }
       ],
       "image": "sos-sculpt.png",
+      "apply": " Aplicar por la mañana una vez por día, previo al masaje o antes de realizar ejercicio físico. Para una acción sinérgica perfecta combinar con Crema de Masajes Dermo Corp.",
       "lang": "es",
       "url": "s.o.s_sculpt",
       "categoryUrl": [
@@ -1511,11 +1525,12 @@
       "category": [
         "Corporales"
       ],
-      "desc": "",
-      "fullDesc": "Booster shot corporal. Complejo de activación global que ayuda a reducir y evitar nuevos almacenamientos. Previene y protege",
+      "desc": "Booster shot corporal. Complejo de activación global que ayuda a reducir y evitar nuevos almacenamientos. Previene y protege.",
+      "fullDesc": "Complejo de activación global que ayuda a reducir y evitar nuevos almacenamientos. Previene y Protege. Innovadora formulación rica en Adipoless, café verde, cafeína y cultivos orgánicos de quinoa de Canadá, conformes con estándares internacionales. Anti angiogénesis, anti adipogénesis.",
       "actives": [
         "Adopoless",
-        "Cafe Verde"
+        "Cafe Verde",
+        "Cafeina"
       ],
       "variants": [
         {
@@ -1526,10 +1541,175 @@
         }
       ],
       "image": "sos-extreme.png",
+      "apply": "Aplicar previo al masaje corporal o después de realizar ejercicio físico. Para una acción sinérgica perfecta combinar con Crema de Masajes Lift Corp.",
       "lang": "es",
       "url": "s.o.s_extreme",
       "categoryUrl": [
         "corporales"
+      ]
+    }, {
+      "name": "Coconut Oil",
+      "category": [
+        "Therapy Rituals"
+      ],
+      "desc": "Una edicion limitada, especialmente concebida para el Ritual del masaje relajante.",
+      "fullDesc": "Aceite de coco especificamente seleccionado, que dejara la piel con calido aroma e increiblemente suave",
+      "actives": [
+        "Aceite de Coco"
+      ],
+      "image": "coconut-oil.png",
+      "variants": [
+        {
+          "code": 9000,
+          "content": "150 ml.",
+          "price": 280,
+          "sellPrice": 0
+        }
+      ],
+      "lang": "es",
+      "url": "coconut_oil",
+      "categoryUrl": [
+        "therapy_rituals"
+      ]
+    },
+    {
+      "name": "Sweet Almond Oil",
+      "category": [
+        "Therapy Rituals"
+      ],
+      "desc": "Una edicion limitada, especialmente concebida para el Ritual del masaje de tejido profundo.",
+      "fullDesc": "Una seleccionada simbiosos de patrones de alta efectividad, que brinda los beneficios de las almendras dulces en el manejo de tecnicas avanzadas",
+      "actives": [
+        "Aceite de almendras dulces"
+      ],
+      "image": "sweet-almond-oil.png",
+      "variants": [
+        {
+          "code": 9001,
+          "content": "150 ml.",
+          "price": 270,
+          "sellPrice": 0
+        }
+      ],
+      "lang": "es",
+      "url": "sweet_almond_oil",
+      "categoryUrl": [
+        "therapy_rituals"
+      ]
+    },
+    {
+      "name": "Origins",
+      "category": [
+        "Therapy Rituals"
+      ],
+      "actives": [],
+      "image": "origins.png",
+      "desc": "Coleccion exclusiva, es la oportunidad de encontrar un aroma extraordinario, un camino inspirador intenso que relajara tu mente.",
+      "fullDesc": "Combina el dulce aroma floral del Loto Blanco con las propiedades aromaticas de 20 hierbas curativas para una experiencia unica",
+      "variants": [
+        {
+          "code": 9002,
+          "content": "20 ml.",
+          "price": 280,
+          "sellPrice": 560
+        }
+      ],
+      "lang": "es",
+      "url": "origins",
+      "categoryUrl": [
+        "therapy_rituals"
+      ]
+    },
+    {
+      "name": "Early Spring",
+      "category": [
+        "Therapy Rituals"
+      ],
+      "actives": [],
+      "image": "early-spring.png",
+      "desc": "Coleccion exclusiva, es la oportunidad de encontrar un aroma extraordinario, un camino inspirador que estimulara tus sentidos.",
+      "fullDesc": "Combina el dulce aroma de la flor de Loto Blanco con las propiedades estimulantes del pomelo y la granada para una experiencia unica",
+      "variants": [
+        {
+          "code": 9003,
+          "content": "20ml.",
+          "price": 220,
+          "sellPrice": 440
+        }
+      ],
+      "lang": "es",
+      "url": "early_spring",
+      "categoryUrl": [
+        "therapy_rituals"
+      ]
+    },
+    {
+      "name": "Solstice",
+      "category": [
+        "Therapy Rituals"
+      ],
+      "image": "solstice.png",
+      "actives": [],
+      "desc": "Coleccion exclusiva, es la oportunidad de encontrar un aroma extraordinario, un camino inspirador te ayudara a concentrarte.",
+      "fullDesc": "Combina el aroma de la flor de Loto Blanco con las propiedades calidas de la madera de cedro para una experiencia unica que inspira la meditacion",
+      "variants": [
+        {
+          "code": 9004,
+          "content": "20 ml.",
+          "price": 230,
+          "sellPrice": 460
+        }
+      ],
+      "lang": "es",
+      "url": "solstice",
+      "categoryUrl": [
+        "therapy_rituals"
+      ]
+    },
+    {
+      "name": "Imperial Spices",
+      "category": [
+        "Therapy Rituals"
+      ],
+      "image": "imperial-spices.png",
+      "actives": [],
+      "desc": "Coleccion exclusiva, es la oportunidad de encontrar un aroma extraordinario, un camino inspirador exotico y sensual.",
+      "fullDesc": "Combina el aroma oriental con la delicada flor de Loto Blanco y especias imperiales para una experiencia unica",
+      "variants": [
+        {
+          "code": 9005,
+          "content": "20 ml.",
+          "price": 230,
+          "sellPrice": 460
+        }
+      ],
+      "lang": "es",
+      "url": "imperial_species",
+      "categoryUrl": [
+        "therapy_rituals"
+      ]
+    },
+    {
+      "name": "Select Lavander",
+      "category": [
+        "Therapy Rituals"
+      ],
+      "image": "select-lavender.png",
+      "actives": [],
+      "desc": "Coleccion exclusiva, es la oportunidad de encontrar un aroma extraordinario, un camino inspirador intenso que te ayudara a relajarte y a encontrar la calma.",
+      "fullDesc": "Combina el dulce aroma floral del loto blanco y loto azul con notas de lavanda cuidadosamente seleccionada para una experiencia unica",
+      "variants": [
+        {
+          "code": 9006,
+          "content": "20 ml.",
+          "price": 230,
+          "sellPrice": 460
+        }
+      ],
+      "lang": "es",
+      "url": "select_lavander",
+      "categoryUrl": [
+        "therapy_rituals"
       ]
     }
 ]

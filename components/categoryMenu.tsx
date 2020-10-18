@@ -23,6 +23,9 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
     url: "acido_hialuronico",
     label: "Ácido Hialurónico"
   }, {
+    url: "espumas",
+    label: "Espumas"
+  }, {
     url: "hombres",
     label: "Hombres"
   }, {
@@ -37,6 +40,9 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
   }, {
     url: "corporales",
     label: "Corporales"
+  }, {
+    url: "therapy_rituals",
+    label: "Therapy Rituals"
   }];
 
   const activeCategory = categories.find(cat => cat.url === active);
