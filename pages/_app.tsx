@@ -11,6 +11,7 @@ import 'styles.css';
 const App = ({ Component, pageProps, router }: AppProps) => {
   const layoutContainer = useRef<HTMLDivElement>(null);
   const { meta } = pageProps;
+  const url = process.env.URL;
   useEffect(() => {
     const scrollToTop = (url: string) => {
       if (layoutContainer?.current) {
@@ -49,13 +50,13 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             <meta property="og:url" content={meta.url}></meta>
             <meta property="og:title" content={meta.title}></meta>
             <meta property="og:description" content={meta.description}></meta>
-            <meta property="og:image" content={meta.image}></meta>
+            <meta property="og:image" content={`${url}${meta.image}`}></meta>
     
-            <meta property="twitter:card" content={meta.image}></meta>
+            <meta property="twitter:card" content={`${url}${meta.image}`}></meta>
             <meta property="twitter:url" content={meta.url}></meta>
             <meta property="twitter:title" content={meta.title}></meta>
             <meta property="twitter:description" content={meta.description}></meta>
-            <meta property="twitter:image" content={meta.image}></meta>
+            <meta property="twitter:image" content={`${url}${meta.image}`}></meta>
           </>
         )}
       </Head>
