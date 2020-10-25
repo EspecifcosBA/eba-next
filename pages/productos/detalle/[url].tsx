@@ -198,8 +198,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const meta =  product ? {
     title: product.name,
     description: product.desc,
+    url: `products/${product.url}`,
     image: `products/${product.image}`
-  } : undefined;
+  } : null;
   return {
     props: {
       product,

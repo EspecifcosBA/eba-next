@@ -47,7 +47,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             <meta name="description" content={meta.description}></meta>
     
             <meta property="og:type" content="website"></meta>
-            <meta property="og:url" content={url}></meta>
+            <meta property="og:url" content={meta.url}></meta>
             <meta property="og:title" content={meta.title}></meta>
             <meta property="og:description" content={meta.description}></meta>
             <meta property="og:image" content={`${url}/${meta.image}`}></meta>
