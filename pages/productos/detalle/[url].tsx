@@ -16,82 +16,91 @@ const ProductPage: NextPage<{product: Product, related: Product[]}> = ({ product
   const router = useRouter();
   return (
     <div className="eba-product-page">
-      <div className="mdl-grid">
-        <div className="mdl-cell mdl-cell--12-col">
-          <ul className="eba-breadcrumb">
-            <li>
-              <Link href="/productos">
-                <a>Productos</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/productos/[category]" as={`/productos/${product.categoryUrl[0]}`}>
-                <a>{product.category[0]}</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="mdl-cell mdl-cell--4-col eba-image-list mdl-cell--4-col-phone mdl-cell--8-col-tablet">
-          <Slider>
-            {
-              images.map((image, key) => (
-                <div key={key} className="eba-card-image mdl-card" style={{backgroundImage: `url(/products/${image})`}}>
-                  <div className="mdl-card__title mdl-card--expand"></div>
-                </div>
-              ))
-            }
-          </Slider>
-        </div>
-        <div className="mdl-cell mdl-cell--8-col">
-          <Section size="xsmall">
-            <h3>{product.name}</h3>
-            <p className="product-intro">{product.desc}</p>
-            <div className="product-description">
-              <div>
-                <h4>Aplicación</h4>
-                <p>{ product.apply }</p>
-              </div>
-              <div>
-                <h4>Activos</h4>
-                <p>
-                  {product.actives.map((active, i) => (
-                    <Label color="secondary" key={i}>{active}</Label>
-                  ))}
-                </p>
-              </div>
-            </div>
-          </Section>
-        </div>
-        <div className="product-highlight">
-          <p>
-            {product.fullDesc}
-          </p>
-        </div>
-        <Section size="xsmall">
-          <h4>Productos relacionados</h4>
-          <div className="related-products__list">
-            <Slider maxItemsPerSlide={4}>
+      <div className="eba-product-container">
+
+        <div className="mdl-grid">
+          <div className="mdl-cell mdl-cell--12-col">
+            <ul className="eba-breadcrumb">
+              <li>
+                <Link href="/productos">
+                  <a>Productos</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/productos/[category]" as={`/productos/${product.categoryUrl[0]}`}>
+                  <a>{product.category[0]}</a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="mdl-cell mdl-cell--4-col eba-image-list mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+            <Slider>
               {
-                related.map((product, key) => (
-                  <Card
-                    key={key}
-                    title={product.name}
-                    suppText={product.actives.join(', ')}
-                    img={product.image}
-                    onClick={() => router.push('/productos/detalle/[url]', `/productos/detalle/${product.url}`)}
-                  />
+                images.map((image, key) => (
+                  <div key={key} className="eba-card-image mdl-card" style={{backgroundImage: `url(/products/${image})`}}>
+                    <div className="mdl-card__title mdl-card--expand"></div>
+                  </div>
                 ))
               }
             </Slider>
           </div>
-        </Section>
+          <div className="mdl-cell mdl-cell--8-col">
+            <Section size="xsmall">
+              <h3>{product.name}</h3>
+              <p className="product-intro">{product.desc}</p>
+              <div className="product-description">
+                { product.apply && (
+                  <div>
+                    <h4>Aplicación</h4>
+                    <p>{ product.apply }</p>
+                  </div>
+                )}
+                { product.actives && !!product.actives.length && (
+                  <div>
+                    <h4>Activos</h4>
+                    <p>
+                      {product.actives.map((active, i) => (
+                        <Label color="secondary" key={i}>{active}</Label>
+                      ))}
+                    </p>
+                  </div>
+                )
+                }
+              </div>
+            </Section>
+          </div>
+          <div className="product-highlight">
+            <p>
+              {product.fullDesc}
+            </p>
+          </div>
+        </div>
       </div>
+      <Section size="small" color="muted">
+        <h4>Productos relacionados</h4>
+        <div className="related-products__list">
+          <Slider maxItemsPerSlide={4}>
+            {
+              related.map((product, key) => (
+                <Card
+                  white
+                  key={key}
+                  title={product.name}
+                  suppText={product.actives.join(', ')}
+                  img={product.image}
+                  onClick={() => router.push('/productos/detalle/[url]', `/productos/detalle/${product.url}`)}
+                />
+              ))
+            }
+          </Slider>
+        </div>
+      </Section>
       <style jsx>{`
-
-        .eba-product-page {
-          padding: 0 5rem;
+        .eba-product-container {
+          max-width: 950px;
+          margin: auto;
+          margin-bottom: 2rem;
         }
-
         .eba-breadcrumb {
           display: flex;
           flex-wrap: nowrap;
@@ -153,6 +162,10 @@ const ProductPage: NextPage<{product: Product, related: Product[]}> = ({ product
           text-align: center;
         }
 
+        .related-products {
+          padding: 0 5rem;
+
+        }
         @media screen and (max-width: 769px) {
           .eba-product-page {
             padding: 0rem;

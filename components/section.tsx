@@ -60,6 +60,10 @@ const Section: FunctionComponent<SectionProps> = ({
         .section.section-small {
           padding: 2.5rem 0;
         }
+
+        .section.section-small > .container {
+          padding: 0 4rem;
+        }
         
         .section.section-regular {
           padding: 5rem 0;
@@ -105,6 +109,12 @@ const Section: FunctionComponent<SectionProps> = ({
         @media screen and (max-width: 426px) {
           .section .container {
             padding: 5%;
+          }
+          .section.section-small {
+            padding: 1rem 0;
+          }
+          .section.section-small > .container {
+            padding: 1rem;
           }
         }
 

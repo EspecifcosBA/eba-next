@@ -16,9 +16,10 @@ type CardProps = {
   }[],
   className?: string,
   inert?: boolean,
+  white?: boolean
 }
 
-const Card: FunctionComponent<CardProps> = ({ title, flexCard, img, suppText, onClick, actions, muted, children, className = '', inert }) => {
+const Card: FunctionComponent<CardProps> = ({ title, flexCard, img, suppText, onClick, actions, muted, children, className = '', inert, white }) => {
   const classnames = cx({
     'eba-card': true,
     'mdl-card': true,
@@ -26,6 +27,7 @@ const Card: FunctionComponent<CardProps> = ({ title, flexCard, img, suppText, on
     'mdl-card--muted': muted,
     'mdl-card--extended': !!children,
     'mdl-card--inert': inert,
+    'eba-card--white': white,
     [className]: true
   });
 
@@ -102,6 +104,10 @@ const Card: FunctionComponent<CardProps> = ({ title, flexCard, img, suppText, on
         .eba-card > .mdl-card__media > img {
           object-fit: contain;
           max-width: 100%;
+        }
+
+        .eba-card.eba-card--white > .mdl-card__media {
+          background-color: white;
         }
 
         .eba-card > .mdl-card__title {
