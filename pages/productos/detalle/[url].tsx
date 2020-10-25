@@ -199,7 +199,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     title: product.name,
     description: product.desc,
     url: `/products/${product.url}`,
-    image: `/products/${product.image}`
+    image: `products/${product.image}`
   } : null;
   return {
     props: {
