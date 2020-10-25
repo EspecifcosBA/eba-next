@@ -195,10 +195,16 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const product = (params !== undefined && params.url !== undefined) ? getProductData(params.url) : undefined;
   const related = product ? getRelated(product.url) : [];
 
+  const meta =  product ? {
+    title: product.name,
+    description: product.desc,
+    image: `products/${product.image}`
+  } : undefined;
   return {
     props: {
       product,
-      related
+      related,
+      meta
     }
   }
 }

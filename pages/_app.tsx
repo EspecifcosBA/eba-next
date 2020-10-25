@@ -10,7 +10,8 @@ import 'styles.css';
 
 const App = ({ Component, pageProps, router }: AppProps) => {
   const layoutContainer = useRef<HTMLDivElement>(null);
-
+  const { meta } = pageProps;
+  const url = 'https://especificosba.com.ar/';
   useEffect(() => {
     const scrollToTop = (url: string) => {
       if (layoutContainer?.current) {
@@ -35,10 +36,29 @@ const App = ({ Component, pageProps, router }: AppProps) => {
   return (
     <div className="eba-site">
       <Head>
-        <title>ESPECIFICOS Buenos Aires</title>
+        <title>{meta && `${meta.title} - `} ESPECIFICOS Buenos Aires </title>
         <link href="/material.min.css" rel="stylesheet"></link>
         <link rel="icon" type="image/png" href="/favicon.png"></link>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
+        { meta && (
+          <>
+            <meta name="title" content={meta.title}></meta>
+            <meta name="description" content={meta.description}></meta>
+    
+            <meta property="og:type" content="website"></meta>
+            <meta property="og:url" content={url}></meta>
+            <meta property="og:title" content={meta.title}></meta>
+            <meta property="og:description" content={meta.description}></meta>
+            <meta property="og:image" content={`${url}/${meta.image}`}></meta>
+    
+            <meta property="twitter:card" content={`${url}/${meta.image}`}></meta>
+            <meta property="twitter:url" content={url}></meta>
+            <meta property="twitter:title" content={meta.title}></meta>
+            <meta property="twitter:description" content={meta.description}></meta>
+            <meta property="twitter:image" content={`${url}/${meta.image}`}></meta>
+          </>
+        )}
       </Head>
       <div className="mdl-layout__container" >
         <div className="mdl-layout mdl-layout--fixed-header has-drawer is-upgraded">
