@@ -5,7 +5,6 @@ import { FunctionComponent, useState } from 'react';
 
 import Input from 'components/input';
 import WhatsappIcon from 'components/whatsapp';
-import { head } from 'ramda';
 
 type Inputs = {
   name: string,
@@ -16,11 +15,30 @@ type Inputs = {
 const Contacto: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps>>  = ({ headquarters }) => {
   const { register, handleSubmit, errors, reset } = useForm<Inputs>();
   const onsubmit = (data: Inputs) => {
-    reset();
-    showDialog(true);
-    setTimeout(() => showDialog(false), 5000)
+    const request = new Request('/contact', {method:  'POST', body: JSON.stringify(data)});
+    fetch(request)
+    .then(response => {
+      if (response.ok) {
+        setResponse({
+          message: 'Su mensaje ha sido en viado, nuestro equipo respondera su consulta a la brevedad',
+          show: true,
+          error: false,
+        });
+        reset();
+      } else {
+        setResponse({
+          message: 'Hubo un error al enviar el mensaje. Por favor intente nuevamente. Si el error continua, por favor comuniquese por telefono',
+          show: true,
+          error: true
+        });
+      }
+    });
   };
-  const [dialog, showDialog] = useState(false);
+  const [response, setResponse] = useState({
+    message: 'Su mensaje ha sido en viado, nuestro equipo respondera su consulta a la brevedad',
+    show: false,
+    error: false,
+  });
 
   return (
     <>
@@ -83,9 +101,9 @@ const Contacto: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps>
                   { errors.content && <span className="eba-error">Campo requerido</span>}
                 </Input>
 
-                { dialog && (
-                  <div className="eba-confirmation">
-                    <p>Su mensaje ha sido en viado, nuestro equipo respondera su consulta a la brevedad</p>
+                { response.show && (
+                  <div className={`eba-message ${response.error ? 'eba-error' : 'eba-confirmation'}`}>
+                    <p>{response.message}</p>
                   </div>
                 )}
                 <button className="mdl-button mdl-button--raised mdl-button--accent" type="submit">enviar</button>
@@ -135,15 +153,15 @@ const Contacto: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps>
         .eba-contact__form .mdl-button {
           margin-top: 1rem;
         }
-
+        .eba-contact__form .eba-message {
+          font-weight: 600;
+        }
         .eba-contact__form .eba-error {
           color: var(--errorColor);
-          text-transform: capitalize;
           font-style: italic;
         }
         .eba-contact__form .eba-confirmation {
           color: var(--successColor);
-          font-weight: 600;
         }
 
         @media screen and (max-width: 839px) {
