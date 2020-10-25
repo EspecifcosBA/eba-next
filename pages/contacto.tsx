@@ -4,6 +4,8 @@ import { Distributor, getHeadquarters } from 'lib/distributors';
 import { FunctionComponent, useState } from 'react';
 
 import Input from 'components/input';
+import WhatsappIcon from 'components/whatsapp';
+import { head } from 'ramda';
 
 type Inputs = {
   name: string,
@@ -59,6 +61,7 @@ const Contacto: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps>
                         <li key={key}><a href={`tel:${phone}`}>{phone}</a></li>
                       ))
                     }
+                    {headquarters.whatsapp && (<li><WhatsappIcon phone={headquarters.whatsapp} withText/></li>)}
                   </ul>
                 </div>
               </div>

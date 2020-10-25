@@ -3,8 +3,7 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next';
 
 import { getDistributorsByGroup, ByGroups, getGroups, Group, Distributor, getHeadquarters } from 'lib/distributors';
 
-import Section from 'components/section';
-
+import WhatsappIcon from 'components/whatsapp';
 
 type DistributionListProps = {
   groupName: string,
@@ -37,6 +36,11 @@ const DistributionList: FunctionComponent<DistributionListProps> = ({ groupName,
                   {distributor.address}
                 </span>
               </span>
+              {
+                distributor.whatsapp && (
+                  <div className="mdl-list__item-secondary-action"><WhatsappIcon phone={distributor.whatsapp} /></div>
+                )
+              }
               <a className="mdl-list__item-secondary-action" href={`tel:${distributor.phone[0]}`}><i className="material-icons">call</i></a>
             </li>
             ))
@@ -159,7 +163,12 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
                     <tr key={key}>
                       <td className="mdl-data-table__cell--non-numeric">{distributor.name}</td>
                       <td className="mdl-data-table__cell--non-numeric">{distributor.address}</td>
-                      <td className="mdl-data-table__cell--non-numeric">{distributor.phone.join(', ')}</td>
+                      <td className="mdl-data-table__cell--non-numeric">
+                        {distributor.phone.join(', ')}
+                        {
+                          distributor.whatsapp && <WhatsappIcon phone={distributor.whatsapp} />
+                        }
+                      </td>
                       <td className="mdl-data-table__cell--non-numeric">{distributor.place}</td>
                       <td className="mdl-data-table__cell--non-numeric">{distributor.province}</td>
                       { active === 'internacional' ? (

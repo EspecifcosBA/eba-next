@@ -13,6 +13,7 @@ export type Distributor = {
   name: string;
   address: string;
   phone: string[];
+  whatsapp?: string;
 };
 
 export type ByGroups = {
