@@ -7,7 +7,7 @@ export default function Custom404() {
         <section>
           <h5>404<br/>Página no encontrada</h5>
           <p>Parece que la página que está intentando acceder no existe, revise la dirección ingresada e intente nuevamente</p>
-          <Link href='/'>Volver al inicio</Link>
+          <Link href='/'><a>Volver al inicio</a></Link>
         </section>
       </div>
       <style jsx>{`
