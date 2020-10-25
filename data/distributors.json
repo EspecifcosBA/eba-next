@@ -12,428 +12,485 @@
     ]
   },
   {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Capital Federal",
-    "place": "Barrio Norte",
-    "name": "Barrio Norte",
-    "address": "Av Santa Fe 2861",
+    "name": "GM aromas para tu Piel",
+    "address": "",
+    "place": "San Martín de Los Andes",
+    "province": "Neuquen",
+    "country": "Argentina",
+    "email": "esteticagm2014@hotmail.com",
     "phone": [
-      "01148215227"
-    ]
+      "2972432587"
+    ],
+    "whatsapp": "",
+    "group": "interior del pais"
   },
   {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Capital Federal",
-    "place": "Belgrano",
-    "name": "NUCLEA",
-    "address": "Ciudad de la Paz 2985",
-    "phone": [
-      "01145442202"
-    ]
-  },
-  {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Capital Federal",
-    "place": "Recoleta",
     "name": "Quantum",
     "address": "Arenales 1942 - 1° B",
+    "place": "Recoleta",
+    "province": "CABA",
+    "country": "Argentina",
+    "email": "distribuidora@quantumbelleza.com.ar",
     "phone": [
-      "53093204"
-    ]
+      "5309-3204"
+    ],
+    "whatsapp": "+54 9 11 5239-0691",
+    "group": "capital federal y GBA"
   },
   {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Capital Federal",
-    "place": "Villa Urquiza",
+    "name": "Nuclea",
+    "address": "Ciudad de la paz 2985",
+    "place": "Belgrano",
+    "province": "CABA",
+    "country": "Argentina",
+    "email": "nuclea@gmail.com",
+    "phone": [
+      "4544 2202"
+    ],
+    "whatsapp": "+5491163634577",
+    "group": "capital federal y GBA"
+  },
+  {
     "name": "Peeling",
-    "address": "Av Monroe 5244 1°piso",
+    "address": "Av. Monroe 5244 1°piso",
+    "place": "Villa Urquiza",
+    "province": "CABA",
+    "country": "Argentina",
+    "email": "distripeeling@gmail.com",
     "phone": [
-      "01145210986"
-    ]
+      "4521-0986"
+    ],
+    "whatsapp": "011 15-6792-1417",
+    "group": "capital federal y GBA"
   },
   {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Buenos Aires",
-    "place": "Ciudadela",
     "name": "Alta Cosmética",
     "address": "Santa Juana de Arco 3792",
+    "place": "Ciudadela",
+    "province": "Buenos Aires",
+    "country": "Argentina",
+    "email": "altacosmetica@hotmail.com",
     "phone": [
-      "01146531659"
-    ]
+      "4653-1659"
+    ],
+    "whatsapp": "",
+    "group": "capital federal y GBA"
   },
   {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Buenos Aires",
-    "place": "Escobar",
     "name": "Bellanor",
-    "address": "-",
+    "address": "",
+    "place": "Escobar - Pilar",
+    "province": "Buenos Aires",
+    "country": "Argentina",
+    "email": "marialaura-gutierrez@hotmail.com",
     "phone": [
-      "1530920405"
-    ]
+      ""
+    ],
+    "whatsapp": "+5491530920405",
+    "group": "capital federal y GBA"
   },
   {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Buenos Aires",
-    "place": "Lanús",
-    "name": "Dicosur",
-    "address": "Hipólito Yrigoyen 4615",
-    "phone": [
-      "01142491923"
-    ]
-  },
-  {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Buenos Aires",
-    "place": "Lomas de Zamora",
     "name": "Dicosur",
     "address": "Laprida 432 2º",
+    "place": "Lomas de Zamora",
+    "province": "Buenos Aires",
+    "country": "Argentina",
+    "email": "",
     "phone": [
-      "01142928887"
-    ]
+      "42928887"
+    ],
+    "whatsapp": "",
+    "group": "capital federal y GBA"
   },
   {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Buenos Aires",
-    "place": "Morón",
     "name": "Quimey",
-    "address": "Valle 295",
+    "address": "J. J. Valle 295",
+    "place": "Morón",
+    "province": "Buenos Aires",
+    "country": "Argentina",
+    "email": "quimeycosmetica@hotmail.com",
     "phone": [
-      "01146290869"
-    ]
+      "46279409"
+    ],
+    "whatsapp": "+54 9 11 2655-0970",
+    "group": "capital federal y GBA"
   },
   {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Buenos Aires",
-    "place": "Quilmes",
-    "name": "L'Por",
+    "name": "L’Por",
     "address": "Moreno 574",
+    "place": "Quilmes",
+    "province": "Buenos Aires",
+    "country": "Argentina",
+    "email": "cristinaportal2015@gmail.com",
     "phone": [
-      "42537242"
-    ]
+      "4253-7242"
+    ],
+    "whatsapp": "+5491165440795",
+    "group": "capital federal y GBA"
   },
   {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Buenos Aires",
-    "place": "Ramos Mejia",
-    "name": "JEM",
+    "name": "JEM Pro",
     "address": "Rosales 333",
+    "place": "Ramos Mejía",
+    "province": "Buenos Aires",
+    "country": "Argentina",
+    "email": "clientes@jempro.net",
     "phone": [
-      "01144690357",
-      "01146563696"
-    ]
+      "4469-0357"
+    ],
+    "whatsapp": "15 6481-3406",
+    "group": "capital federal y GBA"
   },
   {
-    "group": "capital federal y GBA",
-    "country": "argentina",
-    "province": "Buenos Aires",
+    "name": "Centro Cosmetológico del Norte",
+    "address": "Martin y Omar 129 of. 114",
     "place": "San Isidro",
-    "name": "Ctro.Cosm. Del Norte",
-    "address": "Martin y Omar 129 - Of.114",
-    "phone": [
-      "01147429498"
-    ]
-  },
-  {
-    "group": "capital federal y GBA",
-    "country": "argentina",
     "province": "Buenos Aires",
-    "place": "Villa Ballester",
+    "country": "Argentina",
+    "email": "centro.cosmetologico.sanisidro@gmail.com",
+    "phone": [
+      "4742-9498"
+    ],
+    "whatsapp": "+549 1167827721",
+    "group": ""
+  },
+  {
     "name": "Hugo Daizo",
-    "address": "Independencia 4904",
+    "address": "Independencia 4900",
+    "place": "Villa Ballester",
+    "province": "Buenos Aires",
+    "country": "Argentina",
+    "email": "distribuidorahugodaizo@gmail.com",
     "phone": [
-      "01147680362"
-    ]
+      "4768-0362"
+    ],
+    "whatsapp": "+549 11 6721-6918",
+    "group": "capital federal y GBA"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Tierra del Fuego",
-    "place": "Rio Grande",
     "name": "Graciela Busto",
-    "address": "Don Bosco 745",
+    "address": "Don Bosco 745. Barrio Centro",
+    "place": "Río Grande",
+    "province": "Ushuaia",
+    "country": "Argentina",
+    "email": "bustogracemk@gmail.com",
     "phone": [
-      "02964 15521556"
-    ]
+      ""
+    ],
+    "whatsapp": "+54 9 2964 52-1556",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Tierra del Fuego",
-    "place": "Ushuaia",
     "name": "DEA",
-    "address": "Isla año nuevo, Tira 1, Dpto 14",
+    "address": "Isla año nuevo Tira 1 Dpto 14",
+    "place": "Tierra del Fuego",
+    "province": "Ushuaia",
+    "country": "Argentina",
+    "email": "perataq@hotmail.com",
     "phone": [
-      "0290115406682",
       "02901445696"
-    ]
+    ],
+    "whatsapp": "0290115406682",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Santiago del Estero",
-    "place": "La Banda",
     "name": "Marisa Nediani",
-    "address": "-",
+    "address": "Chaco 467",
+    "place": "Santiago del Estero",
+    "province": "Santiago del Estero",
+    "country": "Argentina",
+    "email": "marisanediani@live.com",
     "phone": [
-      "0385-4271885"
-    ]
+      ""
+    ],
+    "whatsapp": "+5493854765900",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Santa Fé",
-    "place": "Cañada de Gomez",
-    "name": "Marisa Maldonado",
-    "address": "-",
-    "phone": [
-      "03471-15687456"
-    ]
-  },
-  {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Santa Fé",
+    "name": "Kio’s",
+    "address": "",
     "place": "Rosario",
-    "name": "Kio's",
-    "address": "-",
+    "province": "Santa Fe",
+    "country": "Argentina",
+    "email": "",
     "phone": [
-      "03402493023"
-    ]
+      "03402 493023"
+    ],
+    "whatsapp": "",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Santa Fé",
+    "name": "Kore",
+    "address": "San Lorenzo 3108",
     "place": "Santa Fé",
-    "name": "Koré",
-    "address": "Catamarca 3033",
+    "province": "Santa Fé",
+    "country": "Argentina",
+    "email": "koresantafe@gmail.com",
     "phone": [
-      "03424524653"
-    ]
+      "0342 4524653"
+    ],
+    "whatsapp": "+54 9 3426987883",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Salta",
-    "place": "Salta",
+    "name": "Kore",
+    "address": "Andrés Pazos 694",
+    "place": "Paraná",
+    "province": "Entre Ríos",
+    "country": "Argentina",
+    "email": "koresantafe@gmail.com",
+    "phone": [
+      ""
+    ],
+    "whatsapp": "+54 9 3436 21-8869",
+    "group": "interior del pais"
+  },
+  {
     "name": "Mirta Causarano",
     "address": "Caseros 1353 of. 3",
+    "place": "",
+    "province": "Salta",
+    "country": "Argentina",
+    "email": "",
     "phone": [
-      "03874217319",
-      "4960844"
-    ]
+      "0387 4217319"
+    ],
+    "whatsapp": "",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Río Negro",
-    "place": "Villa Regina",
     "name": "Carina Paravano",
-    "address": "-",
+    "address": "",
+    "place": "Villa Regina",
+    "province": "Río Negro",
+    "country": "Argentina",
+    "email": "carinaparavanoestetica@hotmail.com",
     "phone": [
-      "0298-4465837"
-    ]
+      ""
+    ],
+    "whatsapp": "+54 9 298 458-1691",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Neuquén",
-    "place": "Neuquén",
     "name": "Ruby Suhr",
-    "address": "Olascoaga 1190",
+    "address": "Av. Cnel. Olascoaga 1190",
+    "place": "Neuquén",
+    "province": "Neuquén",
+    "country": "Argentina",
+    "email": "ruby-suhr@speedy.com.ar",
     "phone": [
       "02994425925"
-    ]
+    ],
+    "whatsapp": "",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Neuquen",
-    "place": "San Martin de los Andes",
-    "name": "Mariela Garea",
-    "address": "-",
-    "phone": [
-      "02972437736"
-    ]
-  },
-  {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Misiones",
-    "place": "Obera",
     "name": "Punto Guapa",
-    "address": "Cordoba 235",
+    "address": "Córdoba 235",
+    "place": "Oberá",
+    "province": "Misiones",
+    "country": "Argentina",
+    "email": "puntoguapa@hotmail.com",
     "phone": [
-      ""
-    ]
+      "03755 42-2811"
+    ],
+    "whatsapp": "+54 3755 67-1202",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Mendoza",
-    "place": "Godoy Cruz",
     "name": "Mariana Catani",
-    "address": "Derqui 13 dto.1",
+    "address": "Derqui 13 1º",
+    "place": "Godoy Cruz",
+    "province": "Mendoza",
+    "country": "Argentina",
+    "email": "",
     "phone": [
-      "02614245948",
-      "155024133 "
-    ]
+      "02614245948"
+    ],
+    "whatsapp": "+54 9 2615 02-4133",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "La Pampa",
-    "place": "Santa Rosa",
     "name": "Graciela Piatti",
-    "address": "Villegas 253",
-    "phone": [
-      "02954422480"
-    ]
-  },
-  {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "La Pampa",
+    "address": "J.V.Gonzales 324",
     "place": "Santa Rosa",
+    "province": "La Pampa",
+    "country": "Argentina",
+    "email": "gracielapiatti@hotmail.com",
+    "phone": [
+      "02954 33-0908"
+    ],
+    "whatsapp": "02954 33-0908",
+    "group": "interior del pais"
+  },
+  {
     "name": "Silvina Andragnez",
-    "address": "-",
-    "phone": [
-      "02954563083"
-    ]
-  },
-  {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Entre Rios",
-    "place": "Concordia",
-    "name": "Biodermia",
-    "address": "A. del Valle 189 \"B\"",
-    "phone": [
-      "03454230793"
-    ]
-  },
-  {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Entre Rios",
-    "place": "Paraná",
-    "name": "Rosa Schaffner",
-    "address": "Salta 131",
-    "phone": [
-      "03434225191"
-    ]
-  },
-  {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Cordoba",
-    "place": "Ciudad de Cordoba",
-    "name": "Jaden",
-    "address": "San Jeronimo 167, 3ro F",
-    "phone": [
-      "03514235359",
-      "0351153161561"
-    ]
-  },
-  {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Córdoba",
-    "place": "Córdoba",
-    "name": "Nené Molina",
-    "address": "San Martín 70 (Galeria). 2do Piso, Local 77",
-    "phone": [
-      "03514210185"
-    ]
-  },
-  {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Chubut",
-    "place": "Comodoro Rivadavia",
-    "name": "Adriana Camaño",
-    "address": "13 de Diciembre 315",
-    "phone": [
-      "0297154256835"
-    ]
-  },
-  {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Chubut",
-    "place": "Comodoro rivadavia",
-    "name": "Bella estetica",
-    "address": "Santa cruz 420",
+    "address": "",
+    "place": "Santa Rosa",
+    "province": "La Pampa",
+    "country": "Argentina",
+    "email": "silsuand@hotmail.com",
     "phone": [
       ""
-    ]
+    ],
+    "whatsapp": "+54 9 2954 59-5681",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
+    "name": "Biodermia",
+    "address": "A. del Valle 189 B",
+    "place": "Concordia",
+    "province": "Entre Ríos",
+    "country": "Argentina",
+    "email": "",
+    "phone": [
+      "0345 423-0793"
+    ],
+    "whatsapp": "+54 9 3456 26-3168",
+    "group": "interior del pais"
+  },
+  {
+    "name": "Jaden",
+    "address": "Galería San Michelle San Jerónimo 167",
+    "place": "Córdoba",
+    "province": "Córdoba",
+    "country": "Argentina",
+    "email": "",
+    "phone": [
+      ""
+    ],
+    "whatsapp": "+54 9 3513 16-1561",
+    "group": "interior del pais"
+  },
+  {
+    "name": "Nené Molina",
+    "address": "San Martín 70 2º Piso Oficina 77. Galería Comercial",
+    "place": "Córdoba",
+    "province": "Córdoba",
+    "country": "Argentina",
+    "email": "nenemolinamultidistibuidora@hotmail.com",
+    "phone": [
+      ""
+    ],
+    "whatsapp": "+54 351 769-3693",
+    "group": "interior del pais"
+  },
+  {
+    "name": "Adriana Camaño",
+    "address": "Av. 13 de Diciembre 315",
+    "place": "Comodoro Rivadavía",
     "province": "Chubut",
-    "place": "Puerto Madryn",
+    "country": "Argentina",
+    "email": "acbellezaintegral@gmail.com",
+    "phone": [
+      ""
+    ],
+    "whatsapp": "+54 9 297 416-1594",
+    "group": "interior del pais"
+  },
+  {
     "name": "Esencia Boutique",
     "address": "Juan Muzzio y Juan de la Piedra 505",
+    "place": "Puerto Madryn",
+    "province": "Chubut",
+    "country": "Argentina",
+    "email": "adriana.garcia.cc@gmail.com",
     "phone": [
-      "1550528067"
-    ]
+      "2804656272"
+    ],
+    "whatsapp": "+549 1150528067",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Buenos Aires",
+    "name": "Celia Aguilera",
+    "address": "E. Gonzalez 1327",
     "place": "Bahía Blanca",
-    "name": "Celia Aguilera ",
-    "address": "E. Gonzalez 1327 ",
+    "province": "Buenos Aires",
+    "country": "Argentina",
+    "email": "celia-aguilera@hotmail.com",
     "phone": [
       "02914883089"
-    ]
+    ],
+    "whatsapp": "",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Buenos Aires",
-    "place": "Mar del Plata",
     "name": "Eurosur",
-    "address": "Sgo. del Estero 3402",
+    "address": "Santiago del Estero 3402",
+    "place": "Mar de Plata",
+    "province": "Buenos Aires",
+    "country": "Argentina",
+    "email": "info@eurosurcosmetica.com.ar",
     "phone": [
-      "02234925556"
-    ]
+      "0223 492-5556"
+    ],
+    "whatsapp": "+54 223 604-4694",
+    "group": "interior del pais"
   },
   {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Buenos Aires",
-    "place": "San Nicolás",
-    "name": "Liliana Zanello",
-    "address": "-",
-    "phone": [
-      "03461461576",
-      "0346115522558"
-    ]
-  },
-  {
-    "group": "interior del pais",
-    "country": "argentina",
-    "province": "Buenos Aires",
+    "name": "Eurosur",
+    "address": "Rodriguez 999",
     "place": "Tandil",
-    "name": "Eurosur Tandil",
-    "address": "RODRGUEZ 999",
+    "province": "Buenos Aires",
+    "country": "Argentina",
+    "email": "info@eurosurcosmetica.com.ar",
     "phone": [
-      "02494444000"
-    ]
+      "0249 444-4000"
+    ],
+    "whatsapp": "+54 223 604-4694",
+    "group": "interior del pais"
+  },
+  {
+    "name": "Marcela Zelaya",
+    "address": "Zuviría 417",
+    "place": "",
+    "province": "Salta",
+    "country": "Argentina",
+    "email": "escuelamz@hotmail.com",
+    "phone": [
+      "0387 412-8581"
+    ],
+    "whatsapp": "+54 387 684-1316",
+    "group": ""
+  },
+  {
+    "name": "Liliana Zanello",
+    "address": "",
+    "place": "San Nicolás de los Arroyos",
+    "province": "Buenos Aires",
+    "country": "Argentina",
+    "email": "lilianazanello@hotmail.com",
+    "phone": [
+      "0336 452-2558"
+    ],
+    "whatsapp": "",
+    "group": "interior del pais"
+  },
+  {
+    "name": "CrioLife",
+    "address": "Castelli 83",
+    "place": "Venado Tuerto",
+    "province": "Santa Fe",
+    "country": "Argentina",
+    "email": "criolife.org@gmail.com",
+    "phone": [
+      "3462-390244"
+    ],
+    "whatsapp": "",
+    "group": "interior del pais"
+  },
+  {
+    "name": "Actualizaciones Estéticas",
+    "address": "Tinogasta 3168 1ºD",
+    "place": "Villa del Parque",
+    "province": "CABA",
+    "country": "Argentina",
+    "email": "actualizacionesesteticas@gmail.com",
+    "phone": [
+      "5711-5221"
+    ],
+    "whatsapp": "+5491162512906",
+    "group": "capital federal y GBA"
   },
   {
     "group": "internacional",
@@ -468,4 +525,4 @@
       "59372886258"
     ]
   }
-] 
+]
