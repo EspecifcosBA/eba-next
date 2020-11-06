@@ -2,7 +2,7 @@ import { FunctionComponent, CSSProperties } from 'react';
 
 type SectionProps = {
   color?: 'default' | 'muted' | 'primary' | 'secondary',
-  size?: 'xsmall' | 'small' | 'large' | 'xlarge' | 'remove-vertical',
+  size?: 'xsmall' | 'small' | 'default' | 'large' | 'xlarge' | 'remove-vertical',
   tag?: 'section' | 'div'
   className?: string,
   id?: string,
@@ -46,7 +46,13 @@ const Section: FunctionComponent<SectionProps> = ({
         .section .container {
           padding: 5rem;
           width: 100%;
+          max-width: 900px;
+          margin: auto;
           box-sizing: border-box;
+        }
+
+        .section.section-default {
+          padding: 1.5rem;
         }
 
         .section.section-xsmall {

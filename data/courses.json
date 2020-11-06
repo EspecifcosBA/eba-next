@@ -1,76 +1,120 @@
 [{
-  "name": "Cosmiatría Específica",
-  "duration": "anual",
+  "id": "cosmiatria-especifica",
+  "name": "Cosmiatría Específica Interdisciplinaria",
+  "duration": "Diplomado Anual",
   "type": "presencial y a distancia",
-  "time": "10:00hs a 13:00hs (GMT -3)",
-  "day": "martes",
+  "periods": [{
+    "startDay": "Martes 19 de Enero 2021",
+    "time": "14:00hs a 16:00hs (GMT -3)",
+    "type": "a distancia"
+  }, {
+    "startDay": "Martes 16 de Marzo 2021",
+    "time": "10:00hs a 13:00hs (GMT -3)",
+    "type": "presencial y a distancia"
+  }, {
+    "startDay": "Martes 8 de Junio 2021",
+    "time": "16:00hs a 18:00hs (GMT -3)",
+    "type": "a distancia"
+  }],
   "requirements": "ser cosmetóloga o profesional de la estética",
   "certificates": [
     "ESPECIFICOS Buenos Aires Desarrollo Cosmético SRL",
-    "Academia Iberoamericana de Medicina Biológica y Odontoestomatología",
+    "Hospital de Clínicas José de San Martín",
     "Federación Argentina de Cosmetología y Estética"
   ],
   "location": "Casa ESPECIFICOS Buenos Aires, Leopoldo Marechal 314, Caballito - CABA",
-  "description": "Cosmiatría es la ciencia que comprende la atención cosmética de la piel sana o enferma. La capacitación anual 'Cosmiatría Específica' tiene como objetivo dar soluciones a las distintas desviaciones de la piel, a través de tratamientos y asesoría con un enfoque cosmiátrico específico, que respete las expectativas individuales, en un marco de interrelación disciplinaria. Les brindaremos aquí a las profesionales, un espacio para introducirse en el profundo estudio de la piel, aprender y responder a esas preguntas que nunca tuvieron la oportunidad de hacer. Estudiarán opciones de tratamiento con una mirada específica, científica y técnica, abarcando desde hábitos  que favorecen  los procesos anti-envejecimiento, hasta una amplia gama de tratamientos que permiten adaptarse a las necesidades y expectativas de cada paciente, para cada instancia en particular. Siempre basado en estudios científicos que avalen las diferentes terapéuticas a seguir."
+  "description": "Cosmiatría es la ciencia que comprende la atención cosmética de la piel sana o enferma. La capacitación anual 'Cosmiatría Específica Interdisciplinaria' tiene como objetivo dar soluciones a las distintas desviaciones de la piel, a través de tratamientos y asesoría con un enfoque cosmiátrico específico, que respete las expectativas individuales, en un marco de interrelación disciplinaria. Les brindaremos aquí a las profesionales, un espacio para introducirse en el profundo estudio de la piel, aprender y responder a esas preguntas que nunca tuvieron la oportunidad de hacer. Estudiarán opciones de tratamiento con una mirada específica, científica y técnica, abarcando desde hábitos  que favorecen  los procesos anti-envejecimiento, hasta una amplia gama de tratamientos que permiten adaptarse a las necesidades y expectativas de cada paciente, para cada instancia en particular. Siempre basado en estudios científicos que avalen las diferentes terapéuticas a seguir."
 }, {
   "name": "Dermatocosmiatría",
   "duration": "anual",
   "type": "presencial y a distancia",
-  "time":"10:00hs a 13:00hs (GMT -3)",
-  "day":  "lunes",
-  "requirements": "ser cosmetóloga o profesional de la estética",
+  "periods": [{
+    "startDay": "Lunes 18 de Enero 2021",
+    "time": "14:00hs a 16:00hs (GMT -3)",
+    "type": "a distancia"
+  }, {
+    "startDay": "Lunes 15 de Marzo 2021",
+    "time": "10:00hs a 13:00hs (GMT -3)",
+    "type": "presencial y a distancia"
+  }, {
+    "startDay": "Lunes 7 de Junio 2021",
+    "time": "16:00hs a 18:00hs (GMT -3)",
+    "type": "a distancia"
+  }],
+  "requirements": "ser ser profesional de la estética, Cosmiatra",
   "certificates": [
     "Hospital de Clínicas José de San Martín de la Universidad de Buenos Aires",
-    "División Cirugía Plástica del Hospital de Clínicas José de San Martín",
-    "Academia Iberoamericana de Medicina Biológica y Odontoestomatología",
+    "Hospital de Clínicas José de San Martín",
+    "Federación Argentina de Cosmetología y Estética",
     "ESPECIFICOS Buenos Aires Desarrollo Cosmético SRL"
   ],
   "location": "Casa ESPECIFICOS Buenos Aires, Leopoldo Marechal 314, Caballito - CABA",
-  "description": "La dermatocosmiatría, es una disciplina requerida, a la altura de la evolución tecnológica que existe actualmente, los progresos realizados en Medicina en las últimas décadas, trajeron aparejados los avances en el conocimiento de las múltiples funciones del órgano cutáneo, participante del equilibrio funcional del organismo. Asimismo, el interés en ella pasó a ocupar, no sólo los aspectos clínicos y biológicos sino también los aspectos estéticos de las diferentes dermatosis. La acción medioambiental, la exposición al sol inadecuada, la vida al aire libre y su acción en la piel, las exigencias de la vida actual, dieron motivo al desarrollo técnicas que ayudan al bienestar general y a la necesidad humana de verse y sentirse bien, maximizando la protección. Es por ello fundamental, la formación de profesionales capacitados para desempeñarse en el área dermatocosmiátrica, que colaboren con el médico dermatólogo, médico especialista en medicina estética y cirujano plástico en el empleo de técnicas complementarias. Esto es posible mediante el establecimiento y aplicación de programas de actualización con formación específica, científica y técnica."
+  "description": "La dermatocosmiatría, es una disciplina requerida, a la altura de la evolución tecnológica que existe actualmente, los progresos realizados en Medicina en las últimas décadas, trajeron aparejados los avances en el conocimiento de las múltiples funciones del órgano cutáneo, participante del equilibrio funcional del organismo. Asimismo, el interés en ella pasó a ocupar, no sólo los aspectos clínicos y biológicos sino también los aspectos estéticos de las diferentes dermatosis. La acción medioambiental, la exposición al sol inadecuada, la vida al aire libre y su acción en la piel, las exigencias de la vida actual, dieron motivo al desarrollo técnicas que ayudan al bienestar general y a la necesidad humana de verse y sentirse bien, maximizando la protección. Es por ello fundamental, la formación de profesionales capacitados para desempeñarse en el área dermatocosmiátrica, que colaboren con el médico dermatólogo, médico especialista en medicina estética y cirujano plástico en el empleo de técnicas complementarias. Esto es posible mediante el establecimiento y aplicación de programas de actualización con formación específica, científica y técnica. Prevención de factores Indoor, epigenéticos y el exposoma, en sinergia con técnicas especializadas."
 }, {
   "name": "Auxiliar en cirugía plástica",
   "duration": "anual",
   "type": "presencial y a distancia",
-  "time": "10:00hs a 13:00hs (GMT -3)",
-  "day": "miercoles",
+  "periods": [{
+    "startDay": "Miércoles 17 de Marzo 2021",
+    "time": "10:00hs a 13:00hs (GMT -3)",
+    "type": "presencial y a distancia"
+  }],
   "requirements": "ser cosmetóloga o profesional de la estética",
   "certificates": [
     "Hospital de Clínicas José de San Martín de la Universidad de Buenos Aires",
-    "División Cirugía Plástica del Hospital de Clínicas José de San Martín",
     "ESPECIFICOS Buenos Aires Desarrollo Cosmético SRL",
-    "Academia Iberoamericana de Medicina Biológica y Odontoestomatología",
     "Federación Argentina de Cosmetología y Estética"
   ],
   "location": "Casa ESPECIFICOS Buenos Aires, Leopoldo Marechal 314, Caballito - CABA",
-  "description": "Ésta capacitación cuenta con la participación de los más prestigiosos profesores médicos especialistas en cirugía plástica, especialistas en medicina estética, especialistas en terapias biológicas, dermatocosmiatras y flebólogos, quienes representan a nuestro país en los distintos Congresos Nacionales e Internacionales y apoyan el desarrollo de la capacitación anual. Los alumnos/as  tendrán la posibilidad de recibir la experiencia de los profesores, promoviendo el intercambio de los últimos procedimientos en Dermatocosmiatría, que apoyarán a las diferentes técnicas realizadas en el ámbito de la Medicina Estética y Cirugía Plástica. Se estudiarán todas las técnicas necesarias para realizar un tratamiento idóneo, previo y posterior a cada una de las prácticas médicas. Relacionadas a la Cirugía Plástica y Medicina Estética."
+  "description": "La capacitación cuenta con la participación de prestigiosos profesores, médicos especialistas en cirugía plástica, especialistas en medicina estética, especialistas en terapias biológicas, Kinesiólogos, dermatocosmiatras, quienes apoyan el desarrollo de la capacitación anual. Los alumnos/as  tendrán la posibilidad de recibir la experiencia de los profesores, promoviendo el intercambio de los últimos procedimientos, que apoyarán a las diferentes técnicas realizadas en el ámbito de la Medicina Estética y Cirugía Plástica. Se estudiarán todas las técnicas necesarias para realizar un tratamiento idóneo, previo y posterior a cada una de las prácticas médicas. Relacionadas a la Cirugía Plástica y Medicina Estética."
 }, {
   "name": "Drenaje Linfático Manual",
   "duration": "14 clases",
   "type": "presencial",
-  "day": "martes",
+  "periods": [{
+    "startDay": "Miércoles 15 de Abril 2021",
+    "time": "14:00hs a 17:00hs (GMT -3)",
+    "type": "presencial"
+  }],
   "time": "14:00hs a 17:00hs (GMT -3)",
   "requirements": "ser cosmetóloga o profesional de la estética",
   "location": "Casa ESPECIFICOS Buenos Aires, Leopoldo Marechal 314, Caballito - CABA",
   "description": "El Drenaje Linfático Manual, es una técnica fundamental para el trabajo sobre el tejido conectivo, con éxito terapéutico reconocido. Siendo, el conocimiento de  la anatomía, la fisiología del sistema linfático y la concentración, herramientas fundamentales para efectuar correctamente este masaje especializado, en forma comprometida con el bienestar del paciente."
 }, {
-  "name": "Quiromasaje",
-  "duration": "4 meses",
-  "type": "presencial",
-  "time": "14:00hs a 17:00hs (GMT -3)",
-  "requirements":"ser cosmetóloga o profesional de la estética",
-  "location": "Casa ESPECIFICOS Buenos Aires, Leopoldo Marechal 314, Caballito - CABA",
-  "description": "Se conoce como quiromasaje al masaje desarrollado manualmente como parte de una terapia. Sintéticamente podríamos definirlo, en dos palabras: Técnica y Sensibilidad con un fin terapéutico. El quiromasaje reúne una serie de técnicas especializadas, que tienen como objetivo principal relajar la musculatura, ya sea por falta de tonicidad, por tensiones, por estrés o dolores. El masaje se aplica directamente sobre la piel y se transmite a los diferentes órganos y tejidos del cuerpo, a través de la presión mecánica de las manos, fricciones, presiones, percusiones, amasamientos y por último estiramientos, dependiendo de la problemática a tratar. Estas técnicas van acompañadas de la utilización de cremas vehiculizadas específicamente, para mejorar la manipulación y el procedimiento del quiromasaje."
-}, {
   "name": "Técnica Especializada en Medicina Estética y Counseling aplicado",
-  "duration": "2 cuatrimestres",
-  "type": "presencial y a distancia",
-  "time": "14:30hs a 17:30hs (GMT -3)",
-  "day": "martes",
+  "duration": "10 meses",
+  "type": "a distancia",
+  "time": "14:00hs a 16:00hs (GMT -3)",
+  "day": "lunes",
   "location":"Casa ESPECIFICOS Buenos Aires, Leopoldo Marechal 314, Caballito - CABA",
   "certificates": [
     "ESPECIFICOS Buenos Aires Desarrollo Cosmético SRL",
     "Academia Iberoamericana de Medicina Biológica y Odontoestomatología",
     "Federación Argentina de Cosmetología y Estética"
   ],
-  "description": "La capacitación consta de dos módulos intensivos orientados a: Tratamientos dermatocosmiátricos avanzados, relacionados a las prácticas médicas, realizadas en el ámbito de la Medicina Estética. El conocimiento práctico del mundo emocional-cognitivo de quienes nos consultan o hacen parte de nuestro mundo de relaciones. Al finalizar la cursada, se podrá diagnosticar un determinado inesteticismo facial o corporal, conociendo los tratamientos de elección, sus límites y escalas terapéuticas progresivas, conocer los aspectos conductuales y emocionales de las conductas humanasc reconocer a las personalidades “problema” en las consultas diarias, las estructuras psicológicas de importancia clínica, nociones sobre Adicciones, trastornos de la conducta alimentaria, manejo del stress, lectura de la información científica, y un conocimiento básico sobre aspectos filosófico-existenciales propios de las distintas etapas de la vida. Conocer y articular los protocolos y conocimientos actuales en Medicina Estética no Quirúrgica, en coordinación científica con las prácticas relacionadas dermatocosmiatricas y realizar tratamientos con técnicas especializadas. Técnica de Fascias. Masaje 3 D. Tratamientos pre y post técnicas mini invasivas."
+  "description": "La capacitación consta de dos módulos intensivos orientados a: Tratamientos dermatocosmiátricos avanzados, relacionados a las prácticas médicas, realizadas en el ámbito de la Medicina Estética. El conocimiento práctico del mundo emocional-cognitivo de quienes nos consultan o hacen parte de nuestro mundo de relaciones. Al finalizar la cursada, se podrá diagnosticar un determinado inesteticismo facial o corporal, conociendo los tratamientos de elección, sus límites y escalas terapéuticas progresivas, conocer los aspectos conductuales y emocionales de las conductas humanas reconocer a las personalidades “problema” en las consultas diarias, las estructuras psicológicas de importancia clínica, nociones sobre Adicciones, trastornos de la conducta alimentaria, manejo del stress, lectura de la información científica, y un conocimiento básico sobre aspectos filosófico-existenciales propios de las distintas etapas de la vida. Conocer y articular los protocolos y conocimientos actuales en Medicina Estética no Quirúrgica, en coordinación científica con las prácticas relacionadas dermatocosmiatricas y realizar tratamientos con técnicas especializadas. Técnica de Fascias. Masaje 3D. Tratamientos pre y post técnicas mini invasivas."
+}, {
+  "name": "Capacitación intensiva Qca. Cosmética y Qca. Biológica Aplicada a Dermatocosmiatría. Módulo I",
+  "duration": "9 clases",
+  "type": "a distancia",
+  "time": "14:00hs (GMT-3)",
+  "day": "martes",
+  "requirements": "ser cosmetóloga, cosmiatra, dermatrocosmiatra o médico",
+  "description": "El objetivo de la capacitación es brindar a profesionales de la estética información actualizada y completa, sobre el estudio de las reacciones biológicas propias de los seres humanos, en interrelación con los productos tópicos aplicados. Conocer las reacciones químicas del organismo humano y cambios en el transcurso de la vida. Se estudiarán reacciones químicas, enzimáticas, átomos y moléculas. Desarrollo de productos, vehículos especializados, como también activos de uso tópico en interrelación con las distintas instancias de la piel. El desarrollo de últimas tecnologías, investigaciones, tendencias y reglamentaciones autorizadas en productos dermatocosmiatricos. Permitiendo comprender y seleccionar dentro de las propuestas del mercado, a través de la lectura de los rótulos de productos y un mejor uso de los mismos.",
+  "certificates": [
+    "ESPECIFICOS Buenos Aires Desarrollo Cosmético SRL",
+    "Federación Argentina de Cosmetología y Estética"
+  ]
+}, {
+  "name": "Química Cosmética Aplicada a Dermatocosmiatría. Módulo II",
+  "duration": "6 clases",
+  "type": "a distancia",
+  "time": "14:00hs (GMT-3)",
+  "day": "martes",
+  "requirements": "ser cosmetóloga, cosmiatra, dermatrocosmiatra o médico",
+  "description": "El envejecimiento cutáneo es un fenómeno complejo, condicionado por la edad, el grado de exposición solar, factores ambientales, la alimentación, factores epigenéticos, el estado hormonal, y distintas patologías. Estudiaremos aquí: - Los avances tecnológicos que permiten conocer y tratar los daños crónicos causados por moléculas de oxígeno reactivas, el envejecimiento cronológico y foto-envejecimiento, la pigmantación, el estrés y la contaminación. - Reacciones bioquímicas de los seres vivos, activos especializados y vehículos de última tecnología. Vectores, Biovectores, Drom. - El papel que tiene el farmacéutico, el médico y la dermatocosmiatra en su abordaje, con la prestación de servicios. La dispensación, indicación y seguimiento dermatocosmiátrico. Así como en su prevención frente factores internos, la luz azul, la polución y el exposoma.",
+  "certificates": [
+    "ESPECIFICOS Buenos Aires Desarrollo Cosmético SRL",
+    "Federación Argentina de Cosmetología y Estética"
+  ]
 }]

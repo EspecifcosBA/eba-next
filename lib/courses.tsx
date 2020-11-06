@@ -10,6 +10,11 @@ export type Course = {
   certificates?: string[],
   requirements?: string,
   day?: string,
+  periods?: {
+    startDay: string,
+    time: string,
+    type: string,
+  }[]
 }
 
 export const getCourses = () => {

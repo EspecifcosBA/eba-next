@@ -18,7 +18,7 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
 
   return (
     <div>
-      <Section img='courses-bg.jpg' position="center" size="large" color="secondary">
+      <Section img='courses-bg.jpg' position="center" size="default" color="secondary">
         <div className="courses-intro">
           <h3>
             Formacion profesional especializada con modalidad presencial y a distancia para las profesionales de habla hispana.
@@ -26,7 +26,7 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
           <Button raised colored onClick={goToPlatform}>Acceder a la plataforma</Button>
         </div>
       </Section>
-      <Section>
+      <Section size="default" style={{boxShadow: '0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12)', zIndex: 10}}>
         <div className="courses-highlights">
           <div>
             <object type="image/svg+xml" data="logos/certificate.svg" className="courses-icon"></object>
@@ -38,50 +38,67 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
           </div>
           <div>
             <object type="image/svg+xml" data="logos/test.svg" className="courses-icon"></object>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Cuestionarios</p>
           </div>
           <div>
             <object type="image/svg+xml" data="logos/watchlater.svg" className="courses-icon"></object>
-            <p>Clase transmitida en vivo en el horario establecido, las clases quedan grabadas y disponibles en la plataforma.</p>
+            <p>Clases y videos disponibles en la plataforma.</p>
           </div>
         </div>
       </Section>
       <section className="courses__list">
-        <div className="mdl-grid">
+        <div className="courses__list__container">
           {
             courses.map((course, key) => (
-              <div className="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--stretch" key={key}>
-                <Card
-                  title={course.name}
-                  actions={[{label: 'solicitar informacion', onClick: moreInfo(course.name)}]}
-                  suppText={`${course.duration} / ${course.type}`}
-                  flexCard
-                  inert
-                >
-                  <div className="courses__list__card">
-                    <p>{course.description}</p>
-                    <dl>
-                      {
-                        course.certificates ? (
-                          <>
-                            <dt>Avales:</dt>
-                            {
-                              course.certificates.map((certificate, key) => (
-                                <dd key={key}>{certificate}</dd>
-                              ))
-                            }
-                          </>
-                      ) : null }
-                      {
-                        course.requirements ? (
-                          <>
-                            <dt>Requisitos previos:</dt>
-                            <dd>{course.requirements}</dd>
-                          </>
-                      ) : null }
-                    </dl>
-                  </div>
-                </Card>
+              <div className="courses__list__card" key={key}>
+                <div className="card__container">
+                  <h3>
+                    {course.name}
+                    <small>
+                      {`${course.duration} / ${course.type}`}
+                    </small>
+                  </h3>
+                  <p>{course.description}</p>
+                  <dl>
+                    {
+                      course.certificates ? (
+                        <>
+                          <dt>Avales:</dt>
+                          {
+                            course.certificates.map((certificate, key) => (
+                              <dd key={key}>{certificate}</dd>
+                            ))
+                          }
+                        </>
+                    ) : null }
+                    {
+                      course.requirements ? (
+                        <>
+                          <dt>Requisitos previos:</dt>
+                          <dd>{course.requirements}</dd>
+                        </>
+                    ) : null }
+                  </dl>
+                  {course.periods && (
+                    <>
+                      <h5>Proximas cursadas</h5>
+                      <div className="course_periods">
+                        {course.periods.map((period, pkey) => (
+                          <div key={pkey} className="course_periods__item">
+                            <ul>
+                              <li>{period.startDay}</li>
+                              <li>{period.time}</li>
+                              <li>{period.type}</li>
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
+                <div className="card__container">
+                  <Button onClick={moreInfo(course.name)}>solicitar informacion</Button>
+                </div>
               </div>
             ))
           }
@@ -89,7 +106,7 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
       </section>
       <style jsx>{`
         .courses-intro {
-          width: 50%;
+          
         }
         .courses-intro h3 {
           font-family: var(--fontDisplay);
@@ -97,7 +114,7 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
 
         .courses-highlights {
           display: flex;
-          align-items: center;
+          align-items: start;
           text-align: center;
           gap: 3rem;
         }
@@ -115,6 +132,30 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
           padding: 5rem;
         }
 
+        .courses__list__container {
+          width: 100%;
+          max-width: 900px;
+          margin: auto;
+        }
+
+        .courses__list__card {
+          border: 1px solid var(--secondaryLightColor);
+          background-color: white;
+          margin-bottom: 2rem;
+          border-radius: 5px;
+        }
+
+        .courses__list__card .card__container {
+          padding: 1rem 3rem;
+        }
+
+        .courses__list__card h5 {      
+          margin-top: 2rem;
+        }
+        .courses__list__card h3 small {
+          display: block;
+        }
+        
         .courses__list__card dl {
           color: var(--secondaryDarkColor);
         }
@@ -127,6 +168,29 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
           margin-left: 1rem;
         }
 
+        .course_periods {
+          display: flex;
+          gap: 1rem;
+          text-align: center;
+          text-transform: capitalize;
+        }
+
+        .course_periods__item {
+          flex: 1 1 33%;       
+          border: 1px solid var(--secondaryLightColor);   
+          border-radius: 5px;
+        }
+
+        .course_periods__item ul {
+          list-style: none;
+          padding: 0 1rem;
+        }
+
+        @media screen and (max-width: 480px) {
+          .courses__list__card .card__container {
+            padding: 1rem;
+          }
+        }
         @media screen and (max-width: 769px) {
           .courses-intro {
             width: 100%;
@@ -138,6 +202,10 @@ const Formacion: FunctionComponent<InferGetStaticPropsType<typeof getStaticProps
 
           .courses__list {
             padding: 2rem 0;
+          }
+
+          .course_periods {
+            flex-direction: column;
           }
         }
       `}</style>
