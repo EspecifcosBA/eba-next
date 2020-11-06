@@ -68,7 +68,7 @@
     "name": "Alta Cosmética",
     "address": "Santa Juana de Arco 3792",
     "place": "Ciudadela",
-    "province": "Buenos Aires",
+    "province": "GBA",
     "country": "Argentina",
     "email": "altacosmetica@hotmail.com",
     "phone": [
@@ -81,7 +81,7 @@
     "name": "Bellanor",
     "address": "",
     "place": "Escobar - Pilar",
-    "province": "Buenos Aires",
+    "province": "GBA",
     "country": "Argentina",
     "email": "marialaura-gutierrez@hotmail.com",
     "phone": [
@@ -94,7 +94,7 @@
     "name": "Dicosur",
     "address": "Laprida 432 2º",
     "place": "Lomas de Zamora",
-    "province": "Buenos Aires",
+    "province": "GBA",
     "country": "Argentina",
     "email": "",
     "phone": [
@@ -107,7 +107,7 @@
     "name": "Quimey",
     "address": "J. J. Valle 295",
     "place": "Morón",
-    "province": "Buenos Aires",
+    "province": "GBA",
     "country": "Argentina",
     "email": "quimeycosmetica@hotmail.com",
     "phone": [
@@ -120,7 +120,7 @@
     "name": "L’Por",
     "address": "Moreno 574",
     "place": "Quilmes",
-    "province": "Buenos Aires",
+    "province": "GBA",
     "country": "Argentina",
     "email": "cristinaportal2015@gmail.com",
     "phone": [
@@ -133,7 +133,7 @@
     "name": "JEM Pro",
     "address": "Rosales 333",
     "place": "Ramos Mejía",
-    "province": "Buenos Aires",
+    "province": "GBA",
     "country": "Argentina",
     "email": "clientes@jempro.net",
     "phone": [
@@ -146,20 +146,20 @@
     "name": "Centro Cosmetológico del Norte",
     "address": "Martin y Omar 129 of. 114",
     "place": "San Isidro",
-    "province": "Buenos Aires",
+    "province": "GBA",
     "country": "Argentina",
     "email": "centro.cosmetologico.sanisidro@gmail.com",
     "phone": [
       "4742-9498"
     ],
     "whatsapp": "5491167827721",
-    "group": ""
+    "group": "capital federal y GBA"
   },
   {
     "name": "Hugo Daizo",
     "address": "Independencia 4900",
     "place": "Villa Ballester",
-    "province": "Buenos Aires",
+    "province": "GBA",
     "country": "Argentina",
     "email": "distribuidorahugodaizo@gmail.com",
     "phone": [

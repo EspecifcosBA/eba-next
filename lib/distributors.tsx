@@ -1,8 +1,14 @@
 import DistributorsData from 'data/distributors.json';
+import { sortWith, prop, ascend } from 'ramda';
 
 export type Group = "capital federal y GBA" | "interior del pais" | "internacional";
 
-const _data = DistributorsData as Distributor[];
+const _data = sortWith([
+  ascend(prop('group')),
+  ascend(prop('country')),
+  ascend(prop('province')),
+  ascend(prop('place'))
+], DistributorsData) as Distributor[];
 const _groups: Group[] = ["capital federal y GBA", "interior del pais", "internacional"];
 
 export type Distributor = {

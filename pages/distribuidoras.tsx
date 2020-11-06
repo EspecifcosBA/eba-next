@@ -147,21 +147,25 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
               <table className="mdl-data-table mdl-shadow--2dp">
                 <thead>
                   <tr>
-                    <th className="mdl-data-table__cell--non-numeric">Distribuidor</th>
-                    <th className="mdl-data-table__cell--non-numeric">Domicilio</th>
-                    <th className="mdl-data-table__cell--non-numeric">Telefono</th>
-                    <th className="mdl-data-table__cell--non-numeric">Localidad</th>
-                    <th className="mdl-data-table__cell--non-numeric">Provincia</th>
                     { active === 'internacional' ? (
                       <th className="mdl-data-table__cell--non-numeric">Pais</th>
                     ) : null }
+                    <th className="mdl-data-table__cell--non-numeric">Provincia</th>
+                    <th className="mdl-data-table__cell--non-numeric">Localidad</th>
+                    <th className="mdl-data-table__cell--non-numeric">Domicilio</th>
+                    <th className="mdl-data-table__cell--non-numeric">Telefono</th>
+                    <th className="mdl-data-table__cell--non-numeric">Distribuidor</th>
                   </tr>
                 </thead>
                 <tbody>
                   {
                     distributors[active].map((distributor, key) => (
                     <tr key={key}>
-                      <td className="mdl-data-table__cell--non-numeric">{distributor.name}</td>
+                      { active === 'internacional' ? (
+                        <td className="mdl-data-table__cell--non-numeric">{distributor.country}</td>
+                      ) : null }
+                      <td className="mdl-data-table__cell--non-numeric">{distributor.province}</td>
+                      <td className="mdl-data-table__cell--non-numeric">{distributor.place}</td>
                       <td className="mdl-data-table__cell--non-numeric">{distributor.address}</td>
                       <td className="mdl-data-table__cell--non-numeric">
                         {distributor.phone.join(', ')}
@@ -169,11 +173,7 @@ const Distribuidoras: FunctionComponent<InferGetStaticPropsType<typeof getStatic
                           distributor.whatsapp && <WhatsappIcon phone={distributor.whatsapp} />
                         }
                       </td>
-                      <td className="mdl-data-table__cell--non-numeric">{distributor.place}</td>
-                      <td className="mdl-data-table__cell--non-numeric">{distributor.province}</td>
-                      { active === 'internacional' ? (
-                        <td className="mdl-data-table__cell--non-numeric">{distributor.country}</td>
-                      ) : null }
+                      <td className="mdl-data-table__cell--non-numeric">{distributor.name}</td>
                     </tr>
                     ))
                   }
