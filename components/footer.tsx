@@ -11,7 +11,7 @@ const Footer: FunctionComponent = () => {
       </div>
       <div className="mdl-mini-footer__right-section">
         <ul className="mdl-mini-footer__link-list">
-          <li><a href="#">Legales</a></li>
+          <li><a href="/qr_DesarrolloCosmetico.pdf" target="_blank">Data Fiscal</a></li>
           <li>
             <Link href="/contacto">
               <a>Contacto</a>
