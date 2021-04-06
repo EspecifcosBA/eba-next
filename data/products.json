@@ -1712,5 +1712,228 @@
       "categoryUrl": [
         "therapy_rituals"
       ]
+    },
+    {
+      "name": "Active Perfect Glow",
+      "category": [
+        "Tónico"
+      ],
+      "image": "active-perfect-glow.png",
+      "actives": [
+        "Vitamina C",
+        "Coenzima Q10",
+        "Filtro luz azul",
+        "Filtro solar"
+      ],
+      "desc": "Protege la barrera cutánea con una combinación enriquecida de activos concentrados - Con filtro de luz azul + filtro solar.",
+      "fullDesc": "Active Perfect Glow, rico en Vitamina C y Coenzima Q10 (Ubiquinona) protege a la piel frente al crono y fotoenvejecimiento. Su estímulo antioxidante refuerza la barrera cutánea. Combina sus propiedades con AntiBlueLight Complex, sinergia de protección frente a la Luz Azul nociva.",
+      "apply": "Luego de la higiene cutánea, por la mañana, por la noche y como protector post peeling de rejuvenecimiento.",
+      "variants": [
+        {
+          "code": 0,
+          "content": "300ml.",
+          "price": 0,
+          "sellPrice": 0
+        }
+      ],
+      "lang": "es",
+      "url": "active_perfect_glow",
+      "categoryUrl": [
+        "tonicos"
+      ]
+    },
+    {
+      "name": "Perfect Lightening Glow",
+      "category": [
+        "Tónico"
+      ],
+      "image": "perfect-lightening-glow.png",
+      "actives": [
+        "AHA Frutales",
+        "Aceite de Palta",
+        "Filtro luz azul"
+      ],
+      "desc": "Equilibrante - Blanqueador - Compensador Pieles secas",
+      "fullDesc": "Ayuda a aclarar la piel y a evitar el efecto rebote post estacional. Combina AHA frutales, con tiamina, riboflavina, niacina y minerales provenientes de la palta con Anti BlueLight Complex. Las propiedades de la Nuez y el Green tea, protegen frente a la luz azul-violeta, siendo además de un complejo blanqueador, humectante, hidratante, una sinergia de protección frente a la luz azul.",
+      "apply": "Aplicar luego de la higiene cutánea, por la mañana, por la noche y como protector post peeling blanqueador.",
+      "variants": [
+        {
+          "code": 10002,
+          "content": "300 ml.",
+          "price": 0,
+          "sellPrice": 0
+        }
+      ],
+      "lang": "es",
+      "url": "perfect_lightening_glow",
+      "categoryUrl": [
+        "tonico"
+      ]
+    },
+    {
+      "name": "Pure Perfect Glow",
+      "category": [
+        "Tónico"
+      ],
+      "image": "pure-perfect-glow.png",
+      "actives": [
+        "Aloe Vera Orgánico",
+        "Vitamina A",
+        "Filtro luz azul"
+      ],
+      "desc": "Equilibrante compensador para pieles grasas",
+      "fullDesc": "Pure Perfect Glow, rico en Aloe Vera Orgánico y Vitamina A equilibra y compensa la piel en biotipos con tendencia oleosa. Combina su acción con Anti BlueLight Complex. El complejo AntiBlueLight combina las propiedades de la nuez y el green tea, logrando una absorción que incluye la luz azul-violeta, siendo además un complejo vegetal, humectante, hidratante. Sinergia de protección frente a la luz azul nociva. Ayuda a equilibrar la microbiota cutánea.",
+      "apply": "Aplicar luego de la higiene cutánea, por la mañana, por la noche y como protector post peeling equilibrante.",
+      "variants": [
+        {
+          "code": 10003,
+          "content": "300 ml.",
+          "price": 0,
+          "sellPrice": 0
+        }
+      ],
+      "lang": "es",
+      "url": "pure_perfect_glow",
+      "categoryUrl": [
+        "tonico"
+      ]
+    },
+    {
+      "name": "Perfect Glow CICA",
+      "category": [
+        "Tónico"
+      ],
+      "image": "perfect-glow-cica.png",
+      "actives": [
+        "Rosa Mosqueta",
+        "Centella Asiática",
+        "Filtro luz azul"
+      ],
+      "desc": "Recuperador celular inteligente",
+      "fullDesc": "Perfect Glow - CICA, rico en Rosa Mosqueta y Centella Asiática, complejo recuperador celular inteligente. Revitaliza la piel, rejuvenece, refuerza la barrera cutánea, ilumina. Combina su acción con Anti BlueLight Complex, para una mejor protección frente a la Luz Azul.",
+      "apply": "Aplicar luego de la higiene cutánea, por la mañana, por la noche y como protector post peeling de rejuvenecimiento y estrías.",
+      "variants": [
+        {
+          "code": 10004,
+          "content": "300 ml.",
+          "price": 0,
+          "sellPrice": 0
+        }
+      ],
+      "lang": "es",
+      "url": "perfect_glow_cica",
+      "categoryUrl": [
+        "tonico"
+      ]
+    },
+    {
+      "name": "Perfect Glow Night",
+      "category": [
+        "Tónico"
+      ],
+      "image": "perfect-glow-night.png",
+      "actives": [
+        "Orquidea",
+        "Oligoelementos",
+        "Silicio",
+        "Gluconolactona",
+        "Filtro luz azul"
+      ],
+      "desc": "Equilibrante - Remineralizante Hidratante",
+      "fullDesc": "Perfect Night Glow, rico en Orquidea, Oligoelementos, Silicio y Gluconolactona protege a la piel frente a la acción medioambiental. La orquídea posee una molécula de longevidad que aumenta la resistencia natural de las células, actuando sobre la piel como anti-inflammaging. Estimula la comunicación celular y la resiliencia. Rejuvenece, equilibra, remineraliza, hidrata, compensa. Reparador nocturno",
+      "apply": "Aplicar luego de la higiene cutánea, por la noche y como protector post peeling.",
+      "variants": [
+        {
+          "code": 10005,
+          "content": "300 ml.",
+          "price": 0,
+          "sellPrice": 0
+        }
+      ],
+      "lang": "es",
+      "url": "perfect_glow_night",
+      "categoryUrl": [
+        "tonico"
+      ]
+    },
+    {
+      "name": "Micellar Water 30+",
+      "category": [
+        "Micellar Water"
+      ],
+      "image": "micellar-30.png",
+      "actives": [
+        "Gluconolactona"
+      ],
+      "desc": "Gluconolactona. Pieles maduras",
+      "fullDesc": "Micellar Water 30+ na el maquillaje e impurezas propias de la piel y polución. Inicia el proceso de hidratación profunda. Rica en Gluconolactona. Rostro equilibrado, limpio y luminoso. Indicado para higiene de piel en rejuvenecimiento facial.",
+      "apply": "Continuar con la aplicación de Active Perfect Glow por la mañana y Perfect Night Glow por la noche para un perfecto equilibrio. Aplicar por la mañana y por la noche.",
+      "variants": [
+        {
+          "code": 10006,
+          "content": "300 ml.",
+          "price": 0,
+          "sellPrice": 0
+        }
+      ],
+      "lang": "es",
+      "url": "micellar_water_30",
+      "categoryUrl": [
+        "micellar_water"
+      ]
+    },
+    {
+      "name": "Micellar Water 12+",
+      "category": [
+        "Micellar Water"
+      ],
+      "image": "micellar-12.png",
+      "actives": [
+        "Aloe Vera Orgánico",
+        "NMF"
+      ],
+      "desc": "Aloe Vera Orgánico + NMF purificante",
+      "fullDesc": "Micellar Water 12+ elimina el maquillaje e impurezas, iniciando el proceso de hidratación. Rostro saludable y fresco. Indicado para pieles con tendencia oleosa o acneica.",
+      "apply": "Aplicar por la mañana y por la noche y continuar con la aplicación de Pure Perfect Glow, par aun perfecto equilibrio.",
+      "variants": [
+        {
+          "code": 10006,
+          "content": "300 ml.",
+          "price": 0,
+          "sellPrice": 0
+        }
+      ],
+      "lang": "es",
+      "url": "micellar_water_12",
+      "categoryUrl": [
+        "micellar_water"
+      ]
+    },
+    {
+      "name": "Micellar Water 20+",
+      "category": [
+        "Micellar Water"
+      ],
+      "image": "micellar-20.png",
+      "actives": [
+        "Ácido Hialurónico"
+      ],
+      "desc": "Pieles jóvenes",
+      "fullDesc": "Micellar Water 20+ elimina el maquillaje e impurezas propias de la piel y polución. Inicia el proceso de hidratación. Rica en ácido hialurónico. Rostro saludable y luminoso. Indicado para pieles con tendencia a deshidratación.",
+      "apply": "Continuar con la aplicación de Perfect Glow CICA por la mañana y Perfect Night Glow por la noche, para un perfecto equilibrio. Puede combinarse con Perfect Lightening Glow para un cuidado blanqueador.",
+      "variants": [
+        {
+          "code": 10007,
+          "content": "300 ml.",
+          "price": 0,
+          "sellPrice": 0
+        }
+      ],
+      "lang": "es",
+      "url": "micellar_water_20",
+      "categoryUrl": [
+        "micellar_water"
+      ]
     }
+    
 ]
