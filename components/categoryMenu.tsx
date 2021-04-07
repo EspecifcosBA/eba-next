@@ -41,11 +41,11 @@ const CategoryMenu: FunctionComponent<CategoryMenuProps> = ({ active }) => {
     url: "corporales",
     label: "Corporales"
   }, {
-    url: "micellar_water",
-    label: "Micellar Water"
+    url: "micelar_lotion",
+    label: "Micelar Lotion"
   },{
-    url: "tonico",
-    label: "Tónico"
+    url: "tonicos",
+    label: "Tónicos"
   }, {
     url: "therapy_rituals",
     label: "Therapy Rituals"
